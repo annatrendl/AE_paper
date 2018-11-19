@@ -34,7 +34,7 @@
 \newpage
 
 \begin{abstract}
-In the attraction effect, adding a third option to a choice set of two options can reverse the preference for original options and even increase the choice share for one of the original options. For this reason, the attraction effect is theoretically important, as it is a violation of the properties of regularity and independence from irrelevant alternatives, which are core properties of any model in which the utility of each option is stable across choice sets. The attraction effect has driven the development of over 10 models of multiattribute choice in the past 20 years. Recently, \citeA{Frederick2014} claimed that the attraction effect is limited to options presented as collections of numerical attributes, and does not hold for choices between naturalistic options like snacks or movies---a claim which would severely undermine the importance of the effect for the development of models of choice. \citeA{Huber2014} criticised \citeauthor{Frederick2014}'s experiments, laying down a set of strict criteria that a naturalistic attraction effect experiment should meet. We present the first experiment that meets these criteria. We find a precisely zero attraction effect.
+In the attraction effect, adding a third option to a choice set of two options can reverse the preference for the original options and even increase the choice share of one of the original options. This decision bias bears significant theoretical importance, as it is a violation of the properties of regularity and independence from irrelevant alternatives, which are core properties of any model in which the utility of each option is stable across choice sets. Consequently, the attraction effect has driven the development of over 10 models of multiattribute choice in the past 20 years. Recently, \citeA{Frederick2014} claimed that the attraction effect is limited to options presented as collections of numerical attributes, and does not hold for choices between naturalistic options like snacks or movies---a claim which would severely undermine the importance of the effect for the development of models of choice. \citeA{Huber2014} criticised \citeauthor{Frederick2014}'s experiments, laying down a set of strict criteria that should be met by any experiment wishing to test for the attraction effect in choices involving naturalistic choice options. We present the first experiment that meets these criteria. We find a precisely zero attraction effect.
 \end{abstract}
 \end{titlepage}
 
@@ -51,13 +51,18 @@ In the attraction effect, adding a third option to a choice set of two options c
 
 2. Highlight that although the stimulus set construction is weird, it is all validated by the ratings then choice data from the experimental session after the preregistration. Something upfront like "While the details of our stimulus construction are necessarily somewhat arbitrary, this does not undermine the quality of the experiment. We were able to check, using only the responses from the experimental session after stimulus construction and preregistration that our triplets meet every one of the the Huber et al. requirements."
 
-3. Add the list of stimuli, the preregistration, the data, and the R script to an OSF page so we are sharing everything up front. Don't make public yet.
-
+3. Add the list of stimuli, the preregistration, the data, and the R script to an OSF page so we are sharing everything up front. Don't make public yet. 
 \section{Introduction}
+
+\AT{Imagine that you just had a nice meal in a restaurant, and you are looking at the two dessert options available on the menu, cheesecake and pecan pie. You are torn between the creamy texture of the cheesecake and the rich, nutty flavour of the pecan pie. As the waiter approaches to take your order, he informs you that a third dessert option, apple pie is also available today. You find the taste of apple pie to be quite bland in general, and you instantly know that you prefer the original two options over it. You need to give your order now, and you quickly decide to go for the pecan pie. Did you just choose it randomly, or did the addition of the apple pie to the choice set made the pecan pie look like a more attractive option?}
+
+\AT{Indeed, decades of decision-making research suggests that the presence of the apple pie (decoy) in the choice set makes you more likely to choose the pecan pie (target) over the cheesecake (competitor). This phenomenon is called the attraction effect (also known as asymmetric dominance effect), and it is one of the most widely researched decision biases in consumer decision making. In essence, it states that when the decision maker is indifferent between the target and the competitor (pecan pie and cheesecake in the example), the addition of an inferior decoy option that resembles the target (apple pie is similar to pecan pie, but is slightly less liked by the decision maker) increases the likelihood that the target will be chosen.}
+
+
 
 Imagine that you are facing a choice between two hotels for a weekend city break: Hotel A has an excellent central location but is fairly expensive, whereas Hotel B is located in the outskirts of the city, but has a very favourable price in comparison to Hotel A. You are torn between the two hotels, when you spot a third option: Hotel C is situated right next to Hotel A in the city centre, but is slightly more expensive. Which one would choose?
 
-Decades on decision-making research suggests that the presence of Hotel C (decoy) in the choice set makes you more likely to choose Hotel A (target) over Hotel B (competitor). This phenomenon is called the attraction effect (also known as asymmetric dominance effect), and it is one of the most widely researched decision biases in consumer decision making. In essence, it states that when the decision maker is indifferent between the target and the competitor (Hotel A and Hotel B in the example), the addition of an inferior decoy option that resembles the target (Hotel C is similar to Hotel A, but is slightly worse) increases the likelihood that the target will be chosen. Neil says I should add things here.
+Decades of decision-making research suggests that the presence of Hotel C (decoy) in the choice set makes you more likely to choose Hotel A (target) over Hotel B (competitor). This phenomenon is called the attraction effect (also known as asymmetric dominance effect), and it is one of the most widely researched decision biases in consumer decision making. In essence, it states that when the decision maker is indifferent between the target and the competitor (Hotel A and Hotel B in the example), the addition of an inferior decoy option that resembles the target (Hotel C is similar to Hotel A, but is slightly worse) increases the likelihood that the target will be chosen. Neil says I should add things here.
 
 
 The attraction effect is important because it rules out the simple scalable family of models, where the value of each alternative is independent of the choice set in which it appears. For the introduction of the decoy to reverse preferences between the target and the comparison is a violation of independence of irrelevant alternatives and often of regularity, where the introduction of a new alternative to a choice set cannot increase the choice share on any existing alternative.
@@ -92,6 +97,9 @@ Our novel experimental design takes individual preferences into account and ensu
 \end{figure}
 
 \subsection{Method}
+
+\subsubsection{Pre-Registration}
+The study design, exclusion criteria and all the analyses were planned and registered before we collected any choice data. The pre-registration can be accessed at \NS{Insert link to OSF page}.
 
 \subsubsection{Candidate choice set selection}
 
@@ -150,7 +158,6 @@ These exclusion criteria were validated in a pilot study, where we collected rat
 
 We applied these exclusion criteria to our sample of 152 people, excluding 17 people, leaving a sample of 135 participants.
 
-The study design, exclusion criteria and all the analyses were planned and registered before we collected any choice data. The pre-registration can be accessed at \NS{Insert link to OSF page}.
 
 \subsubsection{Results}
 
@@ -170,7 +177,17 @@ To test for the presence of the attraction effect, we first excluded all trials 
 \label{fig:exp2_res}
 \end{figure}
 
-As specified in our pre-registered analysis plan, we also ran a mixed effects logistic regression with subject-specific intercepts to investigate how the target-decoy and target-competitor similarity ratings and familiarity of with the movies affect the likelihood of choosing the target. Table \ref{latentattr_exp2reg} shows the results from this regression, where contrary to our expectations, none of the explanatory variables seem to modulate the strength of the attraction effect.
+While we crated the choice triplets very carefully to ensure that they actually represent an attraction effect choice situation where the target-decoy pairs are perceived as similar and the target-competitor pairs perceived as different, individual heterogeneity and malleable preferences can still affect the results. Therefore, we find it instructive to plot the target-decoy and target-competitor similarity rating distributions. Figure \ref{fig:exp2_similarityratings} shows these distributions, and we can see that the overwhelming majority of target-competitor pairs were perceived as not similar, while the majority of target-decoy pairs were perceived as similar, as we hoped.
+
+\begin{figure}[htb!]
+\centering
+\captionsetup{justification=centering}
+\caption{Distribution target-competitor and target-decoy similarity ratings.}
+\includegraphics[width=0.8\textwidth]{exp2_similarityratings.png}
+\label{fig:exp2_similarityratings}
+\end{figure}
+
+As specified in our pre-registered analysis plan, we also ran a mixed effects logistic regression with subject-specific intercepts to investigate how subjects' target-decoy and target-competitor similarity ratings and familiarity with the movies affects the likelihood of choosing the target. Table \ref{latentattr_exp2reg} shows the results from this regression, where contrary to our expectations, none of the explanatory variables seem to modulate the strength of the attraction effect.
 
 \begin{table}[!htbp] \centering
 \captionsetup{justification=centering}
@@ -198,16 +215,6 @@ Bayesian Inf. Crit. & 2,173.686 \\
 \textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
 \end{tabular}}
 \end{table}
-
-While we crated the choice triplets very carefully to ensure that they actually represent an attraction effect choice situation where the target-decoy pairs are perceived as similar and the target-competitor pairs perceived as different, individual heterogeneity and malleable preferences can still affect the results. Therefore, we find it instructive to plot the target-decoy and target-competitor similarity rating distributions. Figure \ref{fig:exp2_similarityratings} shows these distributions, and we can see that the overwhelming majority of target-competitor pairs were perceived as not similar, while the majority of target-decoy pairs were perceived as similar, as we hoped.
-
-\begin{figure}[htb!]
-\centering
-\captionsetup{justification=centering}
-\caption{Distribution target-competitor and target-decoy similarity ratings.}
-\includegraphics[width=0.8\textwidth]{exp2_similarityratings.png}
-\label{fig:exp2_similarityratings}
-\end{figure}
 
 \section{Discussion}
 
