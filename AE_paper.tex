@@ -187,6 +187,7 @@ While we crated the choice triplets very carefully to ensure that they actually 
 
 As specified in our pre-registered analysis plan, we also ran a mixed effects logistic regression with subject-specific intercepts to investigate how subjects' target-decoy and target-competitor similarity ratings and familiarity with the movies affects the likelihood of choosing the target. Table \ref{latentattr_exp2reg} shows the results from this regression, where contrary to our expectations, none of the explanatory variables seem to modulate the strength of the attraction effect.
 
+\AT{All variables in this regression have been scaled by each subject. The CI on the intercept was so big because previously I have only scaled the similarity ratings and not the rating difference.}
 
 
 \begin{table}[!htbp] \centering 
@@ -200,22 +201,21 @@ As specified in our pre-registered analysis plan, we also ran a mixed effects lo
 \cline{2-2} 
 \\[-1.8ex] & Target chosen \\ 
 \hline \\[-1.8ex] 
- Seen all & 1.047 (0.671, 1.635) \\ 
-  TC similarity rating & 0.969 (0.872, 1.077) \\ 
-  TD similarity rating & 0.949 (0.854, 1.054) \\ 
-  TD rating difference & 0.914 (0.817, 1.023) \\ 
-  Intercept & 1.344 (0.745, 2.429) \\ 
+ Seen all & 1.020 (0.648, 1.606) \\ 
+  TC similarity rating & 0.961 (0.863, 1.070) \\ 
+  TD similarity rating & 0.935 (0.841, 1.040) \\ 
+  TD rating difference & 0.894$^{**}$ (0.803, 0.994) \\ 
+  Intercept & 0.989 (0.636, 1.538) \\ 
  \hline \\[-1.8ex] 
-Observations & 1,474 \\ 
-Log Likelihood & $-$1,019.870 \\ 
-Akaike Inf. Crit. & 2,051.739 \\ 
-Bayesian Inf. Crit. & 2,083.513 \\ 
+Observations & 1,441 \\ 
+Log Likelihood & $-$995.776 \\ 
+Akaike Inf. Crit. & 2,003.552 \\ 
+Bayesian Inf. Crit. & 2,035.190 \\ 
 \hline 
 \hline \\[-1.8ex] 
 \textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
 \end{tabular} 
 \end{table} 
-
 
 \section{Discussion}
 
