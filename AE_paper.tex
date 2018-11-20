@@ -175,7 +175,7 @@ To test for the presence of the attraction effect, we first excluded all trials 
 \label{fig:exp2_res}
 \end{figure}
 
-While we crated the choice triplets very carefully to ensure that they actually represent an attraction effect choice situation where the target-decoy pairs are perceived as similar and the target-competitor pairs perceived as different, individual heterogeneity and malleable preferences can still affect the results. Therefore, we find it instructive to plot the target-decoy and target-competitor similarity rating distributions. Figure \ref{fig:exp2_similarityratings} shows these distributions, and we can see that the overwhelming majority of target-competitor pairs were perceived as not similar, while the majority of target-decoy pairs were perceived as similar, as we hoped.
+While we created the choice triplets very carefully to ensure that they actually represent an attraction effect choice situation where the target-decoy pairs are perceived as similar and the target-competitor pairs perceived as different, individual heterogeneity and malleable preferences can still affect the results. Therefore, we find it instructive to plot the target-decoy and target-competitor similarity rating distributions. Figure \ref{fig:exp2_similarityratings} shows these distributions, and we can see that the overwhelming majority of target-competitor pairs were perceived as not similar, while the majority of target-decoy pairs were perceived as similar, as we hoped.
 
 \begin{figure}[htb!]
 \centering
@@ -185,9 +185,7 @@ While we crated the choice triplets very carefully to ensure that they actually 
 \label{fig:exp2_similarityratings}
 \end{figure}
 
-As specified in our pre-registered analysis plan, we also ran a mixed effects logistic regression with subject-specific intercepts to investigate how subjects' target-decoy and target-competitor similarity ratings and familiarity with the movies affects the likelihood of choosing the target. Table \ref{latentattr_exp2reg} shows the results from this regression, where contrary to our expectations, none of the explanatory variables seem to modulate the strength of the attraction effect.
-
-\AT{All variables in this regression have been scaled by each subject. The CI on the intercept was so big because previously I have only scaled the similarity ratings and not the rating difference.}
+As specified in our pre-registered analysis plan, we also ran a mixed effects logistic regression with subject-specific intercepts to investigate how subjects' target-decoy and target-competitor similarity ratings, familiarity with the movies, and the preference rating difference between the target and the decoy affect the likelihood of choosing the target. Table \ref{latentattr_exp2reg} shows the results from this regression, where contrary to our expectations, none of the explanatory variables seem to modulate the strength of the attraction effect.
 
 
 \begin{table}[!htbp] \centering 
@@ -201,21 +199,25 @@ As specified in our pre-registered analysis plan, we also ran a mixed effects lo
 \cline{2-2} 
 \\[-1.8ex] & Target chosen \\ 
 \hline \\[-1.8ex] 
- Seen all & 1.020 (0.648, 1.606) \\ 
-  TC similarity rating & 0.961 (0.863, 1.070) \\ 
-  TD similarity rating & 0.935 (0.841, 1.040) \\ 
-  TD rating difference & 0.894$^{**}$ (0.803, 0.994) \\ 
-  Intercept & 0.989 (0.636, 1.538) \\ 
+ Seen all & 1.046 (0.690, 1.587) \\ 
+  TC similarity rating & 0.983 (0.904, 1.067) \\ 
+  TD similarity rating & 0.976 (0.926, 1.029) \\ 
+  TD rating difference & 0.938 (0.850, 1.036) \\ 
+  Intercept & 1.406 (0.766, 2.584) \\ 
  \hline \\[-1.8ex] 
-Observations & 1,441 \\ 
-Log Likelihood & $-$995.776 \\ 
-Akaike Inf. Crit. & 2,003.552 \\ 
-Bayesian Inf. Crit. & 2,035.190 \\ 
+Observations & 1,953 \\ 
+Log Likelihood & $-$1,352.312 \\ 
+Akaike Inf. Crit. & 2,716.624 \\ 
+Bayesian Inf. Crit. & 2,750.087 \\ 
 \hline 
 \hline \\[-1.8ex] 
 \textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
 \end{tabular} 
 \end{table} 
+
+
+
+
 
 \section{Discussion}
 
