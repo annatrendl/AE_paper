@@ -159,12 +159,11 @@ We applied these exclusion criteria to our sample of 152 people, excluding 17 pe
 
 \subsubsection{Results}
 
-The average number of choice trials per participant was 16 (range 6--54), and 84\% of participants were presented with at least 8 choice trials.
+The average number of choice trials per participant was 16 (the lowest being 6 and the highest 54), and 84\% of participants were presented with at least 8 choice trials.
 
-The decoy was only chosen in 4.3\% of the trials. 72\% of the participants never chose the decoy. Only 2\% of people have chose the decoy in more than 25\% of the trials. This indicates that people were able to identify the dominated decoy in the choice stage.
+The decoy was only chosen in 4.3\% of the trials. In addition, 72\% of the participants have never chosen it, and only 2\% of people have chosen it in more than 25\% of the trials. This indicates that people were able to identify the dominated decoy in the choice stage.
 
-To test for the presence of the attraction effect, we first excluded all trials where the decoy was chosen and then conducted a one-sample t-test to test the hypothesis that the mean of the proportion of trials where the target was chosen is above 0.5 (indicating an increased likelihood of choosing the target item). We found no evidence for the attraction effect (M = 0.5, SD = 0.07), t(134) = -0.44, p = .669. Figure \ref{fig:exp2_res} shows the distribution of the proportions of trials where the target was chosen. The 95\% confidence interval of [0.49--0.51] 
-shows that participants were almost perfectly indifferent between the target and the competitor.
+To test for the presence of the attraction effect, we first excluded all trials where the decoy was chosen and then conducted a one-sample t-test to test the hypothesis that the mean of the proportion of trials where the target was chosen is above 0.5 (indicating an increased likelihood of choosing the target item). We found no evidence for the attraction effect (M = 0.5, SD = 0.07), t(134) = -0.44, p = .669. Figure \ref{fig:exp2_res} shows the distribution of the proportions of trials where the target was chosen, which shows that participants were almost perfectly indifferent between the target and the competitor, M = 0.5, 95\% CI [0.49, 0.51].
 
 
 
@@ -176,7 +175,7 @@ shows that participants were almost perfectly indifferent between the target and
 \label{fig:exp2_res}
 \end{figure}
 
-While we crated the choice triplets very carefully to ensure that they actually represent an attraction effect choice situation where the target-decoy pairs are perceived as similar and the target-competitor pairs perceived as different, individual heterogeneity. Therefore, we find it instructive to plot the target-decoy and target-competitor similarity rating distributions. Figure \ref{fig:exp2_similarityratings} shows these distributions, and we can see that the overwhelming majority of target-competitor pairs were perceived as not similar, while the majority of target-decoy pairs were perceived as similar, as we hoped.
+While we crated the choice triplets very carefully to ensure that they actually represent an attraction effect choice situation where the target-decoy pairs are perceived as similar and the target-competitor pairs perceived as different, individual heterogeneity and malleable preferences can still affect the results. Therefore, we find it instructive to plot the target-decoy and target-competitor similarity rating distributions. Figure \ref{fig:exp2_similarityratings} shows these distributions, and we can see that the overwhelming majority of target-competitor pairs were perceived as not similar, while the majority of target-decoy pairs were perceived as similar, as we hoped.
 
 \begin{figure}[htb!]
 \centering
@@ -188,32 +187,35 @@ While we crated the choice triplets very carefully to ensure that they actually 
 
 As specified in our pre-registered analysis plan, we also ran a mixed effects logistic regression with subject-specific intercepts to investigate how subjects' target-decoy and target-competitor similarity ratings and familiarity with the movies affects the likelihood of choosing the target. Table \ref{latentattr_exp2reg} shows the results from this regression, where contrary to our expectations, none of the explanatory variables seem to modulate the strength of the attraction effect.
 
-\begin{table}[!htbp] \centering
-\captionsetup{justification=centering}
+
+
+\begin{table}[!htbp] \centering 
+  \captionsetup{justification=centering}
   \caption{Odds-ratios and 95\% CIs from a mixed-effects logistic model with subject-specific intercepts. (T - Target, C - Competitor, D - Decoy)}
-  \label{latentattr_exp2reg}
-\resizebox{9cm}{!}{\begin{tabular}{@{\extracolsep{5pt}}lc}
-\\[-1.8ex]\hline
-\hline \\[-1.8ex]
- & \multicolumn{1}{c}{\textit{Dependent variable:}} \\
-\cline{2-2}
-\\[-1.8ex] & Target chosen \\
-\hline \\[-1.8ex]
- Seen all & 1.122 (0.731, 1.729) \\
-  TC similarity rating & 0.967 (0.872, 1.073) \\
-  TD similarity rating & 0.926 (0.835, 1.027) \\
-  TD rating difference & 0.935 (0.837, 1.044) \\
-  Intercept & 1.062 (0.598, 1.882) \\
- \hline \\[-1.8ex]
-Observations & 1,541 \\
-Log Likelihood & $-$1,064.822 \\
-Akaike Inf. Crit. & 2,141.644 \\
-Bayesian Inf. Crit. & 2,173.686 \\
-\hline
-\hline \\[-1.8ex]
-\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
-\end{tabular}}
-\end{table}
+  \label{latentattr_exp2reg} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & Target chosen \\ 
+\hline \\[-1.8ex] 
+ Seen all & 1.047 (0.671, 1.635) \\ 
+  TC similarity rating & 0.969 (0.872, 1.077) \\ 
+  TD similarity rating & 0.949 (0.854, 1.054) \\ 
+  TD rating difference & 0.914 (0.817, 1.023) \\ 
+  Intercept & 1.344 (0.745, 2.429) \\ 
+ \hline \\[-1.8ex] 
+Observations & 1,474 \\ 
+Log Likelihood & $-$1,019.870 \\ 
+Akaike Inf. Crit. & 2,051.739 \\ 
+Bayesian Inf. Crit. & 2,083.513 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+\end{table} 
+
 
 \section{Discussion}
 
