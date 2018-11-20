@@ -160,34 +160,34 @@ The average number of choice trials per participant was 16 (the lowest being 6 a
 
 The decoy was only chosen in 4.3\% of the trials. In addition, 72\% of the participants have never chosen it, and only 2\% of people have chosen it in more than 25\% of the trials. This indicates that people were able to identify the dominated decoy in the choice stage.
 
-To test for the presence of the attraction effect, we first excluded all trials where the decoy was chosen, and then conducted a one-sample t-test to test the hypothesis that the mean of the proportion of trials where the target was chosen is above 0.5 (indicating an increased likelihood of choosing the target item). We found no evidence for the attraction effect (M = 0.5, SD = 0.07), t(134) = -0.44, p = .669. Figure \ref{fig:exp2_res} shows the distribution of the proportions of trials where the target was chosen, which demonstrates that participants were almost perfectly indifferent between the target and the competitor, M = 0.5, 95\% CI [0.49, 0.51].
-
-
+In the attraction effect, the decoy increases the choice share of the target at the expense of the competitor. Figure \ref{fig:exp2_res} shows the distribution of the proportions of trials where the target was chosen instead of the competitor. We excluded all trials where the decoy was chosen. Each point is the estimate for one participant. The mean proportion of trials where the target was chosen is 0.5\NS{Add second decimal place}. The 95\% CI is [0.49--0.51], which demonstrates that mean proportion of trials where the target was chosen is almost exactly 0.5: the attraction effect is almost exactly zero. A one-sample $t$-test shows that the proportion of trials where the target was chosen does not differ significantly from 0.5, $t(134)=-0.44$, $p=.67$.  
 
 \begin{figure}[htb!]
 \centering
 \captionsetup{justification=centering}
-\caption{Proportion of trials where the target was chosen instead of the competitor. Each dot is a participant and the red dot and error bars show the bootstrapped mean and 95\% CIs.}
+\caption{The proportion of trials where the target was chosen instead of the competitor. Each dot is a participant. The red dot and error bar shows the bootstrapped mean and 95\% CI.}
 \includegraphics[width=0.8\textwidth]{exp2_res.png}
 \label{fig:exp2_res}
 \end{figure}
 
-While we created the choice triplets very carefully to ensure that they actually represent an attraction effect choice situation where the target-decoy pairs are perceived as similar, and the target-competitor pairs perceived as different, our results can still be affected by individual heterogeneity and malleable preferences. Therefore, we find it instructive to plot the target-decoy and target-competitor similarity rating distributions. Figure \ref{fig:exp2_similarityratings} shows these distributions, and we can see that the overwhelming majority of target-competitor pairs were perceived as not similar, while the majority of target-decoy pairs were perceived as similar, as we hoped.
+We created the choice triplets carefully to ensure that the target-decoy pairs were similar and the target-competitor pairs are different. To check our participants perceived the triplets this way, we plot target-decoy and target-competitor similarity rating distributions in Figure~\ref{fig:exp2_similarityratings}.  The overwhelming majority of target-competitor pairs were perceived as not similar, while the majority of target-decoy pairs were perceived as similar, as we intended.
 
 \begin{figure}[htb!]
 \centering
 \captionsetup{justification=centering}
-\caption{Distribution of the target-competitor (N = 2120) and target-decoy (N= 2052) similarity ratings. Missing similarity ratings are due to "Don't know" answers.}
+		\caption{Distribution of the target-competitor (N = 2120) and target-decoy (N= 2052) similarity ratings. \NS{There are no missing ratings in the picture. Should we add a Don't Know bar? Missing similarity ratings are due to "Don't know" answers}.}
 \includegraphics[width=0.8\textwidth]{exp2_similarityratings.png}
 \label{fig:exp2_similarityratings}
 \end{figure}
 
-As specified in our pre-registered analysis plan, we also ran a mixed effects logistic regression with subject-specific intercepts to investigate how subjects' target-decoy and target-competitor similarity ratings, familiarity with the movies, and the preference rating difference between the target and the decoy affect the likelihood of choosing the target. Table \ref{latentattr_exp2reg} shows the results from this regression, where contrary to our expectations, none of the explanatory variables seemed to modulate the strength of the attraction effect.
+As specified in our pre-registered analysis plan\NS{This suggests we did not preregister the earlier analysis---but we did}, we also ran a mixed effects logistic regression with by-subjects intercepts to investigate how participants' target-decoy and target-competitor similarity ratings, familiarity with the movies, and the preference rating difference between the target and the decoy affect the likelihood of choosing the target. Table \ref{latentattr_exp2reg} shows the results from this regression. The odds of 1 for choosing the target over the competitor reflect equal preference for each and corresponds to the choice proportion of 0.5 in Figure~\ref{fig:exp2_res}. None of the explanatory variables modulate the strength of the attraction effect.
+
+\NS{Logistic regression needs work. 1. Run a model with just an intercept. The intercept, on response scale, should be 0.5, and the CI should be very tight to match the bootstrap in the figure. 2. The intercept in the model in Table 1 is for when everything else is zero. We want to make sure everything else is scaled so, (x-mean)/sd for ratings, and -1/2 / +1/2 dummy coding for Seen all so that intercept is at the average of everything else. If all is well, replace the table. Explain dummy coding in table footnote.} 
 
 
 \begin{table}[!htbp] \centering 
   \captionsetup{justification=centering}
-  \caption{Odds-ratios and 95\% CIs from a mixed-effects logistic model with subject-specific intercepts. (T - Target, C - Competitor, D - Decoy)}
+    \caption{Odds-ratios and 95\% CIs from a mixed-effects logistic model with subject-specific intercepts. (T - Target, C - Competitor, D - Decoy)}
   \label{latentattr_exp2reg} 
 \begin{tabular}{@{\extracolsep{5pt}}lc} 
 \\[-1.8ex]\hline 
