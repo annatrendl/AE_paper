@@ -51,6 +51,16 @@ In the attraction effect, adding a third option to a choice set of two options c
 1. Add the list of stimuli, the preregistration, the data, and the R script to an OSF page so we are sharing everything up front. Don't make public yet. 
 \section{Introduction}
 
+2. Switch to PDF figures instead of PNG for the results. Would p1 + theme_bw() from librar(ggthemes) produce plots that match the other figures better?
+
+3. Can we improve Figure 4? We could order x-axis by mean? We could order by number of choices used, so that plot funnels left to right to the participants with more choices? Can we use the size aesthetic with 1/no.choices to make the better estimated dots bigger (plus a key)?
+
+4. See notes on regression.
+
+5. Shall we delete Figure 2 and just describe in the text?
+
+6. Change references to have conistent caps in titles. Use JMR in house format, whatever that is.
+
 %\AT{\textbf{Dessert version}}
 
 Imagine that you are having a nice meal in a restaurant, and you are looking at the two dessert options available on the menu: cheesecake and pecan pie. You are torn between the creamy texture of the cheesecake and the rich, nutty flavour of the pecan pie. You resolve to have the cheesecake. As the waiter approaches to take your order, he informs you that a third dessert option, apple pie---which you find quite bland---is also available today. But now you have changed your mind, and decide to order the pecan pie. \citeA{Tsetsos2010} give just this paradoxical example: the availability of the apple pie, which you do not want, makes you switch from cheesecake to pecan pie.
@@ -79,7 +89,6 @@ The goal of this experiment was to test the attraction effect with naturalistic 
 When the stimuli have numerical attributes, it is straightforward to construct choice triplets with a target, competitor and decoy. However, with naturalistic stimuli, this task is significantly more complicated. \citeA{Frederick2014} have also used movie stimuli in two of their experiments: they chose pairs of movies that are part of the same sequel or are starring the same actor (but have distinctly different genres) to create target-decoy pairs. With movie-sequel pairs, \citeauthor{Frederick2014} assumed that the sequel is the decoy, and the original is the target---which may or not have been true for their participants. With same-actor pairs, it is unclear how \citeauthor{Frederick2014} decided which movie should be the target. 
 
 Our novel experimental design takes individual preferences into account and ensures that decision makers are (a) indifferent between the target and competitor and (b) able to clearly identify the inferiority of the decoy. In addition, to increase the statistical power of our test, we used a within-subjects design as well as both A, B, A' and B, A, B' triplet pairs (where X' is the dominated option), as suggested by \citeA{Huber2014} \NS{But our analysis doesn't do this! --- We don't pair the triplets back into quadruplets. We need to discuss!}. We created ``quadruplets'' (each made up of two attraction effect choice triplets), using two distinctly different target-decoy pairs. Figure \ref{fig:quadruplets} shows an example of two choice triplets created from one such quadruplet.
-
 
 \begin{figure}
 \centering
