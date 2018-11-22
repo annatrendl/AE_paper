@@ -51,7 +51,7 @@ In the attraction effect, adding a third option to a choice set of two options c
 1. Add the list of stimuli, the preregistration, the data, and the R script to an OSF page so we are sharing everything up front. Don't make public yet. 
 \section{Introduction}
 
-2. Switch to PDF figures instead of PNG for the results. Would p1 + theme_bw() from librar(ggthemes) produce plots that match the other figures better?
+%2. Switch to PDF figures instead of PNG for the results. Would p1 + theme_bw() from librar(ggthemes) produce plots that match the other figures better?
 
 3. Can we improve Figure 4? We could order x-axis by mean? We could order by number of choices used, so that plot funnels left to right to the participants with more choices? Can we use the size aesthetic with 1/no.choices to make the better estimated dots bigger (plus a key)?
 
@@ -94,7 +94,7 @@ Our novel experimental design takes individual preferences into account and ensu
 \centering
 \captionsetup{justification=centering}
 		 \caption{Two choice triplets used in the experiment.}
-\includegraphics[width=1\textwidth]{figure1.jpg}
+\includegraphics[width=1\textwidth]{figure1.pdf}
 \label{fig:quadruplets}
 \end{figure}
 
@@ -122,7 +122,7 @@ We then reduced the size of this list by selecting the most similar movie pairs.
 \centering
 \captionsetup{justification=centering}
 		\caption{The distribution of the average similarity rating for each target-decoy candidate pair (N = 1242). The dotted line is the cut-off value for accepting a movie pair as similar.}
-\includegraphics[width=0.9\textwidth]{exp2_pilot.png}
+\includegraphics[width=0.9\textwidth]{figure2.pdf}
 \label{fig:exp2_pilot}
 \end{figure}
 
@@ -169,13 +169,13 @@ The decoy was only chosen in 4.3\% of the trials. In addition, 72\% of the parti
 
 In the attraction effect, the decoy increases the choice share of the target at the expense of the competitor. Figure \ref{fig:exp2_res} shows the distribution of the proportions of trials where the target was chosen instead of the competitor. We excluded all trials where the decoy was chosen. Each point is the estimate for one participant. The mean proportion of trials where the target was chosen is 0.5\NS{Add second decimal place}. The 95\% CI is [0.49--0.51], which demonstrates that mean proportion of trials where the target was chosen is almost exactly 0.5: the attraction effect is almost exactly zero. A one-sample $t$-test shows that the proportion of trials where the target was chosen does not differ significantly from 0.5, $t(134)=0.44$, $p=.67$.  
 
-\NS{Could we try a version of Figure~\ref{fig:exp2_res} where we block by number of choice triplets. With low on the left and high on he right, the effect should be to funnel down from estimates based on low N to estimates of high N. 
+\NS{Could we try a version of Figure~\ref{fig:exp2_res} where we block by number of choice triplets. With low on the left and high on he right, the effect should be to funnel down from estimates based on low N to estimates of high N. }
 
 \begin{figure}[htb!]
 \centering
 \captionsetup{justification=centering}
-\caption{The proportion of trials where the target was chosen instead of the competitor. Each dot is a participant. The red dot and error bar shows the bootstrapped mean and 95\% CI.}
-\includegraphics[width=0.8\textwidth]{exp2_res.png}
+\caption{The proportion of trials where the target was chosen instead of the competitor. Each dot is a participant. The red dot and error bars show the bootstrapped mean and 95\% CI.}
+\includegraphics[width=0.9\textwidth]{figure4.pdf}
 \label{fig:exp2_res}
 \end{figure}
 
@@ -185,7 +185,7 @@ We created the choice triplets carefully to ensure that the target-decoy pairs w
 \centering
 \captionsetup{justification=centering}
 		\caption{Distribution of the target-competitor (N = 2120) and target-decoy (N= 2052) similarity ratings. \NS{There are no missing ratings in the picture. Should we add a Don't Know bar? Missing similarity ratings are due to "Don't know" answers}.}
-\includegraphics[width=0.8\textwidth]{exp2_similarityratings.png}
+\includegraphics[width=0.8\textwidth]{figure5.pdf}
 \label{fig:exp2_similarityratings}
 \end{figure}
 
