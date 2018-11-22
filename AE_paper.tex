@@ -1,6 +1,8 @@
 \documentclass[12pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
 %\usepackage{Times}
+\usepackage{booktabs,caption}
+\usepackage[flushleft]{threeparttable}
 \usepackage{authblk}
 \usepackage{setspace}
 \usepackage{apacite}
@@ -51,13 +53,21 @@ In the attraction effect, adding a third option to a choice set of two options c
 1. Add the list of stimuli, the preregistration, the data, and the R script to an OSF page so we are sharing everything up front. Don't make public yet. 
 \section{Introduction}
 
-%2. Switch to PDF figures instead of PNG for the results. Would p1 + theme_bw() from librar(ggthemes) produce plots that match the other figures better?
+2. Switch to PDF figures instead of PNG for the results. Would $p1 + theme_bw()$ from librar(ggthemes) produce plots that match the other figures better?
+
+\AT{Done, the only plot I don't have in pdf is the choice task screenshot. I've tried to take a new screenshot from $http://www.stewart.warwick.ac.uk/expt/big_three_movies_2/$ but I can't access it anymore.}
 
 3. Can we improve Figure 4? We could order x-axis by mean? We could order by number of choices used, so that plot funnels left to right to the participants with more choices? Can we use the size aesthetic with 1/no.choices to make the better estimated dots bigger (plus a key)?
 
+\AT{I've done the first, it looks much better I think.}
+
 4. See notes on regression.
 
+\AT{Updated with the new scaling, CI around intercept is 0.8 and 1.2 now; the same CI from an intercept-only regression is 0.9 and 1.1; glmer still gives exact same results as glm}
+
 5. Shall we delete Figure 2 and just describe in the text?
+
+\AT{I think it's a good illustration of how rigorous we were with the selection process. Also, I think that the description of the selection process is (necessarily) rather dry, so I think the graph helps the reader visualise what we've done. But we can delete it if you think it's redundant.}
 
 6. Change references to have conistent caps in titles. Use JMR in house format, whatever that is.
 
@@ -184,19 +194,17 @@ We created the choice triplets carefully to ensure that the target-decoy pairs w
 \begin{figure}[htb!]
 \centering
 \captionsetup{justification=centering}
-		\caption{Distribution of the target-competitor (N = 2120) and target-decoy (N= 2052) similarity ratings. \NS{There are no missing ratings in the picture. Should we add a Don't Know bar? Missing similarity ratings are due to "Don't know" answers}.}
+		\caption{Distribution of the target-competitor and target-decoy similarity ratings.}
 \includegraphics[width=0.8\textwidth]{figure5.pdf}
 \label{fig:exp2_similarityratings}
 \end{figure}
 
 As specified in our pre-registered analysis plan\NS{This suggests we did not preregister the earlier analysis---but we did}, we also ran a mixed effects logistic regression with by-subjects intercepts to investigate how participants' target-decoy and target-competitor similarity ratings, familiarity with the movies, and the preference rating difference between the target and the decoy affect the likelihood of choosing the target. Table \ref{latentattr_exp2reg} shows the results from this regression. The odds of 1 for choosing the target over the competitor reflect equal preference for each and corresponds to the choice proportion of 0.5 in Figure~\ref{fig:exp2_res}. None of the explanatory variables modulate the strength of the attraction effect.
 
-\NS{Logistic regression needs work. 1. Run a model with just an intercept. The intercept, on response scale, should be 0.5, and the CI should be very tight to match the bootstrap in the figure. 2. The intercept in the model in Table 1 is for when everything else is zero. We want to make sure everything else is scaled so, (x-mean)/sd for ratings, and -1/2 / +1/2 dummy coding for Seen all so that intercept is at the average of everything else. If all is well, replace the table. Explain dummy coding in table footnote.} 
-
-
-\begin{table}[!htbp] \centering 
-  \captionsetup{justification=centering}
-    \caption{Odds-ratios and 95\% CIs from a mixed-effects logistic model with subject-specific intercepts. (T - Target, C - Competitor, D - Decoy)}
+\begin{table*}[htb] \centering
+  \begin{threeparttable}
+    \captionsetup{justification=centering}
+    \caption{Odds-ratios and 95\% CIs from a mixed-effects logistic model with subject-specific intercepts.}
   \label{latentattr_exp2reg} 
 \begin{tabular}{@{\extracolsep{5pt}}lc} 
 \\[-1.8ex]\hline 
@@ -206,10 +214,10 @@ As specified in our pre-registered analysis plan\NS{This suggests we did not pre
 \\[-1.8ex] & Target chosen \\ 
 \hline \\[-1.8ex] 
  Seen all & 1.046 (0.690, 1.587) \\ 
-  TC similarity rating & 0.983 (0.904, 1.067) \\ 
-  TD similarity rating & 0.976 (0.926, 1.029) \\ 
-  TD rating difference & 0.938 (0.850, 1.036) \\ 
-  Intercept & 1.406 (0.766, 2.584) \\ 
+  TC similarity rating & 0.960 (0.877, 1.050) \\ 
+  TD similarity rating & 0.981 (0.895, 1.075) \\ 
+  TD rating difference & 0.944 (0.863, 1.032) \\ 
+  Intercept & 0.987 (0.802, 1.214) \\ 
  \hline \\[-1.8ex] 
 Observations & 1,953 \\ 
 Log Likelihood & $-$1,352.312 \\ 
@@ -217,12 +225,13 @@ Akaike Inf. Crit. & 2,716.624 \\
 Bayesian Inf. Crit. & 2,750.087 \\ 
 \hline 
 \hline \\[-1.8ex] 
-\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
 \end{tabular} 
-\end{table} 
-
-
-
+    \begin{tablenotes}
+      \small
+      \item Notes: $^{**}$p$<$0.05; ratings have been scaled; Seen all is coded 0.5 (Yes) and -0.5 (No); T - Target, C - Competitor, D - Decoy
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table*}
 
 
 \section{Discussion}
