@@ -3,6 +3,7 @@
 %\usepackage{Times}
 \usepackage{booktabs,caption}
 \usepackage[flushleft]{threeparttable}
+\usepackage{hyperref}
 \usepackage{authblk}
 \usepackage{setspace}
 \usepackage{apacite}
@@ -22,6 +23,7 @@
 \newcommand{\AT}[1] {{\textcolor{cyan}{#1}}}
 \newcommand{\TM}[1] {{\textcolor{orange}{#1}}}
 
+%The title should not exceed 25 words.
 \title{Zero attraction: A precisely zero attraction effect with naturalistic stimuli that meets Huber, Payne, and Puto's (2014) criteria}
 
 \author{Anna Trendl\\Department of Psychology, University of Warwick \and Neil Stewart and Timothy L. Mullett\\Warwick Business School, University of Warwick}
@@ -35,9 +37,14 @@
 
 \newpage
 
+%The abstract is limited to 175 words and summarizes the key components of the manuscript, offering the reader a sample of the manuscript.
 \begin{abstract}
 In the attraction effect, adding a third option to a choice set of two options can reverse the preference for the original options and even increase the choice share of one of the original options. The attraction effect bears significant importance for decision-making research, as it is a violation of the axioms of regularity and independence from irrelevant alternatives, which are core properties of any model in which the utility of each option is stable across choice sets. Consequently, the attraction effect has driven the development of a set of influential models of multiattribute choice in the past 20 years. Recently, \citeA{Frederick2014} claimed that the attraction effect is limited to options presented as collections of numerical attributes, and does not hold for choices between naturalistic options like snacks or movies---a claim which would severely undermine the importance of the effect for the development of models of choice. \citeA{Huber2014} criticised \citeauthor{Frederick2014}'s experiments, laying down a set of strict criteria that should be met by any experiment wishing to test for the attraction effect in choices involving naturalistic choice options. We present the first experiment that meets these criteria. We find a precisely zero attraction effect.
+%194 words now
 \end{abstract}
+%Keywords
+%Include 4–5 primary keywords that best suit the topic of the manuscript; these do not necessarily need to match the “Topics/Methods” that are selected in Manuscript Central upon submission.
+
 \end{titlepage}
 
 \NS{Neil has comments like this}
@@ -51,11 +58,12 @@ In the attraction effect, adding a third option to a choice set of two options c
 
 
 1. Add the list of stimuli, the preregistration, the data, and the R script to an OSF page so we are sharing everything up front. Don't make public yet. 
-\section{Introduction}
+
+\AT{Should I only upload the cleaned version of the choice data and the code that produces the results in the paper, or should I upload everything, including the movie stimuli, the code creating the quadruplets, the code that creates bespoke quadruplets; the ratings, choice data and similarity data in csv and the code that cleans the data?}
 
 2. Switch to PDF figures instead of PNG for the results. Would $p1 + theme_bw()$ from librar(ggthemes) produce plots that match the other figures better?
 
-\AT{Done, the only plot I don't have in pdf is the choice task screenshot. I've tried to take a new screenshot from $http://www.stewart.warwick.ac.uk/expt/big_three_movies_2/$ but I can't access it anymore.}
+\AT{Done, the only plot I don't have in pdf is the choice task screenshot. I've tried to take a new screenshot from \url{http://www.stewart.warwick.ac.uk/expt/big_three_movies_2/} but I can't access it anymore.}
 
 3. Can we improve Figure 4? We could order x-axis by mean? We could order by number of choices used, so that plot funnels left to right to the participants with more choices? Can we use the size aesthetic with 1/no.choices to make the better estimated dots bigger (plus a key)?
 
@@ -71,7 +79,29 @@ In the attraction effect, adding a third option to a choice set of two options c
 
 6. Change references to have conistent caps in titles. Use JMR in house format, whatever that is.
 
-%\AT{\textbf{Dessert version}}
+\AT{Fixed, hopefully.}
+
+7. Style checklist. Abstract needs to be shorter. Abstract should be in 3rd person (“the authors”). I do not understand the requirement about the headings.
+
+\AT{\url{https://www.ama.org/publications/JournalOfMarketingResearch/Pages/JMRSubmissionGuidelines.aspx}}
+
+\AT{\url{https://www.ama.org/publications/JournalOfMarketingResearch/Pages/JMR_Accepted_Ms.aspx}}
+
+8. Quadruplet design is not reflected in analysis (and wasn't specified in the pre-registration).
+
+
+%Main Text
+%Please do not add any headers/footers on each page (other than the page number). Headings are text only (not numbered) and are formatted according to level.
+
+%    PRIMARY HEADING: Centered, capitalized, and italicized, with an extra return before and after.
+%    SECONDARY HEADING: Flush left with title-style capitalization (first letter of each word) and italicized. You must have at least two sections beginning with a secondary heading; if there is only one, the heading should be excluded.
+%    TERTIARY HEADING: Left justified and indented with sentence-style capitalization (first word only) in italics. Punctuate the heading with a period and begin the first line of the same section on the same line. If only one tertiary heading is used, the heading should be excluded. 
+%Please make sure to use the correct heading style. When used, you must have more than one secondary heading per section (e.g., you may have a primary heading and two secondary/tertiary heading, but never a single secondary heading in a subsection).
+
+%Do not label opening commentary as “Introduction.”
+
+%Do not place tables and figures within the text. Rather, place them sequentially at the end of the text with titles above the tables and figures. Tables and figures must also be provided in their original format.
+\section{Introduction}
 
 Imagine that you are having a nice meal in a restaurant, and you are looking at the two dessert options available on the menu: cheesecake and pecan pie. You are torn between the creamy texture of the cheesecake and the rich, nutty flavour of the pecan pie. You resolve to have the cheesecake. As the waiter approaches to take your order, he informs you that a third dessert option, apple pie---which you find quite bland---is also available today. But now you have changed your mind, and decide to order the pecan pie. \citeA{Tsetsos2010} give just this paradoxical example: the availability of the apple pie, which you do not want, makes you switch from cheesecake to pecan pie.
 
@@ -177,9 +207,7 @@ The average number of choice trials per participant was 16 (the lowest being 6 a
 
 The decoy was only chosen in 4.3\% of the trials. In addition, 72\% of the participants have never chosen it, and only 2\% of people have chosen it in more than 25\% of the trials. This indicates that people were able to identify the dominated decoy in the choice stage.
 
-In the attraction effect, the decoy increases the choice share of the target at the expense of the competitor. Figure \ref{fig:exp2_res} shows the distribution of the proportions of trials where the target was chosen instead of the competitor. We excluded all trials where the decoy was chosen. Each point is the estimate for one participant. The mean proportion of trials where the target was chosen is 0.5\NS{Add second decimal place}. The 95\% CI is [0.49--0.51], which demonstrates that mean proportion of trials where the target was chosen is almost exactly 0.5: the attraction effect is almost exactly zero. A one-sample $t$-test shows that the proportion of trials where the target was chosen does not differ significantly from 0.5, $t(134)=0.44$, $p=.67$.  
-
-\NS{Could we try a version of Figure~\ref{fig:exp2_res} where we block by number of choice triplets. With low on the left and high on he right, the effect should be to funnel down from estimates based on low N to estimates of high N. }
+In the attraction effect, the decoy increases the choice share of the target at the expense of the competitor. Figure \ref{fig:exp2_res} shows the distribution of the proportions of trials where the target was chosen instead of the competitor. We excluded all trials where the decoy was chosen. Each point is the estimate for one participant. The mean proportion of trials where the target was chosen is 0.5\NS{Add second decimal place} \AT{round(0.4974385,2) = 0.5, shall I put 0.497? the CIs are 0.485847 0.5086947}. The 95\% CI is [0.49--0.51], which demonstrates that mean proportion of trials where the target was chosen is almost exactly 0.5: the attraction effect is almost exactly zero. A one-sample $t$-test shows that the proportion of trials where the target was chosen does not differ significantly from 0.5, $t(134)=0.44$, $p=.67$.  
 
 \begin{figure}[htb!]
 \centering
@@ -199,7 +227,7 @@ We created the choice triplets carefully to ensure that the target-decoy pairs w
 \label{fig:exp2_similarityratings}
 \end{figure}
 
-As specified in our pre-registered analysis plan\NS{This suggests we did not preregister the earlier analysis---but we did}, we also ran a mixed effects logistic regression with by-subjects intercepts to investigate how participants' target-decoy and target-competitor similarity ratings, familiarity with the movies, and the preference rating difference between the target and the decoy affect the likelihood of choosing the target. Table \ref{latentattr_exp2reg} shows the results from this regression. The odds of 1 for choosing the target over the competitor reflect equal preference for each and corresponds to the choice proportion of 0.5 in Figure~\ref{fig:exp2_res}. None of the explanatory variables modulate the strength of the attraction effect.
+We also ran a mixed effects logistic regression with by-subjects intercepts to investigate how participants' target-decoy and target-competitor similarity ratings, familiarity with the movies, and the preference rating difference between the target and the decoy affect the likelihood of choosing the target. Table \ref{latentattr_exp2reg} shows the results from this regression. The odds of 1 for choosing the target over the competitor reflect equal preference for each and corresponds to the choice proportion of 0.5 in Figure~\ref{fig:exp2_res}. None of the explanatory variables modulate the strength of the attraction effect.
 
 \begin{table*}[htb] \centering
   \begin{threeparttable}
@@ -240,7 +268,7 @@ We tested for the attraction effect in a consumer decision making task using nat
 
 First, our experimental design ensured participants' indifference between the target and the competitor, maximising the probability that choices will be constructed on the spot (rather than through relying on strong prior preferences), and an attraction effect will occur. While one could argue that mnemonic processes arising from familiarity with the stimuli could have altered preferences in the choice stage, we did not detect any evidence for an attraction effect when participants were not familiar with the movies.
 
-Second, we have strong evidence that the dominance relationship was perceived in our experiment. The target-decoy similarity ratings confirmed that our careful target-decoy selection process resulted in movie pairs that were perceived as similar. In addition, our choice set construction criteria ensured that the decoy was always rated at least 3 \AT{units (is there a better word for this?)} lower than the target (and the competitor). Consequently, the decoy was only chosen in 4.3\% of the trials, which clearly shows that participants were able to spot and avoid the dominated option.
+Second, we have strong evidence that the dominance relationship was perceived in our experiment. The target-decoy similarity ratings confirmed that our careful target-decoy selection process resulted in movie pairs that were perceived as similar. In addition, our choice set construction criteria ensured that the decoy was always rated at least 3 units lower than the target (and the competitor). Consequently, the decoy was only chosen in 4.3\% of the trials, which clearly shows that participants were able to spot and avoid the dominated option.
 
 Third, by creating bespoke choice triplets based on the ratings, we avoided individual heterogeneity in preferences to act as a potential confound. In addition, we ensured that the decoy is not too desirable in comparison to the target. We also used a strict exclusion criteria to filter out participants who did not take the task sufficiently seriously, and with an average of 16 choice trials per participant, we avoided participant fatigue.
 
