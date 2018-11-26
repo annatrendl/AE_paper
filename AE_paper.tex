@@ -40,6 +40,8 @@
 %The abstract is limited to 175 words and summarizes the key components of the manuscript, offering the reader a sample of the manuscript.
 \begin{abstract}
 In the attraction effect, adding a third option to a choice set of two options can reverse the preference for the original options and even increase the choice share of one of the original options. The attraction effect bears significant importance for decision-making research, as it is a violation of the axioms of regularity and independence from irrelevant alternatives, which are core properties of any model in which the utility of each option is stable across choice sets. Consequently, the attraction effect has driven the development of a set of influential models of multiattribute choice in the past 20 years. Recently, \citeA{Frederick2014} claimed that the attraction effect is limited to options presented as collections of numerical attributes, and does not hold for choices between naturalistic options like snacks or movies---a claim which would severely undermine the importance of the effect for the development of models of choice. \citeA{Huber2014} criticised \citeauthor{Frederick2014}'s experiments, laying down a set of strict criteria that should be met by any experiment wishing to test for the attraction effect in choices involving naturalistic choice options. We present the first experiment that meets these criteria. We find a precisely zero attraction effect.
+
+\AT{In the attraction effect, adding a third option to a choice set of two options can reverse the preference for the original options, and even increase the choice share of one of the original options. This constitutes a violation of the axioms of regularity and independence from irrelevant alternatives, which are core properties of any choice model in which the utility of each option is stable across choice sets. Consequently, the attraction effect has driven the development of a set of influential models of multiattribute choice in the past 20 years. However, recently, \citeA{Frederick2014} claimed that the effect is limited to choices where options have numerical attributes and is absent from real-world consumer choices with naturalistic options (e.g., snacks, movies), a claim which would severely undermine its theoretical importance. \citeA{Huber2014} criticised \citeauthor{Frederick2014}'s experiments, laying down a set of criteria that should be met by any experiment wishing to test for the attraction effect in real-world consumer choices. This article presents the first experiment that meets these criteria. The results show a precisely zero attraction effect.}
 %194 words now
 \end{abstract}
 %Keywords
@@ -57,7 +59,7 @@ In the attraction effect, adding a third option to a choice set of two options c
 \section{To Do}
 
 
-1. Add the list of stimuli, the preregistration, the data, and the R script to an OSF page so we are sharing everything up front. Don't make public yet.
+1. Add the list of stimuli, the preregistration, the data, and the R script to an OSF page so we are sharing everything up front. Don't make public yet. 
 
 \AT{Should I only upload the cleaned version of the choice data and the code that produces the results in the paper, or should I upload everything, including the movie stimuli, the code creating the quadruplets, the code that creates bespoke quadruplets; the ratings, choice data and similarity data in csv and the code that cleans the data?}
 
@@ -69,23 +71,23 @@ In the attraction effect, adding a third option to a choice set of two options c
 
 \AT{I've done the first, it looks much better I think.}
 \TM{Maybe add some vertical jitter? It looks like there must be some points on top of each other, especially when the number of choices is low and they aren't spreading out all the clearly. The funnel shape is very satisfying BTW.}
+\AT{Done}
 
 4. See notes on regression.
 
-\AT{Updated with the new scaling, CI around intercept is 0.8 and 1.2 now; the same CI from an intercept-only regression is 0.9 and 1.1; glmer still gives exact same results as glm}
+\AT{Updated with the new scaling, CI around intercept now is 0.8 and 1.2 now; the same CI from an intercept-only regression is 0.9 and 1.1; glmer still gives exact same results as glm}
 \TM{This looks much better! Is it worth including the intercept only version alongside? The side by side comparion might add a compelling demonstration that ther is really no effect, and then adding in the controls just widens the CIs slightly without changing the beta estimate.}
 
 5. Shall we delete Figure 2 and just describe in the text?
 
 \AT{I think it's a good illustration of how rigorous we were with the selection process. Also, I think that the description of the selection process is (necessarily) rather dry, so I think the graph helps the reader visualise what we've done. But we can delete it if you think it's redundant.}
-
 \TM{Could be convinced either way. I agree that I don't think it's strictly necessary.}
 
 6. Change references to have conistent caps in titles. Use JMR in house format, whatever that is.
 
 \AT{Fixed, hopefully.}
 
-7. Style checklist. Abstract needs to be shorter. Abstract should be in 3rd person (“the authors”). I do not understand the requirement about the headings.
+7. Title. Style checklist. Abstract needs to be shorter. Abstract should be in 3rd person (“the authors”). I do not understand the requirement about the headings.
 
 \AT{\url{https://www.ama.org/publications/JournalOfMarketingResearch/Pages/JMRSubmissionGuidelines.aspx}}
 
@@ -99,7 +101,7 @@ In the attraction effect, adding a third option to a choice set of two options c
 
 %    PRIMARY HEADING: Centered, capitalized, and italicized, with an extra return before and after.
 %    SECONDARY HEADING: Flush left with title-style capitalization (first letter of each word) and italicized. You must have at least two sections beginning with a secondary heading; if there is only one, the heading should be excluded.
-%    TERTIARY HEADING: Left justified and indented with sentence-style capitalization (first word only) in italics. Punctuate the heading with a period and begin the first line of the same section on the same line. If only one tertiary heading is used, the heading should be excluded.
+%    TERTIARY HEADING: Left justified and indented with sentence-style capitalization (first word only) in italics. Punctuate the heading with a period and begin the first line of the same section on the same line. If only one tertiary heading is used, the heading should be excluded. 
 %Please make sure to use the correct heading style. When used, you must have more than one secondary heading per section (e.g., you may have a primary heading and two secondary/tertiary heading, but never a single secondary heading in a subsection).
 
 %Do not label opening commentary as “Introduction.”
@@ -112,11 +114,11 @@ Imagine that you are having a nice meal in a restaurant, and you are looking at 
 This is an example of the attraction effect (also known as asymmetric dominance effect). The presence of the apple pie (decoy) in the choice set makes you more likely to choose the pecan pie (target) over the cheesecake (competitor). In essence, it states that when the decision maker is indifferent between the target and the competitor (pecan pie and cheesecake in the example), the addition of an inferior decoy option that resembles the target (apple pie is similar to pecan pie, but is less liked by the decision maker) increases the likelihood that the target will be chosen.
 
 
-The attraction effect is important, because it poses a challenge to all choice models that rely on the assumption that preferences can be represented on a cardinal utility scale. This assumption is called simple scalability, and is one of the consequences of Luce's choice axiom \cite{Luce1959}. Crucially, the attraction effect represents a violation of independence of irrelevant alternatives, which requires that the preference ranking of two options should not be affected by adding new options to the choice set. In addition, the attraction effect violates the axiom of regularity, which states that an option's choice probability cannot increase when the choice set is extended (\citeNP{Luce1977a}; \citeNP{Tversky1972a}). Therefore, the existence of the attraction effect means that utility of a choice option cannot be represented by a single internal magnitude that is invariant to the other options in the choice set.
+The attraction effect is important, because it poses a challenge to all choice models that rely on the assumption that preferences can be represented on a cardinal utility scale. This assumption is called simple scalability, and is one of the consequences of Luce's choice axiom \cite{Luce1959}. Crucially, the attraction effect represents a violation of independence of irrelevant alternatives, which requires that the preference ranking of two options should not be affected by adding new options to the choice set. In addition, the attraction effect violates the axiom of regularity, which states that an option's choice probability cannot increase when the choice set is extended (\citeNP{Luce1977a}; \citeNP{Tversky1972a}). Therefore, the existence of the attraction effect means that utility of a choice option cannot be represented by a single internal magnitude that is invariant to the other options in the choice set. 
 
-Owing to its theoretical importance, the attraction effect has played a substantial role in the evolution of multialternative models of choice, with a significant number of various theoretical accounts being developed over the past 20 years (e.g., multialternative decision field theory, \citeNP{Roe2001a}; leaky competing accumulators, \citeNP{Usher2004b}; multialternative attentional drift-diffusion model,   \citeNP{Krajbich2010a}; range-normalization model, \citeNP{Soltani2012}; associative accumulation model, \citeNP{Bhatia2013b}; multiattribute linear ballistic accumulator, \citeNP{Trueblood2014a}; multialternative decision by sampling, \citeNP{Noguchi2018a}).
+Owing to its theoretical importance, the attraction effect has played a substantial role in the evolution of multialternative models of choice, with a significant number of various theoretical accounts being developed over the past 20 years (e.g., multialternative decision field theory, \citeNP{Roe2001a}; leaky competing accumulators, \citeNP{Usher2004b}; multialternative attentional drift-diffusion model,   \citeNP{Krajbich2010a}; range-normalization model, \citeNP{Soltani2012}; associative accumulation model, \citeNP{Bhatia2013b}; multiattribute linear ballistic accumulator, \citeNP{Trueblood2014a}; multialternative decision by sampling, \citeNP{Noguchi2018a}). 
 
-The first multiattribute choice experiments (e.g., \citeNP{Huber1982}; \citeNP{Simonson1992}) often used stimuli presented as a set of numerical attributes (e.g., cars presented as numerical values for gas mileage and ride quality). However, recent experiments in multiattribute choice introduced what can perhaps be considered as more ecologically valid stimuli (e.g., movies presented as thumbnails and titles on Netflix or photographs of popular snacks). Results from these experiments indicate that there might be significant differences in the processing of numerical and naturalistic stimuli. For example, \citeA{Bhatia2018b} find that, with naturalistic stimuli, the weighted additive model on a high-dimensional semantic representation generalises to new choices better than the simpler heuristic models, which perform so well on stimuli presented as sets of numerical attributes.
+The first multiattribute choice experiments (e.g., \citeNP{Huber1982}; \citeNP{Simonson1992}) often used stimuli presented as a set of numerical attributes (e.g., cars presented as numerical values for gas mileage and ride quality). However, recent experiments in multiattribute choice introduced what can perhaps be considered as more ecologically valid stimuli (e.g., movies presented as thumbnails and titles on Netflix or photographs of popular snacks). Results from these experiments indicate that there might be significant differences in the processing of numerical and naturalistic stimuli. For example, \citeA{Bhatia2018b} find that, with naturalistic stimuli, the weighted additive model on a high-dimensional semantic representation generalises to new choices better than the simpler heuristic models, which perform so well on stimuli presented as sets of numerical attributes. 
 
 Recently, the existence of the attraction effect in choices that involve naturalistic options has become a contentious issue.
 \citeA{Frederick2014} presented a thorough investigation of the boundary conditions of the attraction effect based on 38 experiments. These stimuli types included choice options with numerically represented attributes as well as complex, real-world stimuli (e.g., fruits, bottled water, apartments, etc.), and in some of these experiments participants could even sample the choice options (e.g. squash, mints, popcorn). The overall conclusion of this study was that while the presence of the decoy seemed to affect decisions with numerical stimuli, it was absent in experiments with more complex, naturalistic stimuli. In light of these results, \citeauthor{Frederick2014} posited that the psychological processes underlying decisions that involve options with numeric attributes are fundamentally different from those employed in decisions where the stimuli has a naturalistic representation. This conclusion was also supported by \citeA{Yang2014}, who reported difficulties replicating the attraction effect in experiments where the stimuli were pictorial, as opposed to cases where the attributes were presented numerically.
@@ -130,7 +132,7 @@ Due to the theoretical significance of the attraction effect, it is important to
 
 The goal of this experiment was to test the attraction effect with naturalistic stimuli. We chose to use the most popular movies on IMDb as stimuli. Since movies are an integral part of Western culture, we can reasonably expect that most our participants will be sufficiently interested in the choice options. Furthermore, choosing between movies is a realistic, everyday task. In addition, the movie space is rich enough so that we can create a wide range of unique choice triplets to test the attraction effect.
 
-When the stimuli have numerical attributes, it is straightforward to construct choice triplets with a target, competitor and decoy. However, with naturalistic stimuli, this task is significantly more complicated. \citeA{Frederick2014} have also used movie stimuli in two of their experiments: they chose pairs of movies that are part of the same sequel or are starring the same actor (but have distinctly different genres) to create target-decoy pairs. With movie-sequel pairs, \citeauthor{Frederick2014} assumed that the sequel is the decoy, and the original is the target---which may or not have been true for their participants. With same-actor pairs, it is unclear how \citeauthor{Frederick2014} decided which movie should be the target.
+When the stimuli have numerical attributes, it is straightforward to construct choice triplets with a target, competitor and decoy. However, with naturalistic stimuli, this task is significantly more complicated. \citeA{Frederick2014} have also used movie stimuli in two of their experiments: they chose pairs of movies that are part of the same sequel or are starring the same actor (but have distinctly different genres) to create target-decoy pairs. With movie-sequel pairs, \citeauthor{Frederick2014} assumed that the sequel is the decoy, and the original is the target---which may or not have been true for their participants. With same-actor pairs, it is unclear how \citeauthor{Frederick2014} decided which movie should be the target. 
 
 Our novel experimental design takes individual preferences into account and ensures that decision makers are (a) indifferent between the target and competitor and (b) able to clearly identify the inferiority of the decoy. In addition, to increase the statistical power of our test, we used a within-subjects design as well as both A, B, A' and B, A, B' triplet pairs (where X' is the dominated option), as suggested by \citeA{Huber2014} \NS{But our analysis doesn't do this! --- We don't pair the triplets back into quadruplets. We need to discuss!}. We created ``quadruplets'' (each made up of two attraction effect choice triplets), using two distinctly different target-decoy pairs. Figure \ref{fig:quadruplets} shows an example of two choice triplets created from one such quadruplet.
 
@@ -172,7 +174,7 @@ We then reduced the size of this list by selecting the most similar movie pairs.
 
 We decided to only use movie pairs with ratings that are equal to or higher than 4.5, which corresponds to the upper 20\% of the similarity rating distribution (253 movie pairs). This procedure intended to ensure that our target-decoy pairs will be perceived as similar by most people.
 
-The next step in creating the quadruplets was to create target-competitor pairs. Since each quadruplet consists of two target-decoy pairs (Movies A and B and Movies C and D in Figure \ref{fig:quadruplets}), we decided to pair up the 253 target-decoy pairs to create the quadruplets. To do this, we first created a target-decoy pair by target-decoy pair matrix (253x253), where each cell was the number of overlapping genre categories between the two movie pairs. For example, considering the comparison between target-decoy candidate 1 (consisting of Movie A and Movie B) and target-decoy candidate 2 (consisting of Movie C and Movie D), we summed the number of genre overlaps between movies A-C, A-D, B-C and B-D. We then selected the unique target-decoy pairs that had no genre overlap with each other. This resulted in 20,022 quadruplets, each of which is a combination of four movies, created from 231 unique movies. The quadruplets used for each participant are based upon their own ratings of the 231 movies, as we describe below.
+The next step in creating the quadruplets was to create target-competitor pairs. Since each quadruplet consists of two target-decoy pairs (Movies A and B and Movies C and D in Figure \ref{fig:quadruplets}), we decided to pair up the 253 target-decoy pairs to create the quadruplets. To do this, we first created a target-decoy pair by target-decoy pair matrix (253x253), where each cell was the number of overlapping genre categories (obtained from IMDb) between the two movie pairs. For example, considering the comparison between target-decoy candidate 1 (consisting of Movie A and Movie B) and target-decoy candidate 2 (consisting of Movie C and Movie D), we summed the number of genre overlaps between movies A-C, A-D, B-C and B-D. We then selected the unique target-decoy pairs that had no genre overlap with each other. This resulted in 20,022 quadruplets, each of which is a combination of four movies, created from 231 unique movies. The quadruplets used for each participant are based upon their own ratings of the 231 movies, as we describe below.
 
 \subsubsection{Experimental Procedure}
 
@@ -211,7 +213,7 @@ The average number of choice trials per participant was 16 (the lowest being 6 a
 
 The decoy was only chosen in 4.3\% of the trials. In addition, 72\% of the participants have never chosen it, and only 2\% of people have chosen it in more than 25\% of the trials. This indicates that people were able to identify the dominated decoy in the choice stage.
 
-In the attraction effect, the decoy increases the choice share of the target at the expense of the competitor. Figure \ref{fig:exp2_res} shows the distribution of the proportions of trials where the target was chosen instead of the competitor. We excluded all trials where the decoy was chosen. Each point is the estimate for one participant. The mean proportion of trials where the target was chosen is 0.5\NS{Add second decimal place} \AT{round(0.4974385,2) = 0.5, shall I put 0.497? the CIs are 0.485847 0.5086947}. The 95\% CI is [0.49--0.51], which demonstrates that mean proportion of trials where the target was chosen is almost exactly 0.5: the attraction effect is almost exactly zero. A one-sample $t$-test shows that the proportion of trials where the target was chosen does not differ significantly from 0.5, $t(134)=0.44$, $p=.67$.
+In the attraction effect, the decoy increases the choice share of the target at the expense of the competitor. Figure \ref{fig:exp2_res} shows the distribution of the proportions of trials where the target was chosen instead of the competitor. We excluded all trials where the decoy was chosen. Each point is the estimate for one participant. The mean proportion of trials where the target was chosen is 0.5\NS{Add second decimal place} \AT{round(0.4974385,2) = 0.5, shall I put 0.497? the CIs are 0.485847 0.5086947}. The 95\% CI is [0.49--0.51], which demonstrates that mean proportion of trials where the target was chosen is almost exactly 0.5: the attraction effect is almost exactly zero. A one-sample $t$-test shows that the proportion of trials where the target was chosen does not differ significantly from 0.5, $t(134)=0.44$, $p=.67$.  
 
 \begin{figure}[htb!]
 \centering
@@ -237,27 +239,27 @@ We also ran a mixed effects logistic regression with by-subjects intercepts to i
   \begin{threeparttable}
     \captionsetup{justification=centering}
     \caption{Odds-ratios and 95\% CIs from a mixed-effects logistic model with subject-specific intercepts.}
-  \label{latentattr_exp2reg}
-\begin{tabular}{@{\extracolsep{5pt}}lc}
-\\[-1.8ex]\hline
-\hline \\[-1.8ex]
- & \multicolumn{1}{c}{\textit{Dependent variable:}} \\
-\cline{2-2}
-\\[-1.8ex] & Target chosen \\
-\hline \\[-1.8ex]
- Seen all & 1.046 (0.690, 1.587) \\
-  TC similarity rating & 0.960 (0.877, 1.050) \\
-  TD similarity rating & 0.981 (0.895, 1.075) \\
-  TD rating difference & 0.944 (0.863, 1.032) \\
-  Intercept & 0.987 (0.802, 1.214) \\
- \hline \\[-1.8ex]
-Observations & 1,953 \\
-Log Likelihood & $-$1,352.312 \\
-Akaike Inf. Crit. & 2,716.624 \\
-Bayesian Inf. Crit. & 2,750.087 \\
-\hline
-\hline \\[-1.8ex]
-\end{tabular}
+  \label{latentattr_exp2reg} 
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & Target chosen \\ 
+\hline \\[-1.8ex] 
+ Seen all & 1.046 (0.690, 1.587) \\ 
+  TC similarity rating & 0.960 (0.877, 1.050) \\ 
+  TD similarity rating & 0.981 (0.895, 1.075) \\ 
+  TD rating difference & 0.944 (0.863, 1.032) \\ 
+  Intercept & 0.987 (0.802, 1.214) \\ 
+ \hline \\[-1.8ex] 
+Observations & 1,953 \\ 
+Log Likelihood & $-$1,352.312 \\ 
+Akaike Inf. Crit. & 2,716.624 \\ 
+Bayesian Inf. Crit. & 2,750.087 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\end{tabular} 
     \begin{tablenotes}
       \small
       \item Notes: $^{**}$p$<$0.05; ratings have been scaled; Seen all is coded 0.5 (Yes) and -0.5 (No); T - Target, C - Competitor, D - Decoy
