@@ -56,7 +56,9 @@ In the attraction effect, adding a dominated third option to a choice set of two
 
 1. Add the list of stimuli, the preregistration, the data, and the R script to an OSF page so we are sharing everything up front. Don't make public yet. 
 
-\AT{Should I only upload the cleaned version of the choice data and the code that produces the results in the paper, or should I upload everything, including the movie stimuli, the code creating the quadruplets, the code that creates bespoke quadruplets; the ratings, choice data and similarity data in csv and the code that cleans the data?}
+
+\AT{Done}
+
 
 2. Switch to PDF figures instead of PNG for the results. Would $p1 + theme_bw()$ from librar(ggthemes) produce plots that match the other figures better?
 
@@ -119,7 +121,7 @@ In the attraction effect, adding a dominated third option to a choice set of two
 
 \newpage
 
-\section{The attraction effect }
+\section{The attraction effect}
 
 Imagine that you are having a nice meal in a restaurant, and you are looking at the two dessert options available on the menu: cheesecake and pecan pie. You are torn between the creamy texture of the cheesecake, and the rich, nutty flavour of the pecan pie. You resolve to have the cheesecake. As the waiter approaches to take your order, he informs you that a third dessert option, apple pie---which you find quite bland---is also available today. But now you have changed your mind, and decide to order the pecan pie. \citeA{Tsetsos2010} give just this paradoxical example: the availability of the apple pie, which you do not want, makes you switch from cheesecake to pecan pie.
 
@@ -163,15 +165,15 @@ The study design, exclusion criteria and all the analyses were planned and regis
 
 \subsubsection{Candidate choice set selection}
 
-Our movie triplets are listed in \NS{Table X in the Appendix}. The details of the construction of these triplets are somewhat arbitrary---a different recipe could have been use. However, the key issue is that our triplets pass \citeauthor{Huber2014}'s \citeyear{Huber2014} criteria, as we detail below.
+Our movie triplets are listed in \NS{Table X in the Appendix}. The details of the construction of these triplets are somewhat arbitrary---a different recipe could have been used. However, the main point is that our triplets pass \citeauthor{Huber2014}'s \citeyear{Huber2014} criteria, as we detail below.
 
-We first retrieved the most popular 40 movies from each of 10 distinct genre categories (romance, drama, sci-fi, thriller, comedy, horror, animation, fantasy, crime, action) from IMDb, so that we had 400 movies overall. We chose a wide range of genres to obtain a sufficiently rich stimuli space. We omitted an sequels.
+We first retrieved the most popular 40 movies from each of 10 distinct genre categories (romance, drama, sci-fi, thriller, comedy, horror, animation, fantasy, crime, action) from IMDb, so that we had 400 movies overall. The popularity of each movie was defined by the number of ratings it has received. We selected a wide range of genres to obtain a sufficiently rich stimuli space (as we wanted our participants to have a variety of preferences over our stimuli). We omitted any sequels.
 
-Owing to the multidimensional nature of the stimuli, one of the main difficulties in creating attraction effect choice triplets from real-world objects is establishing a criterion for matching up similar objects. We used genre and sub-genre information from allmovie.com to create target-decoy pairs with overlapping genres that are likely to be perceived as similar and to create target-competitor pairs with no genre overlap that are likely to be perceived as different.
+Owing to the multidimensional nature of the stimuli, one of the main difficulties in creating attraction effect choice triplets from real-world objects is establishing a criterion for matching up similar objects. We used genre and sub-genre information from allmovie.com to create target-decoy pairs with many shared genres that are likely to be perceived as similar, and target-competitor pairs with no genre overlap that are likely to be perceived as different.
 
 We conjectured that it will be harder to find movie pairs that will be perceived as similar, because any given movie is similar to a only a few movies and dissimilar to all of the others. For this reason, we started the quadruplet creation with selecting potential target-decoy pairs.
 
-The genre information on allmovie.com is very rich: compared to the 18 genre categories on IMDb, there are 156 genre and sub-genre categories, capturing many important aspects of the movies. Using this rich genre information, we created a movie by movie ($400 \times 400$) matrix, where each cell was the number of overlapping genre categories between the two movies. We selected a movie pair as target-decoy candidate if, for a given target movie, the number of overlapping genres with a candidate decoy was equal to the maximum overlap seen for that target across all candidate decoy movies, creating 2,271 target-decoy candidate movie pairs overall.
+The genre information on allmovie.com is very rich: compared to the 18 genre categories on IMDb, there are 156 genre and sub-genre categories, capturing many important aspects of the movies. Using this rich genre information, we created a movie by movie ($400 \times 400$) matrix, where each cell was the number of overlapping genre categories between the two movies. We selected a movie pair as target-decoy candidate if, for a given target candidate movie, the number of overlapping genres with a candidate decoy was equal to the maximum overlap seen for that target across all candidate decoy movies, creating 2,271 target-decoy candidate movie pairs overall.
 We also added 806 movie pairs obtained from the mutually closest 10\% of movies based on a latent semantic analysis\footnote{The latent semantic analysis assesses the similarity of two items based on the text associated with them. For this analysis, we used the summary text about the movies as well as plot keywords, actor and director names, all retrieved from IMDb.} that were not already in our list of target-decoy candidates. The rationale behind using semantic proximity as an additional criterion was to capture movie pairs that are very close to each other in terms of the story themes, but are not the closest on the genre dimension. Overall, we had 3,011 unique target-decoy candidate pairs at this point.
 
 We then reduced the size of this list by selecting the most similar movie pairs. This was done manually by two researchers, who independently judged the similarity of each movie pair (not similar at all/similar). We then only kept the movie pairs that were judged as similar by both researchers, weeding out the movie pairs that were obviously not similar, resulting in 1,242 target-decoy candidates. We then divided the 1,242 pairs into six groups of 207 pairs, and ran a pilot study where we asked 60 participants to rate the similarity of a randomly chosen group of movie pairs, obtaining 10 independent similarity ratings for each of the 1,242 target-decoy candidates. Participants rated the similarity of each movie pair on a 1--7 scale which also included a ``don't know'' option. Figure \ref{fig:exp2_pilot}  shows the distribution of the average similarity ratings for each movie pair.
