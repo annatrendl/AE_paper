@@ -13,6 +13,7 @@
 \usepackage{titlesec}
 \usepackage[margin=1in]{geometry}
 \usepackage{color}
+\usepackage{endnotes}
 \pagestyle{myheadings}
 \title{}
 \author{}
@@ -41,6 +42,7 @@
   {0em}{}
   {}  
   
+\let\footnote=\endnote
 
 \definecolor{orange}{rgb}{1,0.7,0.7}
 \newcommand{\NS}[1] {{\textcolor{green}{#1}}}
@@ -50,7 +52,9 @@
 %The title should not exceed 25 words.
 \title{Zero attraction: A precisely zero attraction effect with naturalistic stimuli that meets Huber, Payne, and Puto's (2014) criteria}
 
-\author{Anna Trendl\\Department of Psychology, University of Warwick \and Neil Stewart and Timothy L. Mullett\\Warwick Business School, University of Warwick}
+\author{Anna Trendl\\Department of Psychology, University of Warwick  \\ email \href{mailto:a.trendl@warwick.ac.uk}{a.trendl@warwick.ac.uk} 
+\and Neil Stewart \\Warwick Business School, University of Warwick \\ email \href{mailto:neil.stewart@wbs.ac.uk}{neil.stewart@wbs.ac.uk} 
+\and Timothy L. Mullett\\Warwick Business School, University of Warwick\\ email \href{mailto:Tim.Mullett@wbs.ac.uk}{Tim.Mullett@wbs.ac.uk} } 
 
 \date{\today}
 
@@ -185,7 +189,7 @@ Our novel experimental design takes individual preferences into account and ensu
 
 \subsection*{Method}
 
-\subsubsection*{Pre-Registration.}
+\subsubsection*{Preregistration.}
 The study design, exclusion criteria and all the analyses were planned and registered before we collected any choice data. The pre-registration can be accessed \href{https://osf.io/fme6c/?view_only=31da4193689f4247a76af93b2f98fcef}{here}.
 
 \subsubsection*{Candidate choice set selection.}
@@ -215,7 +219,7 @@ We decided to only use movie pairs with ratings that are equal to or higher than
 
 Having created the target-decoy pairs, the next step in creating the quadruplets was to create target-competitor pairs. Since each quadruplet consists of two target-decoy pairs, we decided to pair up the 253 target-decoy pairs to create the quadruplets. To do this, we first created a target-decoy pair by target-decoy pair matrix (253x253), where each cell was the number of overlapping genre categories (obtained from IMDb) between the two movie pairs. For example, considering the comparison between target-decoy pair 1 (consisting of Movie A and Movie B) and target-decoy pair 2 (consisting of Movie C and Movie D), we summed the number of genre overlaps between movies A-C, A-D, B-C and B-D. We then selected the unique target-decoy pairs that had no genre overlap with each other. This resulted in 20,022 quadruplets, each of which is a combination of four movies (created from two movie pairs, where each movie is similar to its pair, but is distinctly different from the two movies in the other pair), created from 231 unique movies. The quadruplets used for each participant are based upon their own ratings of the 231 movies, as we describe below.
 
-\subsubsection*{Experimental Procedure.}
+\subsubsection*{Experimental procedure.}
 
 The experiment consisted of three stages: rating stage, choice stage, and a similarity rating stage. In the rating stage, we asked for participants' subjective evaluations over the 231 movies (``How do you personally rate this movie?'') on a scale from 1 (worst) to 7 (best). We also asked whether the participant had seen the movie before. The 231 movies were presented in a random order for each participant. The rating stage took about 15--20 minutes.
 
@@ -241,7 +245,7 @@ We collected data in batches of 50, until we had choice data for at least a 100 
 
 To conduct a rigorous test of the attraction effect, it is crucial that people take the task seriously and reveal their true preferences. Given that individually rating 231 movies can seem somewhat mundane, we specified a set of exclusion criteria to filter those people out who did not take the rating task sufficiently seriously. These were the following. We excluded people who fell into the fastest 5\% of the reaction time distribution, the lowest 5\% of the entropy distribution and the upper and lower 5\% of the autocorrelation distribution. Entropy refers to the diversity of the ratings, while autocorrelation takes into account the temporal pattern, and measures the extent to which a response depends on previous responses. Thus, this procedure filtered out response patterns where people (a) spent an unusually short time completing the task, or (b) did not use the whole of the ratings scale, or (c) often gave the same ratings for consecutive movies, or (d) were giving ratings randomly.
 
-These exclusion criteria were validated in a pilot study, where we collected ratings for a set of books, and included repeat trials. The participants filtered out by these three criteria were the ones who gave the least consistent ratings to repeated stimuli (correlation $r < 0.8$).
+These exclusion criteria were validated in a pilot study, where we collected ratings for a set of books, and included repeat trials. The participants filtered out by these three criteria were the ones who gave the least consistent ratings to repeated stimuli (correlation r < .8).
 
 When we applied these exclusion criteria to our sample of 152 people, 17 participants were filtered out, leaving a sample of 2,148 choices from 135 participants.
 
@@ -250,7 +254,7 @@ When we applied these exclusion criteria to our sample of 152 people, 17 partici
 
 The average number of choice trials per participant was 16 (the lowest being 6 and the highest 54), and 84\% of participants were presented with at least 8 choice trials. The decoy was only chosen in 4.3\% of the trials. In addition, 72\% of the participants have never chosen it, and only 2\% of people have chosen it in more than 25\% of the trials. This indicates that people were able to identify the dominated decoy in the choice stage.
 
-In the attraction effect, the decoy increases the choice share of the target at the expense of the competitor. Figure \ref{fig:exp2_res} shows the distribution of the proportions of trials where the target was chosen instead of the competitor (excluding all trials where the decoy was chosen, as specified in our preregistration), where each point corresponds to a participant. The mean proportion of trials where the target was chosen is $M=0.50$, 95\% CI [0.49--0.51], which demonstrates that participants were almost perfectly indifferent between the target and the competitor, and that the attraction effect is almost exactly zero. As expected, a one-sample $t$-test shows that the proportion of trials where the target was chosen does not differ significantly from 0.5, $t(134)=0.44$, $p=.67$.  
+In the attraction effect, the decoy increases the choice share of the target at the expense of the competitor. Figure \ref{fig:exp2_res} shows the distribution of the proportions of trials where the target was chosen instead of the competitor (excluding all trials where the decoy was chosen, as specified in our preregistration), where each point corresponds to a participant. The mean proportion of trials where the target was chosen is M=.50, 95\% CI [.49--.51], which demonstrates that participants were almost perfectly indifferent between the target and the competitor, and that the attraction effect is almost exactly zero. As expected, a one-sample t-test shows that the proportion of trials where the target was chosen does not differ significantly from .5, t(134)=.44, $p=.67$.  
 
 \begin{figure}[htb!]
 \centering
@@ -270,10 +274,10 @@ We created the choice triplets carefully to ensure that the target-decoy pairs w
 \label{fig:exp2_similarityratings}
 \end{figure}
 
-We can also investigate how subject-specific variability affects the likelihood of choosing the target. Model 1 in Table \ref{latentattr_exp2reg} is an intercept-only regression with by-subjects intercepts. The odds of 1 for choosing the target over the competitor reflect equal preference for the target an competitor, and corresponds to the choice proportion of 0.5 in Figure \ref{fig:exp2_res}. Echoing the same pattern as Figure \ref{fig:exp2_res}, our estimate for the odds of choosing the target over the competitor is $OR = 1.00$, 95\% CI [0.92--1.09], reflecting the participants' indifference between the target and the competitor. 
+We can also investigate how subject-specific variability affects the likelihood of choosing the target. Model 1 in Table \ref{latentattr_exp2reg} is an intercept-only regression with by-subjects intercepts. The odds of 1 for choosing the target over the competitor reflect equal preference for the target an competitor, and corresponds to the choice proportion of .5 in Figure \ref{fig:exp2_res}. Echoing the same pattern as Figure \ref{fig:exp2_res}, our estimate for the odds of choosing the target over the competitor is OR = 1.00, 95\% CI [.92--1.09], reflecting the participants' indifference between the target and the competitor. 
 
 
-We also ran a mixed effects logistic regression with by-subjects intercepts to investigate how participants' target-decoy and target-competitor similarity ratings, familiarity with the movies, and the preference rating difference between the target and the decoy affect the likelihood of choosing the target (see Model 2 in Table \ref{latentattr_exp2reg}). As it can be seen, none of the explanatory variables modulate the strength of the attraction effect. The intercept in this regression captures the odds of choosing the target when all variables are at their respective means. Including the controls have slightly widened the confidence interval on our intercept compared to our estimate from Model 1, $OR = 0.99$, 95\% CI [0.80--1.21], but the conclusion from the two models are the same: participants were almost perfectly indifferent between the target and the competitor. 
+We also ran a mixed effects logistic regression with by-subjects intercepts to investigate how participants' target-decoy and target-competitor similarity ratings, familiarity with the movies, and the preference rating difference between the target and the decoy affect the likelihood of choosing the target (see Model 2 in Table \ref{latentattr_exp2reg}). As it can be seen, none of the explanatory variables modulate the strength of the attraction effect. The intercept in this regression captures the odds of choosing the target when all variables are at their respective means. Including the controls have slightly widened the confidence interval on our intercept compared to our estimate from Model 1, OR = .99, 95\% CI [.80--1.21], but the conclusion from the two models are the same: participants were almost perfectly indifferent between the target and the competitor. 
 
 
 \begin{table*}[htb] \centering
@@ -334,6 +338,98 @@ To conclude, our results corroborate the findings of \citeauthor{Frederick2014} 
 \newpage
 
 \bibliography{refs}
+
+\newpage
+
+\theendnotes
+
+\newpage
+
+\section*{Tables}
+
+
+\begin{table*}[htb] \centering
+  \begin{threeparttable}
+    \captionsetup{justification=centering}
+    \caption{Odds ratios and 95\% CIs from two mixed-effects logistic models with subject-specific intercepts.}
+  \label{latentattr_exp2reg} 
+\begin{tabular}{@{\extracolsep{5pt}}lcc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{2}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-3} 
+\\[-1.8ex] & \multicolumn{2}{c}{Target chosen} \\ 
+ & Model 1 & Model 2 \\ 
+\hline \\[-1.8ex] 
+ Intercept & 1.001 (0.918, 1.091) & 0.987 (0.802, 1.214) \\ 
+  Seen all &  & 1.046 (0.690, 1.587) \\ 
+  TC similarity rating &  & 0.960 (0.877, 1.050) \\ 
+  TD similarity rating &  & 0.981 (0.895, 1.075) \\ 
+  TD rating difference &  & 0.944 (0.863, 1.032) \\ 
+ \hline \\[-1.8ex] 
+Observations & 2,055 & 1,953 \\ 
+Log Likelihood & $-$1,424.417 & $-$1,352.312 \\ 
+Akaike Inf. Crit. & 2,852.834 & 2,716.624 \\ 
+Bayesian Inf. Crit. & 2,864.090 & 2,750.087 \\ 
+\hline 
+\hline \\[-1.8ex] 
+%\textit{Note:}  & \multicolumn{2}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular}  
+    \begin{tablenotes}
+      \small
+      \item Notes: $^{**}$p$<$0.05; ratings have been scaled; Seen all is coded 0.5 (Yes) and -0.5 (No); T - Target, C - Competitor, D - Decoy
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table*}
+
+
+\newpage
+
+\section*{Figures}
+
+\begin{figure}[htb!]
+\centering
+\captionsetup{justification=centering}
+		 \caption{Two choice triplets used in the experiment.}
+\includegraphics[width=1\textwidth]{figure1.pdf}
+\label{fig:quadruplets}
+\end{figure}
+
+
+\begin{figure}[htb!]
+\centering
+\captionsetup{justification=centering}
+		\caption{The distribution of the average similarity rating for each target-decoy candidate pair (N = 1242). The dotted line is the cut-off value for accepting a movie pair as similar.}
+\includegraphics[width=0.9\textwidth]{figure2.pdf}
+\label{fig:exp2_pilot}
+\end{figure}
+
+\begin{figure}[htb!]
+\centering
+\captionsetup{justification=centering}
+\caption{Choice stage.}
+\includegraphics[width=0.8\textwidth]{rsz_exp1_choicestage.png}
+\label{fig:exp1_screenshot}
+\end{figure}
+
+\begin{figure}[htb!]
+\centering
+\captionsetup{justification=centering}
+\caption{The proportion of trials where the target was chosen instead of the competitor. Each dot is a participant. The red dot and error bars show the bootstrapped mean and 95\% CI.}
+\includegraphics[width=0.9\textwidth]{figure4.pdf}
+\label{fig:exp2_res}
+\end{figure}
+
+
+\begin{figure}[htb!]
+\centering
+\captionsetup{justification=centering}
+		\caption{Distribution of the target-competitor and target-decoy similarity ratings.}
+\includegraphics[width=0.8\textwidth]{figure5.pdf}
+\label{fig:exp2_similarityratings}
+\end{figure}
+
+\clearpage
 
 
 
