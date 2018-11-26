@@ -10,14 +10,37 @@
 \usepackage{apacite}
 \usepackage{caption}
 \usepackage{graphicx}
+\usepackage{titlesec}
 \usepackage[margin=1in]{geometry}
+\usepackage{color}
 \pagestyle{myheadings}
 \title{}
 \author{}
 \date{}
 \doublespacing
 
-\usepackage{color}
+%    PRIMARY HEADING: Centered, capitalized, and italicized, with an extra return before and after.
+%    SECONDARY HEADING: Flush left with title-style capitalization (first letter of each word) and italicized. You must have at least two sections beginning with a secondary heading; if there is only one, the heading should be excluded.
+%    TERTIARY HEADING: Left justified and indented with sentence-style capitalization (first word only) in italics. Punctuate the heading with a period and begin the first line of the same section on the same line. If only one tertiary heading is used, the heading should be excluded.
+
+\titleformat{name=\section,numberless}[hang]
+  {\centering\itshape}
+  {}
+  {0em}
+  {\Large\MakeUppercase}
+  
+\titleformat{name=\subsection,numberless}[hang]
+  {\itshape}
+  {}
+  {0em}{}
+  {\Large}  
+
+\titleformat{name=\subsubsection,numberless}[runin]
+  {\itshape}
+  {}
+  {0em}{}
+  {}  
+  
 
 \definecolor{orange}{rgb}{1,0.7,0.7}
 \newcommand{\NS}[1] {{\textcolor{green}{#1}}}
@@ -96,7 +119,7 @@ In the attraction effect, adding a dominated third option to a choice set of two
 \AT{Fixed, hopefully.}
 
 
-7. Title. Style checklist.
+7. \textbf{Title}. Keywords. Style checklist.
 
 \AT{\url{https://www.ama.org/publications/JournalOfMarketingResearch/Pages/JMRSubmissionGuidelines.aspx}}
 
@@ -121,7 +144,9 @@ In the attraction effect, adding a dominated third option to a choice set of two
 
 \newpage
 
-\section{The attraction effect}
+
+\section*{The attraction effect}
+
 
 Imagine that you are having a nice meal in a restaurant, and you are looking at the two dessert options available on the menu: cheesecake and pecan pie. You are torn between the creamy texture of the cheesecake, and the rich, nutty flavour of the pecan pie. You resolve to have the cheesecake. As the waiter approaches to take your order, he informs you that a third dessert option, apple pie---which you find quite bland---is also available today. But now you have changed your mind, and decide to order the pecan pie. \citeA{Tsetsos2010} give just this paradoxical example: the availability of the apple pie, which you do not want, makes you switch from cheesecake to pecan pie.
 
@@ -140,7 +165,7 @@ These two studies sparked considerable interest amongst decision making research
 
 Due to the theoretical significance of the attraction effect, it is important to know if the attraction effect is confined to choice settings with numerical stimuli presented in an attribute by alternative format. Arguably, while most consumer choices in the real world involve stimuli that are often presented in a rich naturalistic form \cite{Bhatia2018b}, development of formal models of choice have been almost exclusively reliant on results from experiments where the options have numerical attributes. In this article, we describe a test of the attraction effect with complex, naturalistic choice options, using an experimental methodology that addresses all of the critical conditions discussed by \citeA{Huber2014}. Using a movie choice task, we find no evidence for the attraction effect.
 
-\section{Testing the attraction effect with real-world stimuli}
+\section*{Testing the attraction effect with real-world stimuli}
 
 The goal of this experiment was to test the attraction effect with naturalistic stimuli. We chose to use the most popular movies on IMDb as stimuli. Since movies are an integral part of Western culture, we can reasonably expect that most our participants will be sufficiently interested in the choice options. Furthermore, choosing between movies is a realistic, everyday task. In addition, the movie space is rich, and thus it allows us to create a wide range of unique choice triplets to test the attraction effect.
 
@@ -158,12 +183,12 @@ Our novel experimental design takes individual preferences into account and ensu
 \label{fig:quadruplets}
 \end{figure}
 
-\subsection{Method}
+\subsection*{Method}
 
-\subsubsection{Pre-Registration}
+\subsubsection*{Pre-Registration.}
 The study design, exclusion criteria and all the analyses were planned and registered before we collected any choice data. The pre-registration can be accessed \href{https://osf.io/fme6c/?view_only=31da4193689f4247a76af93b2f98fcef}{here}.
 
-\subsubsection{Candidate choice set selection}
+\subsubsection*{Candidate choice set selection.}
 
 Our movie triplets are listed in \NS{Table X in the Appendix}. The details of the construction of these triplets are somewhat arbitrary---a different recipe could have been used. However, the main point is that our triplets pass \citeauthor{Huber2014}'s \citeyear{Huber2014} criteria, as we detail below.
 
@@ -190,7 +215,7 @@ We decided to only use movie pairs with ratings that are equal to or higher than
 
 Having created the target-decoy pairs, the next step in creating the quadruplets was to create target-competitor pairs. Since each quadruplet consists of two target-decoy pairs, we decided to pair up the 253 target-decoy pairs to create the quadruplets. To do this, we first created a target-decoy pair by target-decoy pair matrix (253x253), where each cell was the number of overlapping genre categories (obtained from IMDb) between the two movie pairs. For example, considering the comparison between target-decoy pair 1 (consisting of Movie A and Movie B) and target-decoy pair 2 (consisting of Movie C and Movie D), we summed the number of genre overlaps between movies A-C, A-D, B-C and B-D. We then selected the unique target-decoy pairs that had no genre overlap with each other. This resulted in 20,022 quadruplets, each of which is a combination of four movies (created from two movie pairs, where each movie is similar to its pair, but is distinctly different from the two movies in the other pair), created from 231 unique movies. The quadruplets used for each participant are based upon their own ratings of the 231 movies, as we describe below.
 
-\subsubsection{Experimental Procedure}
+\subsubsection*{Experimental Procedure.}
 
 The experiment consisted of three stages: rating stage, choice stage, and a similarity rating stage. In the rating stage, we asked for participants' subjective evaluations over the 231 movies (``How do you personally rate this movie?'') on a scale from 1 (worst) to 7 (best). We also asked whether the participant had seen the movie before. The 231 movies were presented in a random order for each participant. The rating stage took about 15--20 minutes.
 
@@ -212,7 +237,7 @@ In the final, similarity stage, we asked participants to rate the similarity of 
 
 We collected data in batches of 50, until we had choice data for at least a 100 participants (after all the exclusion criteria had been applied, see section \ref{exclusion_ref}). At most, a few days have passed between the rating and choice stage. We recruited 297 participants from Prolific Academic who were paid £8 per hour. Out of the 297 participants that completed the rating stage, we could create quadruplets for 179 participants. Out of the 179 participants who were invited back, 152 took part in the choice stage of the experiment.
 
-\subsubsection{Exclusion criteria} \label{exclusion_ref}
+\subsubsection*{Exclusion criteria.} \label{exclusion_ref}
 
 To conduct a rigorous test of the attraction effect, it is crucial that people take the task seriously and reveal their true preferences. Given that individually rating 231 movies can seem somewhat mundane, we specified a set of exclusion criteria to filter those people out who did not take the rating task sufficiently seriously. These were the following. We excluded people who fell into the fastest 5\% of the reaction time distribution, the lowest 5\% of the entropy distribution and the upper and lower 5\% of the autocorrelation distribution. Entropy refers to the diversity of the ratings, while autocorrelation takes into account the temporal pattern, and measures the extent to which a response depends on previous responses. Thus, this procedure filtered out response patterns where people (a) spent an unusually short time completing the task, or (b) did not use the whole of the ratings scale, or (c) often gave the same ratings for consecutive movies, or (d) were giving ratings randomly.
 
@@ -221,7 +246,7 @@ These exclusion criteria were validated in a pilot study, where we collected rat
 When we applied these exclusion criteria to our sample of 152 people, 17 participants were filtered out, leaving a sample of 2,148 choices from 135 participants.
 
 
-\subsubsection{Results}
+\subsection*{Results}
 
 The average number of choice trials per participant was 16 (the lowest being 6 and the highest 54), and 84\% of participants were presented with at least 8 choice trials. The decoy was only chosen in 4.3\% of the trials. In addition, 72\% of the participants have never chosen it, and only 2\% of people have chosen it in more than 25\% of the trials. This indicates that people were able to identify the dominated decoy in the choice stage.
 
@@ -286,7 +311,7 @@ Bayesian Inf. Crit. & 2,864.090 & 2,750.087 \\
 \end{table*}
 
 
-\section{Discussion}
+\section*{Discussion}
 
 We tested for the attraction effect in a choice task with naturalistic choice options. We found that the presence of the decoy in the choice set did not alter preferences over the target and the competitor, as participants remained indifferent between the two dominating options. We believe that our study is the first rigorous investigation of this research question. We designed our experiment carefully to address all the criticisms raised in connection with the study by \citeauthor{Frederick2014}, where they used similar stimuli.
 
