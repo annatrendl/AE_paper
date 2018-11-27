@@ -1,7 +1,7 @@
 
 \documentclass[12pt, a4paper]{article}
 \usepackage[utf8]{inputenc}
-%\usepackage{Times}
+\usepackage{Times}
 \usepackage{booktabs,caption}
 \usepackage[flushleft]{threeparttable}
 \usepackage{hyperref}
@@ -14,6 +14,12 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{color}
 \usepackage{endnotes}
+\usepackage{caption}
+\usepackage{textcase}
+\usepackage{longtable,tabu}
+\usepackage{booktabs}
+\DeclareCaptionTextFormat{up}{\MakeTextUppercase{#1}}
+\captionsetup{labelsep=newline,textformat=up}
 \pagestyle{myheadings}
 \title{}
 \author{}
@@ -44,17 +50,20 @@
   
 \let\footnote=\endnote
 
+\providecommand{\keywords}[1]{\textbf{\textit{Keywords---}} #1}
+
 \definecolor{orange}{rgb}{1,0.7,0.7}
 \newcommand{\NS}[1] {{\textcolor{green}{#1}}}
 \newcommand{\AT}[1] {{\textcolor{cyan}{#1}}}
 \newcommand{\TM}[1] {{\textcolor{orange}{#1}}}
 \begin{document}
 %The title should not exceed 25 words.
-\title{Zero attraction: A precisely zero attraction effect with naturalistic stimuli that meets Huber, Payne, and Puto's (2014) criteria}
+\title{Zero attraction effect in naturalistic choice}
+%Zero attraction: A precisely zero attraction effect with naturalistic stimuli that meets Huber, Payne, and Puto's (2014) criteria
 
-\author{Anna Trendl\\Department of Psychology, University of Warwick  \\ email \href{mailto:a.trendl@warwick.ac.uk}{a.trendl@warwick.ac.uk} 
-\and Neil Stewart \\Warwick Business School, University of Warwick \\ email \href{mailto:neil.stewart@wbs.ac.uk}{neil.stewart@wbs.ac.uk} 
-\and Timothy L. Mullett\\Warwick Business School, University of Warwick\\ email \href{mailto:Tim.Mullett@wbs.ac.uk}{Tim.Mullett@wbs.ac.uk} } 
+\author{Anna Trendl\\Department of Psychology, University of Warwick  \\  \href{mailto:a.trendl@warwick.ac.uk}{a.trendl@warwick.ac.uk} 
+\and Neil Stewart \\Warwick Business School, University of Warwick \\  \href{mailto:neil.stewart@wbs.ac.uk}{neil.stewart@wbs.ac.uk} 
+\and Timothy L. Mullett\\Warwick Business School, University of Warwick\\  \href{mailto:Tim.Mullett@wbs.ac.uk}{Tim.Mullett@wbs.ac.uk} } 
 
 \date{\today}
 
@@ -66,10 +75,12 @@
 
 %The abstract is limited to 175 words and summarizes the key components of the manuscript, offering the reader a sample of the manuscript.
 \begin{abstract}
-In the attraction effect, adding a dominated third option to a choice set of two options can reverse the preference for the original two options, and even increase one of the option's choice share. This constitutes a violation of the axioms of regularity and independence from irrelevant alternatives, which are core properties of any choice model in which the utility of each option is stable across choice sets. Consequently, in the past 20 years, the attraction effect has driven the development of a set of influential models of multiattribute choice. However, \citeA{Frederick2014} have recently claimed that the attraction effect is only limited to options with numerical attributes, and does not hold for choices between naturalistic options (e.g., snacks, movies) ---a claim which would severely undermine its theoretical importance. \citeA{Huber2014} criticised \citeauthor{Frederick2014}'s experiments, laying down a set of criteria that should be met by any experiment wishing to test for the attraction effect in real-world consumer choices. This article presents the first experiment that meets these criteria. The results show a precisely zero attraction effect.
+In the attraction effect, adding a dominated third option to a choice set of two options can reverse the preference for the original two options, and even increase one of the option's choice share. This constitutes a violation of the axioms of regularity and independence from irrelevant alternatives, which are core properties of any choice model in which the utility of each option is stable across choice sets. Consequently, in the past 20 years, the attraction effect has driven the development of a set of influential models of multiattribute choice. However, \citeA{Frederick2014} have recently claimed that the attraction effect is only limited to options with numerical attributes, and does not hold for choices between naturalistic options (e.g., snacks, movies) --- a claim which would severely undermine its theoretical importance. \citeA{Huber2014} criticised \citeauthor{Frederick2014}'s experiments, laying down a set of criteria that should be met by any experiment wishing to test for the attraction effect in real-world consumer choices. This article presents the first experiment that meets these criteria. The results show a precisely zero attraction effect.
 %174 words now
 \end{abstract}
 %Keywords
+\keywords{consumer choice, attraction effect, asymmetric dominance, attribute representation,  context effects}
+
 %Include 4–5 primary keywords that best suit the topic of the manuscript; these do not necessarily need to match the “Topics/Methods” that are selected in Manuscript Central upon submission.
 
 \end{titlepage}
@@ -108,7 +119,7 @@ In the attraction effect, adding a dominated third option to a choice set of two
 
 \TM{This looks much better! Is it worth including the intercept only version alongside? The side by side comparion might add a compelling demonstration that ther is really no effect, and then adding in the controls just widens the CIs slightly without changing the beta estimate.}
 
-\AT{Intercept-only regression added, is that ok though? It wasn't in the preregistation}
+\AT{Intercept-only regression added, is that ok though? It wasn't in the preregistation. Can you double check what I've written about it?}
 
 
 
@@ -123,7 +134,10 @@ In the attraction effect, adding a dominated third option to a choice set of two
 \AT{Fixed, hopefully.}
 
 
-7. \textbf{Title}. Keywords. Style checklist.
+7. Style checklist.
+
+Things we need to do: \textbf{Title} ("No attraction effect in naturalistic choice"?), font: times new roman, replace figures and tables with placement indicators, 
+
 
 \AT{\url{https://www.ama.org/publications/JournalOfMarketingResearch/Pages/JMRSubmissionGuidelines.aspx}}
 
@@ -182,7 +196,7 @@ Our novel experimental design takes individual preferences into account and ensu
 \begin{figure}
 \centering
 \captionsetup{justification=centering}
-		 \caption{Two choice triplets used in the experiment.}
+		 \caption{Two choice triplets used in the experiment}
 \includegraphics[width=1\textwidth]{figure1.pdf}
 \label{fig:quadruplets}
 \end{figure}
@@ -210,7 +224,7 @@ We then reduced the size of this list by selecting the most similar movie pairs.
 \begin{figure}[htb!]
 \centering
 \captionsetup{justification=centering}
-		\caption{The distribution of the average similarity rating for each target-decoy candidate pair (N = 1242). The dotted line is the cut-off value for accepting a movie pair as similar.}
+		\caption{The distribution of the average similarity rating for each target-decoy candidate pair (N = 1242). The dotted line is the cut-off value for accepting a movie pair as similar}
 \includegraphics[width=0.9\textwidth]{figure2.pdf}
 \label{fig:exp2_pilot}
 \end{figure}
@@ -232,7 +246,7 @@ We only invited those participants back for whom we could create at least three 
 \begin{figure}[htb!]
 \centering
 \captionsetup{justification=centering}
-\caption{Choice stage.}
+\caption{Choice stage}
 \includegraphics[width=0.8\textwidth]{rsz_exp1_choicestage.png}
 \label{fig:exp1_screenshot}
 \end{figure}
@@ -259,7 +273,7 @@ In the attraction effect, the decoy increases the choice share of the target at 
 \begin{figure}[htb!]
 \centering
 \captionsetup{justification=centering}
-\caption{The proportion of trials where the target was chosen instead of the competitor. Each dot is a participant. The red dot and error bars show the bootstrapped mean and 95\% CI.}
+\caption{The proportion of trials where the target was chosen instead of the competitor. Each dot is a participant. The red dot and error bars show the bootstrapped mean and 95\% CI}
 \includegraphics[width=0.9\textwidth]{figure4.pdf}
 \label{fig:exp2_res}
 \end{figure}
@@ -269,7 +283,7 @@ We created the choice triplets carefully to ensure that the target-decoy pairs w
 \begin{figure}[htb!]
 \centering
 \captionsetup{justification=centering}
-		\caption{Distribution of the target-competitor and target-decoy similarity ratings.}
+		\caption{Distribution of the target-competitor and target-decoy similarity ratings}
 \includegraphics[width=0.8\textwidth]{figure5.pdf}
 \label{fig:exp2_similarityratings}
 \end{figure}
@@ -283,7 +297,7 @@ We also ran a mixed effects logistic regression with by-subjects intercepts to i
 \begin{table*}[htb] \centering
   \begin{threeparttable}
     \captionsetup{justification=centering}
-    \caption{Odds ratios and 95\% CIs from two mixed-effects logistic models with subject-specific intercepts.}
+    \caption{Odds ratios and 95\% CIs from two mixed-effects logistic models with subject-specific intercepts}
   \label{latentattr_exp2reg} 
 \begin{tabular}{@{\extracolsep{5pt}}lcc} 
 \\[-1.8ex]\hline 
@@ -351,7 +365,7 @@ To conclude, our results corroborate the findings of \citeauthor{Frederick2014} 
 \begin{table*}[htb] \centering
   \begin{threeparttable}
     \captionsetup{justification=centering}
-    \caption{Odds ratios and 95\% CIs from two mixed-effects logistic models with subject-specific intercepts.}
+    \caption{Odds ratios and 95\% CIs from two mixed-effects logistic models with subject-specific intercepts}
   \label{latentattr_exp2reg} 
 \begin{tabular}{@{\extracolsep{5pt}}lcc} 
 \\[-1.8ex]\hline 
@@ -390,47 +404,51 @@ Bayesian Inf. Crit. & 2,864.090 & 2,750.087 \\
 \begin{figure}[htb!]
 \centering
 \captionsetup{justification=centering}
-		 \caption{Two choice triplets used in the experiment.}
+		 \caption{Two choice triplets used in the experiment}
 \includegraphics[width=1\textwidth]{figure1.pdf}
 \label{fig:quadruplets}
 \end{figure}
-
+\clearpage
 
 \begin{figure}[htb!]
 \centering
 \captionsetup{justification=centering}
-		\caption{The distribution of the average similarity rating for each target-decoy candidate pair (N = 1242). The dotted line is the cut-off value for accepting a movie pair as similar.}
+		\caption{The distribution of the average similarity rating for each target-decoy candidate pair (N = 1242). The dotted line is the cut-off value for accepting a movie pair as similar}
 \includegraphics[width=0.9\textwidth]{figure2.pdf}
 \label{fig:exp2_pilot}
 \end{figure}
+\clearpage
 
 \begin{figure}[htb!]
 \centering
 \captionsetup{justification=centering}
-\caption{Choice stage.}
+\caption{Choice stage}
 \includegraphics[width=0.8\textwidth]{rsz_exp1_choicestage.png}
 \label{fig:exp1_screenshot}
 \end{figure}
+\clearpage
 
 \begin{figure}[htb!]
 \centering
 \captionsetup{justification=centering}
-\caption{The proportion of trials where the target was chosen instead of the competitor. Each dot is a participant. The red dot and error bars show the bootstrapped mean and 95\% CI.}
+\caption{The proportion of trials where the target was chosen instead of the competitor. Each dot is a participant. The red dot and error bars show the bootstrapped mean and 95\% CI}
 \includegraphics[width=0.9\textwidth]{figure4.pdf}
 \label{fig:exp2_res}
 \end{figure}
+\clearpage
 
 
 \begin{figure}[htb!]
 \centering
 \captionsetup{justification=centering}
-		\caption{Distribution of the target-competitor and target-decoy similarity ratings.}
+		\caption{Distribution of the target-competitor and target-decoy similarity ratings}
 \includegraphics[width=0.8\textwidth]{figure5.pdf}
 \label{fig:exp2_similarityratings}
 \end{figure}
 
 \clearpage
 
+\section*{Appendix}
 
 
 \end{document}
