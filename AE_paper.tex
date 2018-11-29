@@ -1,9 +1,10 @@
 
 \documentclass[12pt, a4paper]{article}
+\usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
-%\usepackage{Times}
+\usepackage[tablesfirst, nolists]{endfloat}
+\usepackage{times}
 \usepackage[flushleft]{threeparttable}
-\usepackage[noheads,nolists,tablesfirst]{endfloat}
 \usepackage{hyperref}
 \usepackage{authblk}
 \usepackage{setspace}
@@ -11,7 +12,6 @@
 \usepackage{caption}
 \usepackage{graphicx}
 \usepackage{titlesec}
-\usepackage[margin=1in]{geometry}
 \usepackage{color}
 \usepackage{endnotes}
 \usepackage{caption}
@@ -24,6 +24,7 @@
 \author{}
 \date{}
 \doublespacing
+\renewcommand{\efloatheading}[1]{}
 
 %    PRIMARY HEADING: Centered, capitalized, and italicized, with an extra return before and after.
 %    SECONDARY HEADING: Flush left with title-style capitalization (first letter of each word) and italicized. You must have at least two sections beginning with a secondary heading; if there is only one, the heading should be excluded.
@@ -130,7 +131,7 @@ The attraction effect is important, because it poses a challenge to all choice m
 
 Owing to its theoretical importance, the attraction effect has played a substantial role in the evolution of multialternative, multiattribute models of choice, with a significant number of various theoretical accounts being developed over the past 20 years (e.g., multialternative decision field theory, \citeNP{Roe2001a}; leaky competing accumulators, \citeNP{Usher2004b}; multialternative attentional drift-diffusion model,   \citeNP{Krajbich2010a}; range-normalization model, \citeNP{Soltani2012}; associative accumulation model, \citeNP{Bhatia2013b}; multiattribute linear ballistic accumulator, \citeNP{Trueblood2014a}; multialternative decision by sampling, \citeNP{Noguchi2018a}). 
 
-The first multiattribute choice experiments (e.g., \citeNP{Huber1982}; \citeNP{Simonson1992}) often used stimuli presented as a set of numerical attributes (e.g., cars presented as numerical values for gas mileage and ride quality). However, recent experiments in multiattribute choice introduced what can perhaps be considered as more ecologically valid stimuli (e.g., movies presented as thumbnails and titles on Netflix or photographs of popular snacks). Results from these experiments indicate that there might be significant differences in the processing of numerical and naturalistic stimuli. For example, \citeA{Bhatia2018b} find that, with naturalistic stimuli, the weighted additive model on a high-dimensional semantic representation generalises to new choices better than the simpler heuristic models, which perform so well on stimuli presented as sets of numerical attributes. 
+The first multiattribute choice experiments (e.g., \citeNP{Huber1982}; \citeNP{Simonson1992}) almost exclusively used stimuli presented as a set of numerical attributes (e.g., cars presented as numerical values for gas mileage and ride quality). However, recent experiments in multiattribute choice introduced what can perhaps be considered as more ecologically valid stimuli (e.g., movies presented as thumbnails and titles on Netflix, or photographs of popular snacks). Results from these experiments indicate that there might be significant differences in the processing of numerical and naturalistic stimuli. For example, \citeA{Bhatia2018b} find that, with naturalistic stimuli, the weighted additive model on a high-dimensional semantic representation generalises to new choices better than the simpler heuristic models, which perform so well on stimuli presented as sets of numerical attributes. 
 
 Recently, the existence of the attraction effect in choices that involve naturalistic options has become a contentious issue. Based on 38 experiments, \citeA{Frederick2014} presented a thorough investigation of the boundary conditions of the attraction effect. These experiments included choice options with numerical attributes, as well as complex, real-world stimuli (e.g., fruits, bottled water, apartments, etc.), and in some of these experiments, participants could even sample the choice options (e.g. squash, mints, popcorn). The overall conclusion of this study was that while the presence of the decoy seemed to affect choices when the options had numerical attributes, it was absent in experiments with more complex, naturalistic stimuli. In light of these results, \citeauthor{Frederick2014} posited that the psychological processes underlying decisions that involve options with numeric attributes are fundamentally different from those employed in decisions where the stimuli has a more naturalistic format. This conclusion was also supported by \citeA{Yang2014}, who reported difficulties replicating the attraction effect in experiments where the stimuli were pictorial, as opposed to cases where the attributes were presented numerically.
 
@@ -163,7 +164,7 @@ The study design, exclusion criteria and all the analyses were planned and regis
 
 \subsubsection*{Candidate choice set selection.}
 
-Our movie triplets are listed in \NS{Table X in the Appendix}. The details of the construction of these triplets are somewhat arbitrary---a different recipe could have been used. However, the main point is that our triplets pass \citeauthor{Huber2014}'s \citeyear{Huber2014} criteria, as we detail below.
+The list of movie triplets used in the experiment can be found in the Web Appendix. The details of the construction of these triplets are somewhat arbitrary---a different recipe could have been used. However, the main point is that our triplets pass \citeauthor{Huber2014}'s \citeyear{Huber2014} criteria, as we detail below.
 
 We first retrieved the most popular 40 movies from each of 10 distinct genre categories (romance, drama, sci-fi, thriller, comedy, horror, animation, fantasy, crime, action) from IMDb, so that we had 400 movies overall. The popularity of each movie was defined by the number of ratings it has received. We selected a wide range of genres to obtain a sufficiently rich stimuli space, as we wanted our participants to have a variety of preferences over our stimuli. We omitted any sequels.
 
@@ -208,7 +209,7 @@ We only invited those participants back for whom we could create at least three 
 
 In the final, similarity stage, we asked participants to rate the similarity of all target-decoy and target-competitor pairs on a scale from 1 (least similar) to 7 (most similar), where a "don't know" option was also included. Information collected in this similarity rating stage was important to check that in the choice stage, participants perceived the target-decoy pairs as similar, and the target-competitor pairs as different.
 
-We collected data in batches of 50, until we had choice data for at least a 100 participants (after all the exclusion criteria had been applied, see the exclusion criteria). At most, a few days have passed between the rating and choice stage. We recruited 297 participants from Prolific Academic who were paid £8 per hour. Out of the 297 participants who completed the rating stage, we could create quadruplets for 179 participants. Out of the 179 participants who were invited back, 152 took part in the choice stage of the experiment.
+We collected data in batches of 50, until we had choice data for at least a 100 participants (after all the exclusion criteria had been applied). At most, a few days have passed between the rating and choice stage. We recruited 297 participants from Prolific Academic who were paid £8 per hour. Out of the 297 participants who completed the rating stage, we could create quadruplets for 179 participants. Out of the 179 participants who were invited back, 152 took part in the choice stage of the experiment.
 
 \subsubsection*{Exclusion criteria.} \label{exclusion_ref}
 
@@ -248,7 +249,8 @@ We also estimated the likelihood of choosing the target whilst accounting for su
 We also ran a mixed effects logistic regression with by-subjects intercepts to investigate how participants' target-decoy and target-competitor similarity ratings, familiarity with the movies, and target-decoy preference rating difference affect the likelihood of choosing the target (see Model 2 in Table \ref{latentattr_exp2reg}). The results demonstrate that none of the explanatory variables modulate the strength of the attraction effect. The intercept in this regression captures the odds of choosing the target when all variables are at their respective means. In terms of the probability of choosing the target, our estimate is virtually the same as before, with a slightly wider confidence interval, p = .50, 95\% CI [.44--.55]. Therefore, the conclusion from the two models are the same: participants were almost perfectly indifferent between the target and the competitor. 
 
 
-\begin{table*}[htb] \centering
+\begin{table*}[htb] 
+\centering
   \begin{threeparttable}
     \captionsetup{justification=centering}
     \caption{Odds ratios and 95\% CIs from two mixed-effects logistic models with subject-specific intercepts}
