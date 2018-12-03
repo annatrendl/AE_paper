@@ -2,7 +2,7 @@
 \documentclass[12pt, a4paper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
-\usepackage[tablesfirst, nolists]{endfloat}
+\usepackage[tablesfirst,nolists]{endfloat}
 \usepackage{times}
 \usepackage[flushleft]{threeparttable}
 \usepackage{hyperref}
@@ -24,7 +24,7 @@
 \author{}
 \date{}
 \doublespacing
-\renewcommand{\efloatheading}[1]{}
+%\renewcommand{\efloatheading}[1]{}
 
 %    PRIMARY HEADING: Centered, capitalized, and italicized, with an extra return before and after.
 %    SECONDARY HEADING: Flush left with title-style capitalization (first letter of each word) and italicized. You must have at least two sections beginning with a secondary heading; if there is only one, the heading should be excluded.
@@ -53,6 +53,7 @@
 \providecommand{\keywords}[1]{\textbf{\textit{Keywords---}} #1}
 
 \definecolor{orange}{rgb}{1,0.7,0.7}
+\definecolor{green}{rgb}{0,1,0}
 \newcommand{\NS}[1] {{\textcolor{green}{#1}}}
 \newcommand{\AT}[1] {{\textcolor{cyan}{#1}}}
 \newcommand{\TM}[1] {{\textcolor{orange}{#1}}}
@@ -212,10 +213,11 @@ In the attraction effect, the decoy increases the choice share of the target at 
 \begin{figure}[htb!]
 \centering
 \captionsetup{justification=centering}
-		\caption{The proportion of trials where the target was chosen instead of the competitor. Each dot is a participant. Dots are jitter slightly. The red dot and error bars show the bootstrapped mean and 95\% CI \NS{"Mean of all" -> "Mean Over Participants". Say what the point size means}}
+		\caption{The proportion of trials where the target was chosen instead of the competitor. Each dot is a participant. Dots are jitter slightly. The red dot and error bars show the bootstrapped mean and 95\% CI} 
 \includegraphics[width=0.9\textwidth]{figure4.pdf}
 \label{fig:exp2_res}
 \end{figure}
+\NS{"Mean of all" -> "Mean Over Participants". Say what the point size means}
 
 We created the choice triplets carefully to ensure that the target-decoy pairs were similar, and the target-competitor pairs were different. To check that our participants indeed perceived the triplets this way, we compared the distribution of the target-decoy and target-competitor similarity ratings. As Figure \ref{fig:exp2_similarityratings} shows, the overwhelming majority of target-competitor pairs were perceived as not similar, while the majority of target-decoy pairs were perceived as similar, as we intended.
 
