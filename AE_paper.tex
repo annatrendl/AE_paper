@@ -17,6 +17,8 @@
 \usepackage{caption}
 \usepackage{textcase}
 \usepackage{booktabs}
+\usepackage{titling}
+
 \DeclareCaptionTextFormat{up}{\MakeTextUppercase{#1}}
 \captionsetup{labelsep=newline,textformat=up}
 \pagestyle{myheadings}
@@ -24,7 +26,7 @@
 \author{}
 \date{}
 \doublespacing
-%\renewcommand{\efloatheading}[1]{}
+\renewcommand{\efloatheading}[1]{}
 
 %    PRIMARY HEADING: Centered, capitalized, and italicized, with an extra return before and after.
 %    SECONDARY HEADING: Flush left with title-style capitalization (first letter of each word) and italicized. You must have at least two sections beginning with a secondary heading; if there is only one, the heading should be excluded.
@@ -51,7 +53,7 @@
 \let\footnote=\endnote
 
 \providecommand{\keywords}[1]{\textbf{\textit{Keywords---}} #1}
-
+%
 \definecolor{orange}{rgb}{1,0.7,0.7}
 \definecolor{green}{rgb}{0,1,0}
 \newcommand{\NS}[1] {{\textcolor{green}{#1}}}
@@ -72,9 +74,13 @@
 
 \begin{titlepage}
 \maketitle
+\thispagestyle{empty}
 
-\newpage
-
+\clearpage
+\thispagestyle{empty}
+\begin{center}
+\LARGE{A zero attraction effect in naturalistic choice}
+\end{center}
 %The abstract is limited to 175 words and summarizes the key components of the manuscript, offering the reader a sample of the manuscript.
 \begin{abstract}
 In the attraction effect, adding a dominated third option to a choice set of two options can reverse the preference for the original two options, and even increase one of the option's choice share. This constitutes a violation of the axioms of regularity and independence from irrelevant alternatives, which are core properties of any choice model in which the utility of each option is stable across choice sets. Consequently, in the past 20 years, the attraction effect has driven the development of a set of influential models of multiattribute choice. However, \citeA{Frederick2014} have recently claimed that the attraction effect is only limited to options with numerical attributes, and does not hold for choices between naturalistic options (e.g., snacks, movies) --- a claim which would severely undermine its theoretical importance. \citeA{Huber2014} criticised \citeauthor{Frederick2014}'s experiments, laying down a set of criteria that should be met by any experiment wishing to test for the attraction effect in real-world consumer choices. This article presents the first experiment that meets these criteria. The results show a precisely zero attraction effect.
@@ -148,7 +154,7 @@ The study design, exclusion criteria and all the analyses were planned and regis
 
 \subsubsection*{Candidate choice set selection.}
 
-The list of movie triplets used in the experiment can be found in the Web Appendix. The details of the construction of these triplets are somewhat arbitrary---a different recipe could have been used. However, the main point is that our triplets pass \citeauthor{Huber2014}'s \citeyear{Huber2014} criteria, as we detail below.
+The list of movie triplets used in the experiment can be found \href{https://osf.io/fme6c/?view_only=31da4193689f4247a76af93b2f98fcef}{here}. The details of the construction of these triplets are somewhat arbitrary---a different recipe could have been used. However, the main point is that our triplets pass \citeauthor{Huber2014}'s \citeyear{Huber2014} criteria, as we detail below.
 
 We first retrieved the most popular 40 movies from each of 10 distinct genre categories (romance, drama, sci-fi, thriller, comedy, horror, animation, fantasy, crime, action) from IMDb, so that we had 400 movies overall. The popularity of each movie was defined by the number of ratings it has received. We selected a wide range of genres to obtain a sufficiently rich stimuli space, as we wanted our participants to have a variety of preferences over our stimuli. We omitted any sequels.
 
@@ -213,11 +219,10 @@ In the attraction effect, the decoy increases the choice share of the target at 
 \begin{figure}[htb!]
 \centering
 \captionsetup{justification=centering}
-		\caption{The proportion of trials where the target was chosen instead of the competitor. Each dot is a participant. Dots are jitter slightly. The red dot and error bars show the bootstrapped mean and 95\% CI}
+		\caption{The proportion of trials where the target was chosen instead of the competitor. Each dot is a participant. Dots are jittered slightly. The red dot and error bars show the bootstrapped mean and 95\% CI}
 \includegraphics[width=0.9\textwidth]{figure4.pdf}
 \label{fig:exp2_res}
 \end{figure}
-\NS{Change "Mean of all" to "Mean Over Participants". Say what the point size means}
 
 We created the choice triplets carefully to ensure that the target-decoy pairs were similar, and the target-competitor pairs were different. To check that our participants indeed perceived the triplets this way, we compared the distribution of the target-decoy and target-competitor similarity ratings. As Figure \ref{fig:exp2_similarityratings} shows, the overwhelming majority of target-competitor pairs were perceived as not similar, while the majority of target-decoy pairs were perceived as similar, as we intended.
 
