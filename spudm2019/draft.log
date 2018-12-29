@@ -1,0 +1,97 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350) (preloaded format=pdflatex 2017.6.16)  29 DEC 2018 15:46
+entering extended mode
+**./draft.tex
+(draft.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
+("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color.
+cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex
+.def"
+File: pdftex.def 2017/06/12 v1.0b Graphics/color driver for pdftex
+)) (draft.aux)
+\openout1 = `draft.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+
+("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mki
+i"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count87
+\scratchdimen=\dimen103
+\scratchbox=\box26
+\nofMPsegments=\count88
+\nofMParguments=\count89
+\everyMPshowfont=\toks14
+\MPscratchCnt=\count90
+\MPscratchDim=\dimen104
+\MPnumerator=\count91
+\makeMPintoPDFobject=\count92
+\everyMPtoPDFconversion=\toks15
+)
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ [1
+
+{C:/Users/Anna/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
+ [2]
+(draft.aux) ) 
+Here is how much of TeX's memory you used:
+ 714 strings out of 493323
+ 9197 string characters out of 3130449
+ 65558 words of memory out of 3000000
+ 4320 multiletter control sequences out of 15000+200000
+ 4245 words of font info for 16 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 22i,5n,19p,1397b,115s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Anna/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb><C:/Users/Anna/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on draft.pdf (2 pages, 35859 bytes).
+PDF statistics:
+ 17 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
