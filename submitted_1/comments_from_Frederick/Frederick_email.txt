@@ -1,0 +1,39 @@
+Date: Thu, 20 Dec 2018 20:49:02 +0000
+From: "Frederick, Shane" <shane.frederick@yale.edu>
+To: "Stewart, Neil" <Neil.Stewart@wbs.ac.uk>
+CC: "Trendl, Anna" <A.Trendl@warwick.ac.uk>, Tim Mullett <t.l.mullett@bath.ac.uk>
+Subject: RE: Zero attraction effect
+
+[-- Attachment #1 --]
+[-- Type: multipart/alternative, Encoding: 7bit, Size: 9.6K --]
+
+[-- Autoview using /usr/bin/w3m -I 'us-ascii' -dump -T text/html '/tmp/mutt.html' --]
+Hi Neil (and Anna and Tim).  Thanks for sharing this.  I have a few thoughts,
+most of which are summarized in some back and forth with reviewers and editors
+regarding our JMR paper.  I attach that here, as it seems relevant to the
+issues you discuss.  Unsurprisingly, I found their objections entirely
+uncompelling (though, of course, I agree that some of our stimuli can be
+improved upon).
+
+
+
+As I see it, the decoy must satisfy two properties:
+
+
+
+(1) greater similarity to the target than the competitor (this seems
+uncontroversial in all examples, despite some protestations to the contrary)
+
+(2) inferiority to the target.  Though it is true that in creation of the
+stimuli our assignation was based on common sense (or “assumption”), and
+presumably was not as we intended for all participants, the choice data
+themselves (see our Table 2) support our putatively “arbitrary” assignations,
+as the option we label the decoy was, in fact, much less popular than (i.e.,
+inferior to) the target.  So I don’t think this issue (or others) is really as
+problematic or complicated as you (or our set of reviewers) make it out to be.
+Bottom line, I liked your study, but I think you are giving our detractors too
+much credit.  ; )
+
+
+
+Best regards, Shane.
