@@ -1,8 +1,8 @@
 
-\documentclass[12pt, a4paper]{article}
+\documentclass[12pt, letterpaper]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
-\usepackage[tablesfirst,nolists]{endfloat}
+%\usepackage[tablesfirst,nolists]{endfloat}
 \usepackage{times}
 \usepackage[flushleft]{threeparttable}
 \usepackage{hyperref}
@@ -13,44 +13,46 @@
 \usepackage{graphicx}
 \usepackage{titlesec}
 \usepackage{color}
-\usepackage{endnotes}
+%\usepackage{endnotes}
 \usepackage{caption}
 \usepackage{textcase}
 \usepackage{booktabs}
 \usepackage{titling}
+\pagenumbering{gobble}
+\newcommand*{\sectionformat}{\centering}
 
-\DeclareCaptionTextFormat{up}{\MakeTextUppercase{#1}}
-\captionsetup{labelsep=newline,textformat=up}
-\pagestyle{myheadings}
+%\DeclareCaptionTextFormat{up}{\MakeTextUppercase{#1}}
+%\captionsetup{labelsep=newline,textformat=up}
+%\pagestyle{myheadings}
 \title{}
 \author{}
 \date{}
 \doublespacing
-\renewcommand{\efloatheading}[1]{}
+%\renewcommand{\efloatheading}[1]{}
 
 %    PRIMARY HEADING: Centered, capitalized, and italicized, with an extra return before and after.
 %    SECONDARY HEADING: Flush left with title-style capitalization (first letter of each word) and italicized. You must have at least two sections beginning with a secondary heading; if there is only one, the heading should be excluded.
 %    TERTIARY HEADING: Left justified and indented with sentence-style capitalization (first word only) in italics. Punctuate the heading with a period and begin the first line of the same section on the same line. If only one tertiary heading is used, the heading should be excluded.
 
-\titleformat{name=\section,numberless}[hang]
-  {\centering\itshape}
-  {}
-  {0em}
-  {\Large\MakeUppercase}
+%\titleformat{name=\section,numberless}[hang]
+%  {\centering\itshape}
+%  {}
+%  {0em}
+%  {\Large\MakeUppercase}
+%
+%\titleformat{name=\subsection,numberless}[hang]
+%  {\itshape}
+%  {}
+%  {0em}{}
+%  {\Large}
+%
+%\titleformat{name=\subsubsection,numberless}[runin]
+%  {\itshape}
+%  {}
+%  {0em}{}
+%  {}
 
-\titleformat{name=\subsection,numberless}[hang]
-  {\itshape}
-  {}
-  {0em}{}
-  {\Large}
-
-\titleformat{name=\subsubsection,numberless}[runin]
-  {\itshape}
-  {}
-  {0em}{}
-  {}
-
-\let\footnote=\endnote
+%\let\footnote=\endnote
 
 \providecommand{\keywords}[1]{\textbf{\textit{Keywords---}} #1}
 %
@@ -65,25 +67,31 @@
 \title{A zero attraction effect in naturalistic choice}
 %Zero attraction: A precisely zero attraction effect with naturalistic stimuli that meets Huber, Payne, and Puto's (2014) criteria
 
-\author{Anna Trendl\\Department of Psychology, University of Warwick  \\  \href{mailto:a.trendl@warwick.ac.uk}{a.trendl@warwick.ac.uk}
-\and Neil Stewart \\Warwick Business School, University of Warwick \\  \href{mailto:neil.stewart@wbs.ac.uk}{neil.stewart@wbs.ac.uk}
-\and Timothy L. Mullett\\Warwick Business School, University of Warwick\\  \href{mailto:Tim.Mullett@wbs.ac.uk}{Tim.Mullett@wbs.ac.uk} }
+%\author{Anna Trendl\\Department of Psychology, University of Warwick  \\  \href{mailto:a.trendl@warwick.ac.uk}{a.trendl@warwick.ac.uk}
+%\and Neil Stewart \\Warwick Business School, University of Warwick \\  \href{mailto:neil.stewart@wbs.ac.uk}{neil.stewart@wbs.ac.uk}
+%\and Timothy L. Mullett\\Warwick Business School, University of Warwick\\  \href{mailto:Tim.Mullett@wbs.ac.uk}{Tim.Mullett@wbs.ac.uk} }
 
-\date{\today}
+%\date{\today}
+
+
 
 
 \begin{titlepage}
 \maketitle
+\begin{center}
+\textbf{Contribution Statement}
+\end{center}
+The attraction effect is one of the most well-known decision biases, which has played a key role in the development of many popular choice models over the past decades. However, the real-world relevance of the attraction effect has recently been challenged, as results from a series of experiments by \citeA{Frederick2014} and \citeA{Yang2014} have suggested that this decision bias is only confined to scenarios where options are represented in an attribute by alternative format, and is absent in choice contexts where options have naturalistic representations. Since the overwhelming majority of real-world consumer choices involve options with naturalistic attributes, these results severely undermine the theoretical and empirical importance of the attraction effect in decision research. However, \citeA{Huber2014} have criticised the experiments of \citeauthor{Frederick2014} and \citeauthor{Yang2014} on methodological grounds, arguing that their experiments did not meet the set of criteria required for a strict test of the attraction effect. Guided by these criteria, this paper describes the first rigorous investigation of the attraction effect in choices involving complex objects. While our results are similar to that of \citeauthor{Frederick2014} and \citeauthor{Yang2014} in that we found no evidence for the attraction effect, our strict methodological approach constitutes a much stronger basis for claiming that the attraction effect does not extend to choices between naturalistic options.
 \thispagestyle{empty}
 
 \clearpage
 \thispagestyle{empty}
-\begin{center}
-\LARGE{A zero attraction effect in naturalistic choice}
-\end{center}
+%\begin{center}
+%\LARGE{A zero attraction effect in naturalistic choice}
+%\end{center}
 %The abstract is limited to 175 words and summarizes the key components of the manuscript, offering the reader a sample of the manuscript.
 \begin{abstract}
-In the attraction effect, adding a dominated third option to a choice set of two options can reverse the preference for the original two options, and even increase one of the option's choice share. This constitutes a violation of the axioms of regularity and independence from irrelevant alternatives, which are core properties of any choice model in which the utility of each option is stable across choice sets. Consequently, in the past 20 years, the attraction effect has driven the development of a set of influential models of multiattribute choice. However, \citeA{Frederick2014} have recently demonstrated that the attraction effect is only limited to options with numerical attributes, and does not hold for choices between naturalistic options (e.g., snacks, movies) in 38 experiments--- a claim which would severely undermine its theoretical importance. \citeA{Huber2014} criticised each of  \citeauthor{Frederick2014}'s experiments, laying down a set of criteria that should be met by any experiment wishing to test for the attraction effect in real-world consumer choices. This article presents the first experiment that meets these criteria. The results show a precisely zero attraction effect.
+In the attraction effect, adding a dominated third option to a choice set of two options can reverse the preference for the original two options, and even increase one of the option's choice share. This constitutes a violation of the axioms of regularity and independence from irrelevant alternatives, which are core properties of any choice model in which the utility of each option is stable across choice sets. Consequently, in the past 20 years, the attraction effect has driven the development of a set of influential models of multiattribute choice. However, \citeA{Frederick2014} have recently claimed that the attraction effect is only limited to options with numerical attributes, and does not hold for choices between naturalistic options (e.g., snacks, movies) --- a claim which would severely undermine its theoretical importance. \citeA{Huber2014} criticised \citeauthor{Frederick2014}'s experiments, laying down a set of criteria that should be met by any experiment wishing to test for the attraction effect in real-world consumer choices. This article presents the first experiment that meets these criteria. The results show a precisely zero attraction effect.
 %174 words now
 \end{abstract}
 %Keywords
@@ -110,7 +118,7 @@ In the attraction effect, adding a dominated third option to a choice set of two
 \newpage
 
 
-\section*{The attraction effect}
+\section*{\sectionformat The attraction effect}
 
 
 Imagine that you are having a nice meal in a restaurant, and you are looking at the two dessert options available on the menu: cheesecake and pecan pie. You are torn between the creamy texture of the cheesecake, and the rich, nutty flavour of the pecan pie. You resolve to have the cheesecake. As the waiter approaches to take your order, he informs you that a third dessert option, apple pie---which you find quite bland---is also available today. But now you have changed your mind, and decide to order the pecan pie. \citeA{Tsetsos2010} give just this paradoxical example: the availability of the apple pie, which you do not want, makes you switch from cheesecake to pecan pie.
@@ -126,11 +134,12 @@ The first multiattribute choice experiments (e.g., \citeNP{Huber1982}; \citeNP{S
 
 Recently, the existence of the attraction effect in choices that involve naturalistic options has become a contentious issue. Based on 38 experiments, \citeA{Frederick2014} presented a thorough investigation of the boundary conditions of the attraction effect. These experiments included choice options with numerical attributes, as well as complex, real-world stimuli (e.g., fruits, bottled water, apartments, etc.), and in some of these experiments, participants could even sample the choice options (e.g. squash, mints, popcorn). The overall conclusion of this study was that while the presence of the decoy seemed to affect choices when the options had numerical attributes, it was absent in experiments with more complex, naturalistic stimuli. In light of these results, \citeauthor{Frederick2014} posited that the psychological processes underlying decisions that involve options with numeric attributes are fundamentally different from those employed in decisions where the stimuli has a more naturalistic format. This conclusion was also supported by \citeA{Yang2014}, who reported difficulties replicating the attraction effect in experiments where the stimuli were pictorial, as opposed to cases where the attributes were presented numerically.
 
-These two studies sparked considerable interest amongst decision making researchers, and led to the re-examination of the boundary conditions of the attraction effect. \citeA{Huber2014} discussed five critical features that can inhibit the attraction effect, and argued that at least one of these five features is present in each of the 38 experiments reported by \citeA{Frederick2014}. The five critical features to be avoided are: (1) strong prior preferences over the target and competitor, (2) inability to identify the dominance relationship  between the target and the decoy, (3) heterogeneity in prior preferences over the target and competitor, (4) an undesirable decoy and (5) a decoy that is too desirable. \citeA{Simonson2014a} further stressed the importance of the detection of the dominance relationship in observing the attraction effect, and also pointed out several other smaller, specific methodological shortcomings of the studies by \citeauthor{Frederick2014} and \citeauthor{Yang2014}. \citeA{Huber2014}'s xXXXXXxxx argument is that because each of the naturalistic-option experiments has at least one of these critical features, the failure to find an attraction effect in these experiments is not a sound base for concluding that the attraction effect does not generalise to real-world consumer choices.
+These two studies sparked considerable interest amongst decision making researchers, and led to the re-examination of the boundary conditions of the attraction effect. \citeA{Huber2014} discussed five critical features that can inhibit the attraction effect, and argued that at least one of these five features is present in each of the 38 experiments reported by \citeA{Frederick2014}. The five critical features to be avoided are: (1) strong prior preferences over the target and competitor, (2) inability to identify the dominance relationship  between the target and the decoy, (3) heterogeneity in prior preferences over the target and competitor, (4) an undesirable decoy and (5) a decoy that is too desirable. \citeA{Simonson2014a} further stressed the importance of the detection of the dominance relationship in observing the attraction effect, and also pointed out several other smaller, specific methodological shortcomings of the studies by \citeauthor{Frederick2014} and \citeauthor{Yang2014}. In essence, \citeauthor{Huber2014} and \citeauthor{Simonson2014a} have argued that because each of the naturalistic-option experiments had at least one of these critical features, the failure to find an attraction effect in these experiments is not a sound base for concluding that the attraction effect does not generalise to real-world consumer choices.
 
 Due to the theoretical significance of the attraction effect, it is important to know if the attraction effect is confined to choice settings with numerical stimuli presented in an attribute by alternative format. Arguably, while most consumer choices in the real world involve stimuli that are often presented in a rich naturalistic form \cite{Bhatia2018b}, development of formal models of choice have been almost exclusively reliant on results from experiments where the options have numerical attributes. In this article, we describe a test of the attraction effect with complex, naturalistic choice options, using an experimental methodology that addresses all of the critical conditions discussed by \citeA{Huber2014}. Using a movie choice task, we find no evidence for the attraction effect.
 
-\section*{Testing the attraction effect with real-world stimuli}
+
+\section*{\sectionformat Testing the attraction effect with real-world stimuli}
 
 The goal of this experiment was to test the attraction effect with naturalistic stimuli. We chose to use the most popular movies on IMDb as stimuli. Since movies are an integral part of Western culture, we can reasonably expect that most our participants will be sufficiently interested in the choice options. Furthermore, choosing between movies is a realistic, everyday task. In addition, the movie space is rich, and thus it allows us to create a wide range of unique choice triplets to test the attraction effect.
 
@@ -273,7 +282,7 @@ Bayesian Inf. Crit. & 2,864.090 & 2,750.087 \\
   \end{threeparttable}
 \end{table*}
 
-\section*{Discussion}
+\section*{\sectionformat Discussion}
 
 We tested for the attraction effect in a choice task with naturalistic choice options. We found that the presence of the decoy in the choice set did not alter preferences over the target and the competitor, as participants remained indifferent between the target and competitor. Our experiment is the first investigation to rigorously test the attraction effect with naturalistic stimuli whilst also addressing all of the criticisms raised in connection with \citeauthor{Frederick2014}'s experiments. 
 
@@ -297,7 +306,7 @@ To conclude, our results corroborate the findings of \citeauthor{Frederick2014} 
 
 \newpage
 
-\theendnotes
+%\theendnotes
 
 \newpage
 
