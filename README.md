@@ -1,8 +1,21 @@
-Send to JCP as a short empirical report
+# A zero attraction effect in naturalistic choice,
 
-Send this to JCR next?
+# Submission history
 
-Short report for Psych Science?
+submitted_1 JMR, desk reject
 
-JDM
+submitted_2 JCR, desk reject
+
+
+# Plans for submission
+
+Very short report at Psych Science
+
+Short report at JCP
+
+Decision
+
+JDM later on
+
+
 
