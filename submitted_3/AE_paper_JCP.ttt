@@ -1,0 +1,33 @@
+\begin{table*}[htb]
+\centering
+  \begin{threeparttable}
+    \caption{Odds ratios and 95\% CIs from two mixed-effects logistic models fit by maximum likelihood with subject-specific intercepts.}
+  \label{latentattr_exp2reg}
+\begin{tabular}{@{\extracolsep{5pt}}lcc}
+\\[-1.8ex]\hline
+\hline \\[-1.8ex]
+ & \multicolumn{2}{c}{\textit{Dependent variable:}} \\
+\cline{2-3}
+\\[-1.8ex] & \multicolumn{2}{c}{Target chosen} \\
+ & Model 1 & Model 2 \\
+\hline \\[-1.8ex]
+ Intercept & 1.001 (0.918, 1.091) & 0.987 (0.802, 1.214) \\
+  Seen all &  & 1.046 (0.690, 1.587) \\
+  TC similarity rating &  & 0.960 (0.877, 1.050) \\
+  TD similarity rating &  & 0.981 (0.895, 1.075) \\
+  TD rating difference &  & 0.944 (0.863, 1.032) \\
+ \hline \\[-1.8ex]
+Observations & 2,055 & 1,953 \\
+Log Likelihood & $-$1,424.417 & $-$1,352.312 \\
+Akaike Inf. Crit. & 2,852.834 & 2,716.624 \\
+Bayesian Inf. Crit. & 2,864.090 & 2,750.087 \\
+\hline
+\hline \\[-1.8ex]
+%\textit{Note:}  & \multicolumn{2}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\end{tabular}
+    \begin{tablenotes}
+      \small
+      \item Notes: $^{**}$p$<$0.05; ratings have been scaled; Seen all is coded 0.5 (Yes) and -0.5 (No); T - Target, C - Competitor, D - Decoy
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table*}
