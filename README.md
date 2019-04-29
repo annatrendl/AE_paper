@@ -12,8 +12,6 @@ submitted_3 JCP, desk reject, lack of power
 
 Very short report at Psych Science
 
-Short report at JCP
-
 Decision
 
 JDM later on
