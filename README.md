@@ -6,6 +6,7 @@ submitted_1 JMR, desk reject
 
 submitted_2 JCR, desk reject
 
+submitted_3 JCP, desk reject, lack of power
 
 # Plans for submission
 
