@@ -1,0 +1,38 @@
+\begin{figure}
+\centering
+ \caption{Two choice triplets used in the experiment.}
+\includegraphics[width=1\textwidth]{figure1.pdf}
+\label{fig:quadruplets}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htb!]
+\centering
+\caption{The distribution of the average similarity rating for each target-decoy candidate pair (N = 1242). The dotted line is the cut-off value for accepting a movie pair as similar}
+\includegraphics[width=0.9\textwidth]{figure2.pdf}
+\label{fig:exp2_pilot}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htb!]
+\centering
+\caption{Choice stage.}
+\includegraphics[width=0.8\textwidth]{rsz_exp1_choicestage.png}
+\label{fig:exp1_screenshot}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htb!]
+\centering
+\caption{The proportion of trials where the target was chosen instead of the competitor. Each dot is a participant. Dots are jittered slightly. The red dot and error bars show the bootstrapped mean and 95\% CI.}
+\includegraphics[width=0.9\textwidth]{figure4.pdf}
+\label{fig:exp2_res}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[htb!]
+\centering
+\caption{Distribution of the target-competitor and target-decoy similarity ratings.}
+\includegraphics[width=0.8\textwidth]{Figure5.pdf}
+\label{fig:exp2_similarityratings}
+\end{figure}
