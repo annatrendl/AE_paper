@@ -1,0 +1,64 @@
+﻿Da: Psychological Science <onbehalfof@manuscriptcentral.com>
+Date: mar 9 lug 2019 alle ore 15:42
+Subject: Psychological Science - Decision on Manuscript PSCI-19-0604
+To: <trendlak@gmail.com>
+
+
+09-Jul-2019
+
+Dear Miss Trendl:
+
+Thank you for submitting "A zero attraction effect in naturalistic choice" to Psychological Science. Upon receipt of your manuscript, a Senior Editor and I read it. We both were impressed by several features of the paper, including the care with which the stimuli were selected as well as the care in implementing the study. A challenge though for the paper is that it is reporting null effects. Null effects can be informative but are also tricky to deal with as they often invite multiple alternative explanations. With these comments in mind, I sent your manuscript to two experts. Their comments appear below. I thank the reviewers for their thoughtful work.
+
+Both reviewers saw and appreciated the great effort that went into crafting the study. I think it is studies like these that are going to help the field of judgment and decision making transition from explaining laboratory decisions to explaining (and predicting) the decisions people make out on the streets. That being said, the reviewers raise some issues with the current study that have led me to decide to decline your manuscript for publication in Psychological Science. One of the problems that stood out to me was Reviewer 2's point about just how naturalistic the stimuli are. Reviewer 2 provided a short analysis showing that raise some issues about this claim making the point that it is more justifiable to classify the stimuli as visual. Movies are rather complex choice options, and I applaud you for using them, but both reviewers make some good points about issues that need to be addressed about their complexity and the consequences for claims about preferences. A second issue pertains to the null findings. As I mentioned, this can be a tricky claim and reviewer 2 identified a number of other questions and conditions that probably need to be met to state that there were sufficient grounds to see an attraction effect. These issues lead me to conclude that the generality of the claim of a zero attraction effect is just not there, which in turn limits the appeal of the paper to Psychological Science. 
+
+I do hope that you and your co-authors pursue publishing this piece, potentially in a journal more focused on judgment and decision making.  I regret that the outcome was not positive, but we have to be extraordinarily selective due to the large number of manuscripts that are submitted to the journal (nearly 2,000 new submissions are expected this year). I wish you well with this project and I hope the reviews are useful as you revise the manuscript for a specialty journal. Finally, I encourage you to continue to consider Psychological Science as an outlet for your work.
+
+Yours sincerely,
+
+Timothy J. Pleskac
+Associate Editor, Psychological Science
+psci@psychologicalscience.org
+
+REVIEWER(S)' COMMENTS:
+
+Reviewer: 1
+
+Comments to the Author
+
+
+The present authors report a pre-registered study on preferential choice involving naturalistic stimuli. The goal was to attempt to replicate the null attraction effects reported by Frederick et al. while overcoming its many shortcoings. The authors reported a null attraction effect.
+
+Generally speaking, I am not surprised by the results reported, especially when taking into account failures to extend some context effects across domains (Trueblood & Pettibone, 2017) or the recent studies showing their sensitivity to (supposedly minor) changes in the experimental design (see Cataldo & Cohen, 2018a, 2018b: Spektor, Kellen, & Hotaling, 2018).
+
+However, I am not entirely convinced by the present study.
+
+My main concern is that the ratings-matching does not imply equal preference between genres. The fact that I love both "There's Something About Mary" and "The Godfather" and would rate them equally high (in their respective genres), it does not mean I would be indifferent between the two options if I would be asked to make a choice. Importantly, these preference differences would not be detectable in the reported analyses. Perhaps the authors could control for such differences in a new study, where overall genre preferences are elicited. But that would involve collecting an entire new study.
+
+Other issues remain. For instance, any triplet can be easily reduced to a pair on the basis of movie-title recognition alone, before a more careful memory-based evaluation of the movies' characteristics can take place. If true, then one would not expect an attraction effect.
+
+
+Finally, I think that the paper would make a much stronger case if the authors followed Frederick et al. and reported additional studies using different stimulus sets. After all, the appeal of context effects is their (supposed) generality across domains.
+
+
+
+Reviewer: 2
+
+Comments to the Author
+Overall, I appreciate the effort and time the authors took in designing this experiment. Crafting different choice sets for each individual is a tedious process and not often used. The paper also addresses an interesting and important question. Understanding the boundary conditions of context effects is critical for theory development and testing. That said, I have a number of serious concerns about the scope and claims of this paper. My comments are enumerated below.
+
+1.      One of my major concerns with this paper is the claim that the stimuli are “naturalistic”. The stimuli in the experiment are pictures of movie posters. However, when people are making decisions about movies, they have access to much richer information, including important numerical information. For example, IMDb provides ratings (on a 10 point) scale for each movie along with the number of people rating the movie. This information is prominently displayed at the top of each movie webpage. Thus, more “naturalistic” stimuli would incorporate both numerical information and visual information.  The authors provided no justification for removing numerical information from their stimuli. Further there were no pilot tests showing which type of information (e.g., numerical information such as ratings or visual information such as movie posters) is more important in movie decisions. More generally, most real-world decisions involve both numerical information and visual information. For example, products on Amazon are presented with price and rating information (both numerical) as well as images of products. By titling the paper “A zero attraction effect in naturalistic choice”, the authors are greatly overstating the results of this paper. In my opinion, the stimuli are more accurately described as visual, not naturalistic. 
+2.      I was curious why the authors chose to use the conditions from the Huber et al. (2014) paper. Other guidelines for context effects have been proposed, such as those by Lichters et al. (2015). Their conditions are concerned with creating realistic choice situations. This includes providing both visual, verbal, and numeric information (similar to what consumers actually experience) as well as introducing real economic consequences. Given that the current experiment does not produce an attraction effect, it is difficult to know if this is due to the unrealistic nature of the task (limited information and no real consequences) or if such a result would persist in a more realistic task.
+
+Lichters, M., Sarstedt, M., & Vogt, B. (2015). On the practical relevance of the attraction effect: A cautionary note and guidelines for context effect experiments. AMS Review, 5(1-2), 1-19.
+
+Lichters, M., Bengart, P., Sarstedt, M., & Vogt, B. (2017). What really matters in attraction effect research: when choices have economic consequences. Marketing Letters, 28(1), 127-138.
+
+3.      While I appreciate the involved nature of the experiment and stimuli creation, the paper lacks generalizability with only a single experiment. At best, this paper shows there is no attraction effect with visually present movie stimuli. That is quite a narrow result and cannot be generalized to other “naturalistic” decisions. The paper would be much stronger if there were additional experiments using other types of stimuli. Ideally, these stimuli would be more realistic than those in the current experiment (see points 1 and 2 above).
+4.      One of the Huber et al. (2014) conditions is to avoid an undesirable decoy. I was wondering how the authors controlled for this in their experiment. The decoy was selected to be 3 points lower than the target on the rating scale. Why 3 points instead of 1 or 2 points? Was this pilot tested? It is possible that having the decoy be 3 points lower resulted in it being an undesirable decoy.
+5.      Another of the Huber et al. (2014) conditions is to avoid strong prior preferences over the target and competitor. However, recent work (Evangelidis et al., 2018) has shown that the attraction effect is quite strong for items that are disadvantaged in the binary core set (the set containing the target and competitor). While no attraction effect was found for movies with similar ratings, an attraction effect might arise when the target and competitor have different ratings (paralleling the experiments in Evangelidis et al, 2018).
+
+Evangelidis, I., Levav, J., & Simonson, I. (2018). The Asymmetric Impact of Context on Advantaged versus Disadvantaged Options. Journal of Marketing Research, 55(2), 239-253.
+
+6.      I wish the authors had collected binary choice data for the target competitor pairs. This would have provided more information regarding preferences over these options (as discussed in point 5) and allowed for binary and ternary comparisons (which is the traditional way of assessing the attraction effect).
+7.      I was surprised at how few choice trials there were per person (median was 16). Given that the authors started with a very large set of movies, it is concerning that they could only generate a handful of choice sets for each person. This, again, raises issues of generalizability.
