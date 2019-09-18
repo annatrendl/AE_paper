@@ -8,6 +8,10 @@ submitted_2 JCR, desk reject
 
 submitted_3 JCP, desk reject, lack of power
 
+submitted 4 psych sci reject
+
+submitted 5 decision
+
 # Plans for submission
 
 Very short report at Psych Science
