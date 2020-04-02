@@ -28,13 +28,25 @@ Reviewer #1: There are a number of novel and valuable characteristics in this st
 
 The results are very consistent, perhaps too much so. Overall, the choices between A and B are almost equal, despite having seen the same A B choice in the context of different A' or B' decoys. It is unfortunate that the tests of similarity and familiarity have no effect, given other researchers have found that these variables moderate the attraction effect.
 
-It is important that that less than 5% choose the decoy, showing that choices are largely consistent with large differences in ratings. However, for those who do choose the decoy, a similarity effect could draw shares from the target, thus limiting the attraction effect. Thus, it is important to demonstrate that the results do not differ if the authors drop the 5% of observations who chose the decoy. That test is unlikely to matter, but it is still needed.
+It is important that that less than 5% choose the decoy, showing that choices are largely consistent with large differences in ratings. 
+However, for those who do choose the decoy, a similarity effect could draw shares from the target, thus limiting the attraction effect. 
+Thus, it is important to demonstrate that the results do not differ if the authors drop the 5% of observations who chose the decoy. 
+That test is unlikely to matter, but it is still needed. 
 
-There remains a more substantial problem that could invalidate the general conclusions from the study. Fortunately, there are two simple tests that could determine if the problem exists. The choice design specifies that each respondent sees an A B B' and an A' A B choice set within the same set of tasks. If a respondent reasonably repeats the first choice between A and B despite the presence of a different undesired decoy, then the average attraction effect will be zero for that respondent, one choice counting for, and the other counting against the attraction effect. To test that possibility, two tests are necessary.
+we have already done that
 
-1. Run the analysis only on the first choice made on the A B pair. If recalled repetition is substantial, then the attraction is likely to be positive on the first, but negative on the second choice.
+There remains a more substantial problem that could invalidate the general conclusions from the study. 
+Fortunately, there are two simple tests that could determine if the problem exists. 
+The choice design specifies that each respondent sees an A B B' and an A' A B choice set within the same set of tasks. 
+If a respondent reasonably repeats the first choice between A and B despite the presence of a different undesired decoy, 
+then the average attraction effect will be zero for that respondent, one choice counting for, and the other counting against 
+the attraction effect. To test that possibility, two tests are necessary.
 
-2. Run an analysis on all those who switched A B across the two trials. Contrast the proportion of switches that are in the direction of the attraction effect against those which reverse it.
+1. Run the analysis only on the first choice made on the A B pair. 
+If recalled repetition is substantial, then the attraction is likely to be positive on the first, but negative on the second choice.
+
+2. Run an analysis on all those who switched A B across the two trials. 
+Contrast the proportion of switches that are in the direction of the attraction effect against those which reverse it.
 
 If the attraction effect is still not significant given these two tests, then the paper is an important contribution provided those provided those tests are included. However, if a reliable attraction is found, then there is a valuable paper that identifies the magnitude of the attraction effect and contexts in which it is stronger or weaker. In particular, it may happen that attraction effect becomes diminishes where target-decoy similarity is less or where the respondent are more familiar with the stimuli.
 
@@ -50,13 +62,33 @@ Overall the study is both timely and will interest a broad audience. Furthermore
 
 Limitations:
 
-1) The authors meticulously elicit similarity and preference ratings for different Netflix moving. These ratings are used in order to construct target-competitor-decoy triplets. Regarding preference ratings, the underlying (reasonable) assumption here is that if two movies receive equal ratings then participants should be indifferent between them. However, I am unclear if this works well in practice. In particular, if choosing between two dissimilar movies of equal ratings would yield 50%-50% choice probabilities. My concern is motivated by the oftentimes discrepancy encountered between judgment and choice experiments but also by the fact that evaluating or comparing dissimilar naturalistic stimuli, such as movies, may engender different cognitive processes. For instance, when asked to rate a movie participants may arrive at the rating by comparing the movie at hand with all other movies within the same genre (e.g. this is a very good action movie). But when asked to compare an action movie and a thriller, their choice could be guided by their overall preferences for one genre over the other (e.g. I strongly prefer a very good thriller over a very good action movie). Ensuring correspondence between equal ratings of dissimilar naturalistic stimuli and choice indifference is necessary in order to claim that the Frederick's criteria are met. This correspondence can only be assessed experimentally. Finally, asides the aforesaid criteria, if preferences elicited from ratings and from choices are decoupled this would undermine the appropriateness of the design in studying the attraction effect in the absence of binary baseline choices between target and competitor.
+1) The authors meticulously elicit similarity and preference ratings for different Netflix moving. 
+These ratings are used in order to construct target-competitor-decoy triplets. 
+Regarding preference ratings, the underlying (reasonable) assumption here is that if two movies receive equal ratings then participants 
+should be indifferent between them. However, I am unclear if this works well in practice. In particular, if choosing between two dissimilar
+ movies of equal ratings would yield 50%-50% choice probabilities. My concern is motivated by the oftentimes discrepancy encountered
+ between judgment and choice experiments but also by the fact that evaluating or comparing dissimilar naturalistic stimuli, such as movies,
+ may engender different cognitive processes. For instance, when asked to rate a movie participants may arrive at the rating by comparing
+ the movie at hand with all other movies within the same genre (e.g. this is a very good action movie). But when asked to compare an action
+ movie and a thriller, their choice could be guided by their overall preferences for one genre over the other (e.g. I strongly prefer a very
+ good thriller over a very good action movie). Ensuring correspondence between equal ratings of dissimilar naturalistic stimuli and choice 
+indifference is necessary in order to claim that the Frederick's criteria are met. This correspondence can only be assessed experimentally.
+
+ Finally, asides the aforesaid criteria, if preferences elicited from ratings and from choices are decoupled this would undermine
+ the appropriateness of the design in studying the attraction effect in the absence of binary baseline choices between target and 
+competitor.
 
 2) The claims made by Frederick and Huber et al. may not be up to date given more recent experimental results. For instance, Spektor et al. (2018, Psych Science) show that an attraction effect with non-numerical stimuli is obtained only when the alternatives are horizontally aligned (Fig. 5). This speaks to the possibility that when attribute-wise processing is facilitated then the attraction effect ensues and strongly contradicts Fredericks's claim. Interestingly, in all other experiments in Spektor et al., in which the rectangles are not aligned, a repulsion (negative attraction) effect is obtained. It seems, thus, that it matters for the attraction effect whether people engage in attribute- or alternative-wise processing. With naturalistic stimuli, different people may have different strategies which overall gives a zero attraction effect. The paper should reflect the current state-of-the-art (e.g. Spektor et al) beyond the claims made by Frederick et al. and Huber et al.
 
 Further analyses:
 
-1) The probability of choosing the decoy is low, perhaps too low in comparison to other studies. It is thus an open question whether the decoy was placed way too far from the target, rendering the manipulation ineffective. I recommended plotting the magnitude of the attraction effect against the probability of choosing the decoy (and perhaps the similarity of the two based on the ratings) in order to see if there is any regularity there. The possibility that the decoy was too inferior to generate a preference reversal should be discussed. The mixed effect model ran with similarity ratings shows a lack of effect, but I recommend showing this relationship also descriptively (there might be non-monotonic patterns).
+1) The probability of choosing the decoy is low, perhaps too low in comparison to other studies. 
+It is thus an open question whether the decoy was placed way too far from the target, rendering the manipulation ineffective. 
+I recommended plotting the magnitude of the attraction effect against the probability of choosing the decoy 
+(and perhaps the similarity of the two based on the ratings) in order to see if there is any regularity there. 
+The possibility that the decoy was too inferior to generate a preference reversal should be discussed. 
+The mixed effect model ran with similarity ratings shows a lack of effect, but I recommend showing this relationship also 
+descriptively (there might be non-monotonic patterns).
 
 2) How did the preference ratings of the target-competitor (4-4 vs. 7-7) influence the attraction effect? Even if this is part of the logistic model (not sure if it is) I would also recommend to plot this relationship descriptively.
 

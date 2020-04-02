@@ -1,0 +1,83 @@
+
+
+
+
+what you suggested is what we did 
+we thank the reviewer, this is exactly what weve done
+we have now made this clear that we dropped
+
+ran it on the whole sample the results are the same
+
+weird columns, add confidence intervals
+
+to chi square test as well
+
+they only switched between A nd B on 8.5% (x pairs in total)
+10 pairs where they switched incongruent, congruent
+
+
+
+to account for for..... changed it a bit
+
+
+#################################################### 
+we havent seen people switch but this does not mean that they have a strong preference
+could just mean consistemcy
+it is really hard to tell these things apart 
+
+AB A' BA B' also applies to AB A'
+this critcism applies to all attraction effect designs
+not just our paper
+
+
+####################################################
+
+
+Table A .1
+just intercept and rating diff
+ wide cis - there could be a huge attraction effect there
+
+m 3 - int + 
+
+m3 + in pref dummy
+
+m both
+
+and model x with all so currently 4 
+
+
+then it is even less liekly that it would generalise to realistic options
+
+#################################
+
+
+change original to pre-registered
+
+
+we don'T need to pass a a judgement on thsi, but literature 
+
+we are teh first to use naturalistic stimuli whilst addressing
+
+
+we have done these both
+
+we ahve clarified the language throughout to make it clear , we are also 
+now including between subjects first trial 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

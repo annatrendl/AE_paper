@@ -1,0 +1,80 @@
+Actions:
+- entire cover letter underneat para what we did
+- top please find the revised
+- italics and normal underneath
+
+
+
+
+############################
+
+Reviewer 1 (Huber):
+1) check if results are the same if we don't exclude people who chose the decoy (it is possible that people who do not choose the decoy would experience a similarity effect, limiting the attraction effect) 
+just add it to main text
+2) run the analysis on the first of each of the choice pairs
+3) run the analysis on all those who switched across the two trials and check the proportion of those who switched towards the attraction effect aganst those who did not
+throw out A and A and B and B
+within a person and then t-test across 
+all pc who switched pt-t-c pair
+
+exlude no swicthes
+calculate the prop of switches and do a t test on 0.5
+average within pt and pt level t-test - CI
+
+4) asking for analysis that "accounts for within person association" -- thought we have done that?
+github revised the text to make clear we accounted
+raw data and analysis can be found on git
+
+Reviewer 2 ():
+1) only take people who change their minds - AB preference must be weak, actually the genius of r1 addresses r3
+2) put in spektor et al, cataldo - alignability - hard to spot
+just put it in intro, most naturalistic 
+3) plot td rating difference against probability of choosing the target
+4) bin and plot as well - wasnt in the pre-reg 
+
+Reviewer 3
+- change kool-aid
+- remove claim remove flawed
+- thank you for tolerating the position of the paper we toned the language down see pages etcetc and hope it is more appropriate 
+- delete they chose movies pairs.... -- just highlight that we created bespoke triplets
+avoid describing how he did his
+- add a high level summary
+400 movis
+worked out similarity 
+selected target decoy pairsif they were similar
+....
+
+- attributes spatial separated
+- nice sentences opening sentences
+- replace further work with this is just one really carefully set up experiment that meets all of the criticisms and we cant find an ae
+others perhaps less carefully but there's lots of them
+this incicates robust under specific cond but not under general conditions indicating theorizing about how people choose and real world 
+importance
+- awaits further empirical work
+
+---------------------------------------------------------------------
+- last point is about AB or BA (same as Huber)
+
+
+key thing that has changed are the extra tests - two new statistical test rev 1 and rev3 
+and rev 2
+
+
+
+the paper has been greatly improved 
+we addressed major comments
+we have also made changes 
+detailed point by point
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -203,7 +203,7 @@ To conduct a rigorous test of the attraction effect, it is crucial that people t
 
 These exclusion criteria were validated in a pilot study, where we collected ratings for a set of books, and included repeat trials. The participants filtered out by these three criteria were the ones who gave the least consistent ratings to repeated stimuli (correlation r $<$ .8).
 
-When we applied these exclusion criteria to our sample of 152 people, 17 participants were filtered out, leaving a sample of 2,148 choices from 135 participants.
+When we applied these exclusion criteria to our sample of 152 people, 17 participants were filtered out, leaving a sample of 2,148 choices from 135 participants. When testing for the attraction effect, we have also removed all trials where the decoy was chosen.
 
 
 \subsection*{Results}
@@ -228,7 +228,8 @@ We created the choice triplets carefully so that the target-decoy pairs were per
 \label{fig:exp2_similarityratings}
 \end{figure}
 
-We estimated the likelihood of choosing the target whilst accounting for subject-specific variability. Model 1 in Table \ref{latentattr_exp2reg} is an intercept-only mixed effects logistic regression with by-subjects intercepts.  The odds of 1 for choosing the target over the competitor reflect equal preference for the target and competitor, and corresponds to the choice proportion of .5 in Figure \ref{fig:exp2_res}. Using Model 1, the overall probability of choosing the target is .50, 95\% CI [.48--.52], as we see in the mean over subject proportions from Figure \ref{fig:exp2_res}.
+
+To account for subject-specific variability, we also estimated the likelihood of choosing the target with an intercept-only mixed effects logistic regression with by-subjects intercepts (see Model 1 in Table \ref{latentattr_exp2reg}). The odds of 1 for choosing the target over the competitor reflect equal preference for the target and competitor, and corresponds to the choice proportion of .5 in Figure \ref{fig:exp2_res}. Using Model 1, the overall probability of choosing the target is .50, 95\% CI [.48--.52], as we see in the mean over subject proportions from Figure \ref{fig:exp2_res}.
 
 
 \begin{table*}[htb!]
@@ -246,8 +247,8 @@ We estimated the likelihood of choosing the target whilst accounting for subject
 \hline \\[-1.8ex]
  Intercept & 1.001 (0.918, 1.091) & 0.987 (0.802, 1.214) \\
   Seen all &  & 1.046 (0.690, 1.587) \\
-  TC similarity rating &  & 0.960 (0.877, 1.050) \\
-  TD similarity rating &  & 0.981 (0.895, 1.075) \\
+  TC similarity rating &  & 0.981 (0.895, 1.075) \\
+  TD similarity rating &  & 0.960 (0.877, 1.050) \\
   TD rating difference &  & 0.944 (0.863, 1.032) \\
  \hline \\[-1.8ex]
 Observations & 2,055 & 1,953 \\
@@ -265,22 +266,21 @@ Bayesian Inf. Crit. & 2,864.090 & 2,750.087 \\
   \end{threeparttable}
 \end{table*}
 
-We also ran a mixed effects logistic regression with by-subjects intercepts to investigate how participants' target-decoy and target-competitor similarity ratings, familiarity with the movies, and target-decoy preference rating difference affect the likelihood of choosing the target (see Model 2 in Table \ref{latentattr_exp2reg}). The sample size is slightly smaller because people giving ``Don't Know'' ratings were not included. None of the ratings modulate the strength of the attraction effect. The overall probability of choosing the target is .50 95\% CI [.44--.55], with a slightly wider confidence interval. The conclusion from the two models and the simple mean over proportions is the same: we estimate a precisely zero attraction effect.
+We also ran a mixed effects logistic regression with by-subjects intercepts to investigate how participants' target-decoy and target-competitor similarity ratings, familiarity with the movies, and target-decoy preference rating difference affect the likelihood of choosing the target (see Model 2 in Table \ref{latentattr_exp2reg}). The sample size is slightly smaller because people giving ``Don't Know'' ratings were not included. None of the ratings modulate the strength of the attraction effect. The overall probability of choosing the target is .50, 95\% CI [.44--.55], with a slightly wider confidence interval. The conclusion from the two models and the simple mean over proportions is the same: we estimate a precisely zero attraction effect.
 
 \subsubsection*{Further analyses}
 
 
 Our experimental design ensured that for each bespoke A B movie pair, participants were presented with both A, B, A' and B, A, B' triplets. Faced with two subsequent choices involving two equally highly rated A--B movie pairs and two different, but undesirable decoys, it is possible that the first choice is  ``sticky'', and will be repeated. If this is the case, then we can expect that the target and the competitor will be chosen exactly half of the time, resulting in a perfectly zero attraction effect. 
 
-Indeed, participants were overwhelmingly likely to stick with their first choice, as they only switched between A and B in 8.5\% of cases (out of the 990 bespoke A--B pairs where the decoy was not chosen, corresponding to 1,980 individual choice trials, 92\% of the overall number of trials). 
-Using the subset of bespoke A--B pairs where participants have switched between their preferred option (A or B), we found that proportion of switches towards the attraction effect (i.e., choosing the target on both occasions as opposed to always choosing the competitor) was not significantly higher than 0.5, ${\chi}^2(1, N = 84)=1.44$, $p=.115$.
+Indeed, participants were overwhelmingly likely to stick with their first choice, as they only switched between A and B for 8.5\% of A--B pairs (out of the 990 bespoke A--B pairs where the decoy was not chosen on either of the trials). Out of these 84 occasions when participants switched, 48 times they have chosen the target both times, which means that we found no evidence that the proportion of switches towards the attraction effect (i.e., choosing the target on both occasions as opposed to always choosing the competitor) was higher than 0.5, ${\chi}^2(1, N = 84)=1.44$, $p=.115$, 95\% CI [.46--.68].
 
-Even though participants tended to stick with their first choice, the attraction effect might still be evident on the first choice for each bespoke A--B pair, and if this the case we can also expect a ``reverse'' attraction effect (higher likelihood of choosing the competitor) on the second choice. After excluding individual trials where the decoy was chosen, a one-sample $t$-test shows that the proportion of trials where the target was chosen on the first occasion is not significantly different from .5, $t(134)=-.039$, $p=.969$, and does not differ from 0.5 on the second choice either, $t(134)= .015$, $p=.988$.
+Even though participants tended to stick with their first choice, the attraction effect might still be evident on the first choice for each bespoke A--B pair, and if this the case we can also expect a ``reverse'' attraction effect (higher likelihood of choosing the competitor) on the second choice. After excluding individual trials where the decoy was chosen, we found no evidence that the proportion of trials where the target was chosen was different from .5 on the first, $t(134)=-.039$, $p=.969$, 95\% CI [.47--.53], or second choice, $t(134)= .015$, $p=.988$, 95\% CI [.46--.54].
 
 Our experimental design relies on the assumption that participants should be indifferent between equally highly rated movies from different genres. However, if the cognitive processes underlying the evaluation and choice stages are different, then discrepancies between ratings and choices might arise. For example, it is possible that the rating reflects preference for the movie \textit{within} its genre category, but the overall choice between two movies with different genres is driven by overall genre preferences.
 
 
-To address this concern, we first tested whether overall genre preferences have an influence on choices over and above the information reflected in individual movie ratings, by including the difference between the average target--competitor genre ratings in our regression model described in Table \ref{latentattr_exp2reg} (Model 2), assuming that average genre ratings serve as a suitable proxy for overall genre preferences. Model 3 in Table \ref{latentattr_exp3reg} in the Appendix shows that a stronger genre preference for the target over the competitor slightly increases the probability of choosing the target: a one standard deviation increase in the difference of the average target-competitor rating (corresponding to a 0.9 unit increase in average ratings on the original rating scale) increases the odds of choosing the target by about 10\%.  
+To address this concern, we first tested whether overall genre preferences have an influence on choices over and above the information reflected in individual movie ratings, by including the difference between the target–competitor genre ratings for each participant in our regression model described in Table \ref{latentattr_exp2reg} (Model 2), assuming that average genre ratings serve as a suitable proxy for overall genre preferences. Model 3 in Table \ref{latentattr_exp3reg} in the Appendix shows that a stronger genre preference for the target over the competitor slightly increases the probability of choosing the target: a one standard deviation increase in the difference of the average target-competitor rating (corresponding to a 0.9 unit increase in average ratings on the original rating scale) increases the odds of choosing the target by about 10\%.  
 
 Second, to determine whether overall genre preferences influence the strength of the attraction effect, we conducted two tests. First, we added a binary explanatory variable in Model 3, capturing whether the option with the higher overall genre rating was chosen on that particular trial (this is the case in 53\% of trials). The results from Model 3 in Table \ref{latentattr_exp2reg} show that choosing the option with a higher overall genre preference did not affect the probability that the target will be chosen. In addition, a one-sample $t$-test on a subset of trials where overall genre preferences for the target and competitor are roughly equal (where the absolute difference between the average genre ratings was less than 0.25 -- about 23\% of all trials) shows that the proportion of trials where the target was chosen is not significantly higher than .5, $t(98)=-.142$, $p=.556$.
   
@@ -323,6 +323,47 @@ In conclusion, our results are in line with that of \citeA{Frederick2014}, and p
 \clearpage
 \begin{appendices}
 
+\renewcommand{\thetable}{A\arabic{table}}
+\renewcommand{\thefigure}{A\arabic{figure}}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+
+%\begin{table*}[htb!]
+%\centering
+%  \begin{threeparttable}
+%    \caption{Odds ratios and 95\% CIs from two mixed-effects logistic models fit by maximum likelihood with subject-specific intercepts.}
+%  \label{latentattr_exp3reg}
+%\begin{tabular}{@{\extracolsep{5pt}}lcc} 
+%\\[-1.8ex]\hline 
+%\hline \\[-1.8ex] 
+% & \multicolumn{2}{c}{\textit{Dependent variable:}} \\ 
+%\cline{2-3} 
+%\\[-1.8ex] & \multicolumn{2}{c}{Target chosen} \\ 
+% & Model 3 & Model 4 \\ 
+%\hline \\[-1.8ex] 
+%Intercept & 0.989 (0.803, 1.217) & 0.991 (0.805, 1.221) \\
+% Seen all & 1.042 (0.687, 1.581) & 1.037 (0.684, 1.575) \\ 
+%  TC similarity rating& 0.980 (0.895, 1.074) & 0.981 (0.895, 1.075) \\ 
+% TD similarity rating & 0.960 (0.877, 1.050) & 0.960 (0.877, 1.050) \\ 
+%  TD rating difference & 0.947 (0.866, 1.036) & 0.947 (0.865, 1.036) \\ 
+%  TC genre rating difference & 1.101$^{*}$ (1.007, 1.204) & 1.101$^{*}$ (1.007, 1.204) \\ 
+%  Preferred genre chosen &  & 0.969 (0.810, 1.158) \\  
+% \hline \\[-1.8ex] 
+%Observations & 1,953 & 1,953 \\ 
+%Log Likelihood & $-$1,350.093 & $-$1,350.032 \\ 
+%Akaike Inf. Crit. & 2,714.186 & 2,716.064 \\ 
+%Bayesian Inf. Crit. & 2,753.226 & 2,760.681 \\ 
+%\hline 
+%\hline \\[-1.8ex] 
+%%\textit{Note:}  & \multicolumn{2}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+%\end{tabular} 
+%    \begin{tablenotes}
+%      \small
+%      \item Notes: $^{*}$p$<$0.05; ratings, and rating differences have been scaled; Seen all and Preferred genre chosen is coded 0.5 (Yes) and -0.5 (No); T - Target, C - Competitor, D - Decoy
+%    \end{tablenotes}
+%  \end{threeparttable}
+%\end{table*}
+
 
 \begin{table*}[htb!]
 \centering
@@ -337,29 +378,27 @@ In conclusion, our results are in line with that of \citeA{Frederick2014}, and p
 \\[-1.8ex] & \multicolumn{2}{c}{Target chosen} \\ 
  & Model 3 & Model 4 \\ 
 \hline \\[-1.8ex] 
-Intercept & 0.989 (0.803, 1.217) & 0.991 (0.805, 1.221) \\
- Seen all & 1.042 (0.687, 1.581) & 1.037 (0.684, 1.575) \\ 
-  TC similarity rating& 0.980 (0.895, 1.074) & 0.981 (0.895, 1.075) \\ 
- TD similarity rating & 0.960 (0.877, 1.050) & 0.960 (0.877, 1.050) \\ 
-  TD rating difference & 0.947 (0.866, 1.036) & 0.947 (0.865, 1.036) \\ 
-  TC genre rating difference & 1.101$^{*}$ (1.007, 1.204) & 1.101$^{*}$ (1.007, 1.204) \\ 
-  Preferred genre chosen &  & 0.969 (0.810, 1.158) \\  
- \hline \\[-1.8ex] 
-Observations & 1,953 & 1,953 \\ 
-Log Likelihood & $-$1,350.093 & $-$1,350.032 \\ 
-Akaike Inf. Crit. & 2,714.186 & 2,716.064 \\ 
-Bayesian Inf. Crit. & 2,753.226 & 2,760.681 \\ 
+Intercept & 1.001 (0.918, 1.091) & 0.989 (0.803, 1.217) \\ 
+ Genre rating difference & 1.080 (0.990, 1.178) & 1.101$^{*}$ (1.007, 1.204) \\  
+ Seen all &  & 1.042 (0.687, 1.581) \\ 
+  TC similarity rating &  & 0.980 (0.895, 1.074) \\ 
+  TD similarity rating &  & 0.960 (0.877, 1.050) \\ 
+  TD rating difference &  & 0.947 (0.866, 1.036) \\ 
+   \hline \\[-1.8ex]
+Observations & 2,055 & 1,953 \\ 
+Log Likelihood & $-$1,422.902 & $-$1,350.093 \\ 
+Akaike Inf. Crit. & 2,851.803 & 2,714.186 \\ 
+Bayesian Inf. Crit. & 2,868.687 & 2,753.226 \\ 
 \hline 
 \hline \\[-1.8ex] 
 %\textit{Note:}  & \multicolumn{2}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
 \end{tabular} 
     \begin{tablenotes}
       \small
-      \item Notes: $^{*}$p$<$0.05; ratings, and rating differences have been scaled; Seen all and Preferred genre chosen is coded 0.5 (Yes) and -0.5 (No); T - Target, C - Competitor, D - Decoy
+      \item Notes: $^{*}$p$<$0.05; ratings, and rating differences have been scaled; Seen all is coded 0.5 (Yes) and -0.5 (No); T - Target, C - Competitor, D - Decoy
     \end{tablenotes}
   \end{threeparttable}
 \end{table*}
-
 
 
 \begin{figure}[htb!]
