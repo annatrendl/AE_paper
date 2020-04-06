@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.11)  5 APR 2020 17:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.11)  6 APR 2020 18:29
 entering extended mode
 **./AE_updated.tex
 (AE_updated.tex
@@ -911,7 +911,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 277--278
 ; rat-ings have been scaled; Seen all is coded 0.5 (Yes) and
  []
 
-[13 <./Figure5.pdf>] [14]
+[13 <./Figure5.pdf>]
+! Undefined control sequence.
+l.293 ...of trials where the target was chosen \NS
+                                                  {INSERT POINT ESTIMATE HER...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[14]
+! Undefined control sequence.
+l.299 ...of trials where the target was chosen \NS
+                                                  {INSERT POINT ESTIMATE HER...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
 Overfull \hbox (7.12007pt too wide) in paragraph at lines 301--302
 \OT1/ptm/m/n/12 be-tween the tar-get and com-peti-tor, we found no ev-i-dence t
 hat this had any ef-fect on the strength 
@@ -955,11 +975,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 435.
 Here is how much of TeX's memory you used:
  8289 strings out of 493301
  126311 string characters out of 3129579
- 215500 words of memory out of 3000000
+ 214500 words of memory out of 3000000
  11644 multiletter control sequences out of 15000+200000
  30150 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,12n,38p,1398b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,12n,38p,1512b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -974,7 +994,7 @@ ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ann
 a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/
 Anna/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Use
 rs/Anna/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on AE_updated.pdf (25 pages, 585222 bytes).
+Output written on AE_updated.pdf (25 pages, 585213 bytes).
 PDF statistics:
  351 PDF objects out of 1000 (max. 8388607)
  60 named destinations out of 1000 (max. 500000)
