@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.11)  6 APR 2020 18:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.11)  6 APR 2020 21:05
 entering extended mode
 **./AE_updated.tex
 (AE_updated.tex
@@ -778,24 +778,24 @@ G,.JBIG2,.JB2 ,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 72.
+(Font)              <14.4> on input line 71.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 72.
+(Font)              <7> on input line 71.
  [1
 
 {C:/Users/Anna/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
 
 [2
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
 
-Overfull \hbox (4.53865pt too wide) in paragraph at lines 105--106
+Overfull \hbox (4.53865pt too wide) in paragraph at lines 104--105
 [][]\OT1/ptm/m/n/12 Usher & Mc-Clel-land[], []2004[]; mul-ti-al-ter-na-tive at-
 ten-tional drift-diffusion model, [][]Krajbich, Armel, 
  []
@@ -804,14 +804,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.106 
+l.105 
        [1]pdfTeX warning (ext4): destination with the same identifier (name{pag
 e.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.117 
+l.116 
        [2] [3]
-Overfull \hbox (0.86743pt too wide) in paragraph at lines 130--131
+Overfull \hbox (0.86743pt too wide) in paragraph at lines 129--130
 \OT1/ptm/m/n/12 to use the most pop-u-lar movies on IMDb as stim-uli. Since mov
 ies are an in-te-gral part of West- 
  []
@@ -820,20 +820,20 @@ ies are an in-te-gral part of West-
 <figure1.pdf, id=136, pagebox=cropbox, 963.6pt x 542.025pt>
 File: figure1.pdf Graphic file (type pdf)
 <use figure1.pdf>
-Package pdftex.def Info: figure1.pdf  used on input line 144. on input line 144
+Package pdftex.def Info: figure1.pdf  used on input line 143. on input line 143
 .
 Package pdftex.def Info: Requested size: 452.9679pt x 254.79314pt on input line
- 144.
+ 143.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 148.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 147.
 
-Overfull \hbox (3.33922pt too wide) in paragraph at lines 155--156
+Overfull \hbox (3.33922pt too wide) in paragraph at lines 154--155
 \OT1/ptm/m/n/12 To de-ter-mine the choice sets used in the ex-per-i-ment, the f
 irst step was to cre-ate a set of quadru- 
  []
 
 [5 <./figure1.pdf>]
-Overfull \hbox (9.5795pt too wide) in paragraph at lines 157--158
+Overfull \hbox (9.5795pt too wide) in paragraph at lines 156--157
 \OT1/ptm/m/n/12 quadru-plets pass [][]Huber et al.[][]'s [][]2014[]) cri-te-ria
 , as we de-tail be-low. The main steps in the quadru- 
  []
@@ -841,25 +841,25 @@ Overfull \hbox (9.5795pt too wide) in paragraph at lines 157--158
 <flow.png, id=158, 722.7pt x 542.025pt>
 File: flow.png Graphic file (type png)
 <use flow.png>
-Package pdftex.def Info: flow.png  used on input line 169. on input line 169.
+Package pdftex.def Info: flow.png  used on input line 168. on input line 168.
 Package pdftex.def Info: Requested size: 407.66833pt x 305.74844pt on input lin
-e 169.
+e 168.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 173.
+(Font)              <12> on input line 172.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 173.
+(Font)              <8> on input line 172.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 173.
+(Font)              <6> on input line 172.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 174.
+(Font)              <5> on input line 173.
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
 [][]\OT1/ptm/m/n/10 The la-tent se-man-tic anal-y-sis as-sesses the sim-i-lar-i
 ty of two items based on the text as-so-ci-ated with them. For
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 173--173
 \OT1/ptm/m/n/10 this anal-y-sis, we used the sum-mary text about the movies as 
 well as plot key-words, ac-tor and di-rec-tor names, all
  []
@@ -868,12 +868,12 @@ well as plot key-words, ac-tor and di-rec-tor names, all
 <figure2.pdf, id=172, pagebox=cropbox, 716.6775pt x 446.66875pt>
 File: figure2.pdf Graphic file (type pdf)
 <use figure2.pdf>
-Package pdftex.def Info: figure2.pdf  used on input line 181. on input line 181
+Package pdftex.def Info: figure2.pdf  used on input line 180. on input line 180
 .
 Package pdftex.def Info: Requested size: 407.66833pt x 254.08583pt on input lin
-e 181.
+e 180.
  [8 <./figure2.pdf>] [9]
-Overfull \hbox (3.81981pt too wide) in paragraph at lines 200--201
+Overfull \hbox (3.81981pt too wide) in paragraph at lines 199--200
 []\OT1/ptm/m/n/12 We only in-vited those par-tic-i-pants back for whom we could
  cre-ate at least three unique quadru- 
  []
@@ -881,67 +881,47 @@ Overfull \hbox (3.81981pt too wide) in paragraph at lines 200--201
 <rsz_exp1_choicestage.png, id=189, 424.58624pt x 304.13625pt>
 File: rsz_exp1_choicestage.png Graphic file (type png)
 <use rsz_exp1_choicestage.png>
-Package pdftex.def Info: rsz_exp1_choicestage.png  used on input line 205. on i
-nput line 205.
+Package pdftex.def Info: rsz_exp1_choicestage.png  used on input line 204. on i
+nput line 204.
 Package pdftex.def Info: Requested size: 362.37569pt x 259.5844pt on input line
- 205.
+ 204.
 LaTeX Font Info:    Font shape `OT1/ptm/m/ui' in size <12> not available
-(Font)              Font shape `OT1/ptm/m/it' tried instead on input line 211.
+(Font)              Font shape `OT1/ptm/m/it' tried instead on input line 210.
 [10 <./rsz_exp1_choicestage.png>] [11]
 <figure4.pdf, id=203, pagebox=cropbox, 716.6775pt x 446.66875pt>
 File: figure4.pdf Graphic file (type pdf)
 <use figure4.pdf>
-Package pdftex.def Info: figure4.pdf  used on input line 231. on input line 231
+Package pdftex.def Info: figure4.pdf  used on input line 230. on input line 230
 .
 Package pdftex.def Info: Requested size: 407.66833pt x 254.08583pt on input lin
-e 231.
+e 230.
 <Figure5.pdf, id=205, pagebox=cropbox, 716.6775pt x 446.66875pt>
 File: Figure5.pdf Graphic file (type pdf)
 <use Figure5.pdf>
-Package pdftex.def Info: Figure5.pdf  used on input line 240. on input line 240
+Package pdftex.def Info: Figure5.pdf  used on input line 239. on input line 239
 .
 Package pdftex.def Info: Requested size: 362.37569pt x 225.85559pt on input lin
-e 240.
+e 239.
  [12 <./figure4.pdf>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 277.
+(Font)              <10.95> on input line 276.
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 []\OT1/ptm/m/n/10.95 Notes: $[]$p$\OML/cmm/m/it/10.95 <$\OT1/ptm/m/n/10.95 0.05
 ; rat-ings have been scaled; Seen all is coded 0.5 (Yes) and
  []
 
-[13 <./Figure5.pdf>]
-! Undefined control sequence.
-l.293 ...of trials where the target was chosen \NS
-                                                  {INSERT POINT ESTIMATE HER...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[14]
-! Undefined control sequence.
-l.299 ...of trials where the target was chosen \NS
-                                                  {INSERT POINT ESTIMATE HER...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (7.12007pt too wide) in paragraph at lines 301--302
+[13 <./Figure5.pdf>] [14]
+Overfull \hbox (7.12007pt too wide) in paragraph at lines 300--301
 \OT1/ptm/m/n/12 be-tween the tar-get and com-peti-tor, we found no ev-i-dence t
 hat this had any ef-fect on the strength 
  []
 
 [15] [16] [17] [18] (AE_updated.bbl [19]) [20]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 337.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 341.
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
 []\OT1/ptm/m/n/10.95 Notes: $[]$p$\OML/cmm/m/it/10.95 <$\OT1/ptm/m/n/10.95 0.05
 ; rat-ings, and rat-ing dif-fer-ences have been scaled; Seen all is
  []
@@ -949,28 +929,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 411--412
 <figure6.pdf, id=278, pagebox=cropbox, 578.16pt x 433.62pt>
 File: figure6.pdf Graphic file (type pdf)
 <use figure6.pdf>
-Package pdftex.def Info: figure6.pdf  used on input line 420. on input line 420
+Package pdftex.def Info: figure6.pdf  used on input line 424. on input line 424
 .
 Package pdftex.def Info: Requested size: 407.66833pt x 305.74846pt on input lin
-e 420.
+e 424.
 <figure7.pdf, id=279, pagebox=cropbox, 578.16pt x 433.62pt>
 File: figure7.pdf Graphic file (type pdf)
 <use figure7.pdf>
-Package pdftex.def Info: figure7.pdf  used on input line 429. on input line 429
+Package pdftex.def Info: figure7.pdf  used on input line 433. on input line 433
 .
 Package pdftex.def Info: Requested size: 407.66833pt x 305.74846pt on input lin
-e 429.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
+e 433.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 439.
 [21
 
 ] [22 <./figure6.pdf>] [23 <./figure7.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 439.
  (AE_updated.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 439.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 439.
 Package rerunfilecheck Info: File `AE_updated.out' has not changed.
 (rerunfilecheck)             Checksum: 59A90739CDA15FCA21EDB7B27F8C4510;99.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 435.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 439.
  ) 
 Here is how much of TeX's memory you used:
  8289 strings out of 493301
@@ -979,7 +959,7 @@ Here is how much of TeX's memory you used:
  11644 multiletter control sequences out of 15000+200000
  30150 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,12n,38p,1512b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,12n,38p,1511b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -994,7 +974,7 @@ ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ann
 a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/
 Anna/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Use
 rs/Anna/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on AE_updated.pdf (25 pages, 585213 bytes).
+Output written on AE_updated.pdf (25 pages, 584795 bytes).
 PDF statistics:
  351 PDF objects out of 1000 (max. 8388607)
  60 named destinations out of 1000 (max. 500000)
