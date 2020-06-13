@@ -8,11 +8,11 @@ submitted_2 JCR, desk reject
 
 submitted_3 JCP, desk reject, lack of power
 
-submitted 4 psych sci, reject
+submitted 4 Psych Sci, reject
 
-submitted 5 decision, revise and resubmit
+submitted 5 Decision, revise and resubmit
 
-
+submitted_6 Decision, revise and resubmit
 
 
 
