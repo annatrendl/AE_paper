@@ -1,0 +1,32 @@
+---
+output: pdf_document
+classoption: landscape
+---
+
+```{r setup, include=FALSE, echo = FALSE}
+setwd("C:/Anna/latent_attraction/AE_paper/OSF")
+rm(list=ls())
+library(data.table)
+library(knitr)
+library(kableExtra)
+library(readr)
+
+load("List_of_stimuli.RData")
+
+
+stimuli <- quadruplets_for_subs[, c("Target_A_Title", "Decoy_A_Title", "Target_B_Title", "Decoy_B_Title")]
+stimuli[, No := 1:.N]
+stimuli <- setcolorder(stimuli, c("No", "Target_A_Title", "Decoy_A_Title", "Target_B_Title", "Decoy_B_Title"))
+```
+
+```{r, echo = FALSE}
+kable_out <- stimuli %>%
+  kable(booktabs = T,  longtable = T, col.names = c("", "Target A", "Decoy A",
+                                                    "Target B", "Decoy B"),
+        caption = "List of stimuli used in the experiment", "latex") %>%
+ kable_styling(full_width = T, latex_options = "repeat_header")%>%
+  column_spec(1, bold = T, width = "1cm") #%>%
+  #row_spec(seq(20,nrow(stimuli), by = 20), hline_after = T)
+write_file(kable_out, "kable_out.tex")
+
+```
