@@ -543,7 +543,7 @@ triplets[, no_choices := .N,.(worker.id)]
 
 #add overall rating, 
 #reorder trial no only including the first trial
-triplets[nos == 1, order_redefined := rank(trial.no), .(worker.id)]
+#triplets[nos == 1, order_redefined := rank(trial.no), .(worker.id)]
 
 summary(m1 <- glmer(Targetchosen ~ Seen + Similarity_dec  + Similarity_comp +
                       Target_decoy_ratingdiff +
@@ -552,13 +552,13 @@ summary(m1 <- glmer(Targetchosen ~ Seen + Similarity_dec  + Similarity_comp +
 
 
 triplets[, Target_rating := scale(Target_rating)]
-triplets[, order_redefined := scale(order_redefined)]
-triplets[, no_choices := scale(no_choices)]
+#triplets[, order_redefined := scale(order_redefined)]
+#triplets[, no_choices := scale(no_choices)]
 
 
 #scale everything else apart from order
 summary(m2 <- glmer(Targetchosen ~ Seen + Similarity_dec  + Similarity_comp +
-                      Target_decoy_ratingdiff + Target_rating + order + no_choices + order_redefined +
+                      Target_decoy_ratingdiff + Target_rating + order + no_choices + trial.no +
                       (1|worker.id), data = triplets[nos == 1,],
                     family=binomial(link='logit')))
 
@@ -570,12 +570,28 @@ CI.vector_2 <- exp(confint(m2))
 OR.vector_2 <- exp(m2@beta)
 p.values_2 <- summary(m2)$coefficients[,4]
 
-stargazer(m1,m2, type = "latex",ci=TRUE,single.row = TRUE,
-          coef = list(as.numeric(c(OR.vector_1)),as.numeric(c(OR.vector_2))),
-          ci.custom = list(CI.vector_1,CI.vector_2),
-          p =list(p.values_1, p.values_2),model.numbers = FALSE,
+m0 <- glmer(Targetchosen ~ 1 +
+              (1|worker.id), data = triplets[nos == 1,],
+            family=binomial(link='logit'))
+
+
+CI.vector_0 <- exp(confint(m0))
+OR.vector_0 <- exp(m0@beta)
+p.values_0 <- summary(m0)$coefficients[,4]
+
+stargazer(m0,m1,m2, type = "latex",ci=TRUE,single.row = TRUE,
+          coef = list(as.numeric(c(OR.vector_0)),as.numeric(c(OR.vector_1)),as.numeric(c(OR.vector_2))),
+          ci.custom = list(CI.vector_0,CI.vector_1,CI.vector_2),
+          p =list(p.values_0,p.values_1, p.values_2),model.numbers = FALSE,
           covariate.labels = c("Intercept","Seen all", "TC similarity rating", "TD similarity rating",
                                "TD rating difference", "TC rating", "order:CTD", "order:DCT", "order:TCD",
                                "order:TDC", "number of choices", "trial number"),
-          dep.var.labels = "Target chosen", column.labels = c("Model 1","Model 2"))
+          dep.var.labels = "Target chosen", column.labels = c("Model 1","Model 2", "Model 3"))
+
+
+
+stargazer(m0,m1,m2, type  = "latex", ci = T, single.row = T, coef = list(as.numeric(c(OR.vector_0)),as.numeric(c(OR.vector_1)),as.numeric(c(OR.vector_2))),
+          ci.custom = list(CI.vector_0,CI.vector_1,CI.vector_2),
+          p =list(p.values_0,p.values_1, p.values_2))
+
 

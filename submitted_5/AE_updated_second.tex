@@ -293,7 +293,7 @@ Our experimental design ensured that for each bespoke A--B movie pair, participa
 Indeed, participants were overwhelmingly likely to stick with their first choice, as they only switched between A and B in 8.5\% of cases (out of the 990 bespoke A--B pairs where the decoy was not chosen on either of the first or second trial). Out of these 84 cases when participants switched, 48 times they chose the target both times and 36 times they chose the competitor both times. Thus 57\%, 95\% CI [46\%--68\%] of switches were in the direction predicted by the attraction effect, which is not significantly higher than the chance level of 50\%, ${\chi}^2(1, N = 84)=1.44$, $p=.115$. 
 
 We have also analysed the first choice participants made for each A--B pair, discarding the second, possibly ``sticky'' choice.  
-After excluding individual trials where the decoy was chosen, we found no evidence that the proportion of trials where the target was chosen (M = .49) was different from .5 on the first choice, $t(134)=-.039$, $p=.969$, 95\% CI [.46--.52]. 
+After excluding individual trials where the decoy was chosen, we found no evidence that the proportion of trials where the target was chosen (M = .49) was different from .5 on the first choice, $t(134)=-.039$, $p=.969$, 95\% CI [.46--.52]. Using only the first choices, we repeated the analyses presented in Table \ref{latentattr_exp2reg} (see Models 2 and 3 in Table \ref{firstchoice} in the Appendix), and also tested the effect of various additional controls, including familiarity with the movies; target-competitor and target-decoy similarity ratings; target-decoy preference rating difference; target preference rating; display order of target, competitor, and decoy; overall number of choices; and current trial number (Model 5). When all covariates are included, we find some evidence that a larger preference difference between the target and decoy decreases the probability of choosing the target, but we still not find any evidence for the attraction effect. 
 
 Our experimental design relies on the assumption that participants should be indifferent between equally highly rated movies from different genres. However, if the cognitive processes underlying the evaluation and choice stages are different, then discrepancies between ratings and choices might arise. For example, it is possible that the rating reflects preference for the movie \textit{within} its genre category, but the overall choice between two movies with different genres is driven by overall genre preferences.
 
@@ -389,40 +389,41 @@ In conclusion, our results are in line with that of \citeA{Frederick2014}, and p
 \begin{table*}[htb!]
 \centering
   \begin{threeparttable}
-    \caption{Odds ratios and 95\% CIs from two mixed-effects logistic models fit by maximum likelihood with subject-specific intercepts.}
+    \caption{Odds ratios and 95\% CIs from three mixed-effects logistic models fit by maximum likelihood with subject-specific intercepts.}
   \label{firstchoice}
-\begin{tabular}{@{\extracolsep{5pt}}lcc} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
- & \multicolumn{2}{c}{\textit{Dependent variable:}} \\ 
-\cline{2-3} 
-\\[-1.8ex] & \multicolumn{2}{c}{Target chosen} \\ 
- & Model 1 & Model 2 \\ 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Targetchosen} \\ 
+\\[-1.8ex] & Model 3 & Model 4 & Model 5\\ 
 \hline \\[-1.8ex] 
- Intercept & 0.868 (0.652, 1.148) & 1.032 (0.710, 1.497) \\  
-  Seen all & 0.922 (0.816, 1.041) & 0.923 (0.816, 1.044) \\ 
-  TC similarity rating & 0.890 (0.782, 1.009) & 0.895 (0.787, 1.016) \\ 
-  TD similarity rating & 0.892 (0.791, 1.005) & 0.855$^{*}$ (0.749, 0.976) \\ 
-  TD rating difference &  & 1.115 (0.970, 1.284) \\ 
-  TC rating &  & 1.067 (0.704, 1.620) \\ 
-  order:CTD &  & 0.662$^{*}$ (0.437, 0.998) \\ 
-  order:DCT &  & 0.827 (0.543, 1.257) \\ 
-  order:TCD &  & 0.825 (0.541, 1.255) \\ 
-  order:TDC &  & 0.824 (0.538, 1.260) \\ 
-  number of choices &  & 1.025 (0.873, 1.203) \\ 
-  trial number &  & 0.981 (0.836, 1.151) \\ 
-  \hline \\[-1.8ex] 
-Observations & 1,014 & 1,014 \\ 
-Log Likelihood & $-$697.223 & $-$693.110 \\ 
-Akaike Inf. Crit. & 1,406.446 & 1,414.220 \\ 
-Bayesian Inf. Crit. & 1,435.976 & 1,483.123 \\ 
+Intercept & 0.936 (0.830, 1.056) & 0.868 (0.652, 1.148) & 1.005 (0.644, 1.465) \\ 
+ Seen all &  & 1.180 (0.674, 2.096) & 1.114 (0.630, 1.993) \\ 
+  TC similarity rating &  & 0.890 (0.782, 1.009) & 0.895 (0.787, 1.016) \\ 
+   TD similarity rating &  & 0.922 (0.816, 1.041) & 0.923 (0.816, 1.044) \\ 
+  TD rating difference &  & 0.892 (0.791, 1.005) & 0.855$^{*}$ (0.748, 0.977) \\ 
+  Target\ rating &  &  & 1.115 (0.970, 1.284) \\ 
+  order:CTD &  &  & 1.068 (0.708, 1.619) \\ 
+  order:DCT &  &  & 0.662 (0.438, 0.999) \\ 
+  order:DTC &  &  & 0.827 (0.543, 1.257) \\ 
+  order:TCD &  &  & 0.825 (0.541, 1.255) \\ 
+  order:TDC &  &  & 0.824 (0.538, 1.260) \\ 
+  number of choices &  &  & 1.002 (0.988, 1.017) \\ 
+  trial number &  &  & 0.998 (0.977, 1.019) \\ 
+ \hline \\[-1.8ex] 
+Observations & 1,065 & 1,014 & 1,014 \\ 
+Log Likelihood & $-$737.627 & $-$697.223 & $-$693.118 \\ 
+Akaike Inf. Crit. & 1,479.253 & 1,406.446 & 1,414.235 \\ 
+Bayesian Inf. Crit. & 1,489.195 & 1,435.976 & 1,483.138 \\ 
 \hline 
 \hline \\[-1.8ex] 
-%\textit{Note:}  & \multicolumn{2}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
-\end{tabular}
+%\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
     \begin{tablenotes}
       \small
-      \item Notes: $^{*}$p$<$0.05; all variables have been scaled apart from Seen all and order variables; Seen all is coded 0.5 (Yes) and -0.5 (No); benchmark for order variables is CDT; T - Target, C - Competitor, D - Decoy
+      \item Notes: $^{*}$p$<$0.05; ratings, and rating differences have been scaled; Seen all is coded 0.5 (Yes) and -0.5 (No); benchmark for order variables is CDT; T - Target, C - Competitor, D - Decoy
     \end{tablenotes}
   \end{threeparttable}
 \end{table*}
@@ -439,7 +440,7 @@ Bayesian Inf. Crit. & 1,435.976 & 1,483.123 \\
  & \multicolumn{2}{c}{\textit{Dependent variable:}} \\ 
 \cline{2-3} 
 \\[-1.8ex] & \multicolumn{2}{c}{Target chosen} \\ 
- & Model 3 & Model 4 \\ 
+ & Model 6 & Model 7 \\ 
 \hline \\[-1.8ex] 
 Intercept & 1.001 (0.918, 1.091) & 0.989 (0.803, 1.217) \\ 
  Genre rating difference & 1.080 (0.990, 1.178) & 1.101$^{*}$ (1.007, 1.204) \\  
