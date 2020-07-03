@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.11)  2 JUL 2020 21:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.11)  3 JUL 2020 23:41
 entering extended mode
 **./AE_updated_second.tex
 (AE_updated_second.tex
@@ -811,13 +811,19 @@ e.2}) has been already used, duplicate ignored
                    \relax 
 l.119 
        [2] [3]
+Overfull \hbox (9.73726pt too wide) in paragraph at lines 130--130
+|[]\OT1/ptm/b/n/17.28 Testing the at-trac-tion ef-fect with real-world stim-uli
+ that meets
+ []
+
+
 Overfull \hbox (0.86743pt too wide) in paragraph at lines 132--133
 \OT1/ptm/m/n/12 to use the most pop-u-lar movies on IMDb as stim-uli. Since mov
 ies are an in-te-gral part of West- 
  []
 
 [4]
-<figure1.pdf, id=135, pagebox=cropbox, 963.6pt x 542.025pt>
+<figure1.pdf, id=133, pagebox=cropbox, 963.6pt x 542.025pt>
 File: figure1.pdf Graphic file (type pdf)
 <use figure1.pdf>
 Package pdftex.def Info: figure1.pdf  used on input line 147. on input line 147
@@ -838,7 +844,7 @@ Overfull \hbox (9.5795pt too wide) in paragraph at lines 160--161
 , as we de-tail be-low. The main steps in the quadru- 
  []
 
-<flow.png, id=157, 722.7pt x 542.025pt>
+<flow.png, id=155, 722.7pt x 542.025pt>
 File: flow.png Graphic file (type png)
 <use flow.png>
 Package pdftex.def Info: flow.png  used on input line 172. on input line 172.
@@ -866,7 +872,7 @@ well as plot key-words, ac-tor and di-rec-tor names, all
  []
 
 [7 <./flow.png>]
-<figure2.pdf, id=171, pagebox=cropbox, 716.6775pt x 446.66875pt>
+<figure2.pdf, id=169, pagebox=cropbox, 716.6775pt x 446.66875pt>
 File: figure2.pdf Graphic file (type pdf)
 <use figure2.pdf>
 Package pdftex.def Info: figure2.pdf  used on input line 184. on input line 184
@@ -879,7 +885,7 @@ Overfull \hbox (3.81981pt too wide) in paragraph at lines 203--204
  cre-ate at least three unique quadru- 
  []
 
-<rsz_exp1_choicestage.png, id=188, 424.58624pt x 304.13625pt>
+<rsz_exp1_choicestage.png, id=186, 424.58624pt x 304.13625pt>
 File: rsz_exp1_choicestage.png Graphic file (type png)
 <use rsz_exp1_choicestage.png>
 Package pdftex.def Info: rsz_exp1_choicestage.png  used on input line 208. on i
@@ -890,14 +896,14 @@ Package pdftex.def Info: Requested size: 362.37569pt x 259.5844pt on input line
 LaTeX Font Info:    Font shape `OT1/ptm/m/ui' in size <12> not available
 (Font)              Font shape `OT1/ptm/m/it' tried instead on input line 214.
  [11]
-<figure4.pdf, id=202, pagebox=cropbox, 716.6775pt x 446.66875pt>
+<figure4.pdf, id=200, pagebox=cropbox, 716.6775pt x 446.66875pt>
 File: figure4.pdf Graphic file (type pdf)
 <use figure4.pdf>
 Package pdftex.def Info: figure4.pdf  used on input line 234. on input line 234
 .
 Package pdftex.def Info: Requested size: 407.66833pt x 254.08583pt on input lin
 e 234.
-<Figure5.pdf, id=204, pagebox=cropbox, 716.6775pt x 446.66875pt>
+<Figure5.pdf, id=202, pagebox=cropbox, 716.6775pt x 446.66875pt>
 File: Figure5.pdf Graphic file (type pdf)
 <use Figure5.pdf>
 Package pdftex.def Info: Figure5.pdf  used on input line 243. on input line 243
@@ -939,14 +945,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 462--463
 ; rat-ings, and rat-ing dif-fer-ences have been scaled; Seen all is
  []
 
-<figure6.pdf, id=280, pagebox=cropbox, 578.16pt x 433.62pt>
+<figure6.pdf, id=278, pagebox=cropbox, 578.16pt x 433.62pt>
 File: figure6.pdf Graphic file (type pdf)
 <use figure6.pdf>
 Package pdftex.def Info: figure6.pdf  used on input line 471. on input line 471
 .
 Package pdftex.def Info: Requested size: 407.66833pt x 305.74846pt on input lin
 e 471.
-<figure7.pdf, id=281, pagebox=cropbox, 578.16pt x 433.62pt>
+<figure7.pdf, id=279, pagebox=cropbox, 578.16pt x 433.62pt>
 File: figure7.pdf Graphic file (type pdf)
 <use figure7.pdf>
 Package pdftex.def Info: figure7.pdf  used on input line 480. on input line 480
@@ -987,9 +993,9 @@ ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ann
 a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/
 Anna/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Use
 rs/Anna/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on AE_updated_second.pdf (25 pages, 587079 bytes).
+Output written on AE_updated_second.pdf (25 pages, 587486 bytes).
 PDF statistics:
- 355 PDF objects out of 1000 (max. 8388607)
+ 353 PDF objects out of 1000 (max. 8388607)
  62 named destinations out of 1000 (max. 500000)
  57 words of extra memory for PDF output out of 10000 (max. 10000000)
 
