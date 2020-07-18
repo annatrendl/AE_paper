@@ -193,29 +193,6 @@ Luce%
 }{%
 Luce%
 }{%
-{\protect \APACyear {1959}}%
-}]{%
-Luce1959}
-\APACinsertmetastar {%
-Luce1959}%
-\begin{APACrefauthors}%
-Luce, R\BPBI D.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{1959}.
-\newblock
-\APACrefbtitle {{Individual Choice Behavior: A Theoretical Analysis}}
-  {{Individual Choice Behavior: A Theoretical Analysis}}.
-\newblock
-\APACaddressPublisher{New York}{Wiley}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Luce%
-}{%
-Luce%
-}{%
 {\protect \APACyear {1977}}%
 }]{%
 Luce1977a}
@@ -289,6 +266,31 @@ Noguchi, T.%
   Sampling: A Model of Decision Making Constrained by Process Data}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Psychological Review}{125}{4}{512--544}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pleskac%
+}{%
+Pleskac%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+Pleskac2015}
+\APACinsertmetastar {%
+Pleskac2015}%
+\begin{APACrefauthors}%
+Pleskac, T\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Decision and Choice: Luce's Choice Axiom}} {{Decision
+  and Choice: Luce's Choice Axiom}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {International Encyclopedia of the Social {\&} Behavioral
+  Sciences: Second Edition.} {International encyclopedia of the social {\&}
+  behavioral sciences: Second edition.}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
