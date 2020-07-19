@@ -490,6 +490,12 @@ ggsave("figure7.pdf", width = 8, height = 6)
 
 #revisions round 2 28/06/2020
 rm(list = ls())
+library(simpleboot)
+library(data.table)
+library(ggplot2)
+library(ggthemes)
+library(lme4)
+library(stargazer)
 load("step4_Prepare_choice_data_input.RData")
 load("C:/AE_paper/data/step1_Create_decoy_target_output.RData")
 load("step5_AE_results_input.RData")
@@ -538,7 +544,7 @@ triplets[, nos := 1:.N, .(worker.id, type)]
 #overall number of choices per pt
 triplets[, no_choices := .N,.(worker.id)]
 
-
+triplets[, RT_choice := scale(rt_choice)]
 
 
 #add overall rating, 
@@ -558,7 +564,7 @@ triplets[, Target_rating := scale(Target_rating)]
 
 #scale everything else apart from order
 summary(m2 <- glmer(Targetchosen ~ Seen + Similarity_dec  + Similarity_comp +
-                      Target_decoy_ratingdiff + Target_rating + order + no_choices + trial.no +
+                      Target_decoy_ratingdiff + Target_rating + order + no_choices + trial.no + RT_choice +
                       (1|worker.id), data = triplets[nos == 1,],
                     family=binomial(link='logit')))
 
@@ -585,7 +591,7 @@ stargazer(m0,m1,m2, type = "latex",ci=TRUE,single.row = TRUE,
           p =list(p.values_0,p.values_1, p.values_2),model.numbers = FALSE,
           covariate.labels = c("Intercept","Seen all", "TC similarity rating", "TD similarity rating",
                                "TD rating difference", "TC rating", "order:CTD", "order:DCT", "order:TCD",
-                               "order:TDC", "number of choices", "trial number"),
+                               "order:TDC", "number of choices", "trial number", "reaction time"),
           dep.var.labels = "Target chosen", column.labels = c("Model 1","Model 2", "Model 3"))
 
 

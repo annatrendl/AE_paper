@@ -74,7 +74,7 @@ Cataldo, A\BPBI M.%
   as an account of variation in the attraction, compromise, and similarity
   effects}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Psychonomic Bulletin and Review}{}{}{}.
+\APACjournalVolNumPages{Psychonomic Bulletin and Review}{26}{3}{934--942}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -236,9 +236,7 @@ Noguchi, T.%
   attraction, compromise, and similarity effects, alternatives are repeatedly
   compared in pairs on single dimensions}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Cognition}{}{}{}.
-\newblock
-\begin{APACrefDOI} \doi{10.1016/j.cognition.2014.03.006} \end{APACrefDOI}
+\APACjournalVolNumPages{Cognition}{132}{1}{44--56}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -288,9 +286,12 @@ Pleskac, T\BPBI J.%
 {\BBOQ}\APACrefatitle {{Decision and Choice: Luce's Choice Axiom}} {{Decision
   and Choice: Luce's Choice Axiom}}.{\BBCQ}
 \newblock
-\BIn{} \APACrefbtitle {International Encyclopedia of the Social {\&} Behavioral
-  Sciences: Second Edition.} {International encyclopedia of the social {\&}
-  behavioral sciences: Second edition.}
+\BIn{} J\BPBI D.~Wright\ (\BED), \APACrefbtitle {International Encyclopedia of
+  the Social {\&} Behavioral Sciences} {International encyclopedia of the
+  social {\&} behavioral sciences}\ (\PrintOrdinal{2nd}\ \BEd, \BPGS\
+  895--900).
+\newblock
+\APACaddressPublisher{Oxford}{Elsevier}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -425,7 +426,7 @@ Spektor, M\BPBI S.%
   the Repulsion Effect}} {{When the Good Looks Bad: An Experimental Exploration
   of the Repulsion Effect}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Psychological Science}{}{}{}.
+\APACjournalVolNumPages{Psychological Science}{29}{8}{1309--1320}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -484,7 +485,7 @@ Trueblood, J\BPBI S.%
   to Decision Making}} {{Not Just for Consumers: Context Effects Are
   Fundamental to Decision Making}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Psychological Science}{}{}{}.
+\APACjournalVolNumPages{Psychological Science}{24}{6}{901--908}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
