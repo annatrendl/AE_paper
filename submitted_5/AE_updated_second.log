@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.11)  19 JUL 2020 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.11)  26 JUL 2020 13:26
 entering extended mode
 **./AE_updated_second.tex
 (AE_updated_second.tex
@@ -795,6 +795,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
 
+Overfull \hbox (24.4356pt too wide) in paragraph at lines 102--103
+\OT1/ptm/m/n/12 given a scale value, and choice prob-a-bil-ity is a mono-tone f
+unc-tion of these scale val-ues [][]Trueblood, 
+ []
+
+
 Overfull \hbox (4.53865pt too wide) in paragraph at lines 105--106
 [][]\OT1/ptm/m/n/12 Usher & Mc-Clel-land[], []2004[]; mul-ti-al-ter-na-tive at-
 ten-tional drift-diffusion model, [][]Krajbich, Armel, 
@@ -817,7 +823,7 @@ ies are an in-te-gral part of West-
  []
 
 [4]
-<figure1.pdf, id=141, pagebox=cropbox, 963.6pt x 542.025pt>
+<figure1.pdf, id=142, pagebox=cropbox, 963.6pt x 542.025pt>
 File: figure1.pdf Graphic file (type pdf)
 <use figure1.pdf>
 Package pdftex.def Info: figure1.pdf  used on input line 151. on input line 151
@@ -839,7 +845,7 @@ Overfull \hbox (9.5795pt too wide) in paragraph at lines 164--165
  []
 
 [6 <./figure1.pdf>]
-<flow.png, id=168, 722.7pt x 542.025pt>
+<flow.png, id=169, 722.7pt x 542.025pt>
 File: flow.png Graphic file (type png)
 <use flow.png>
 Package pdftex.def Info: flow.png  used on input line 176. on input line 176.
@@ -866,7 +872,7 @@ well as plot key-words, ac-tor and di-rec-tor names, all
  []
 
 [7 <./flow.png>]
-<figure2.pdf, id=176, pagebox=cropbox, 716.6775pt x 446.66875pt>
+<figure2.pdf, id=177, pagebox=cropbox, 716.6775pt x 446.66875pt>
 File: figure2.pdf Graphic file (type pdf)
 <use figure2.pdf>
 Package pdftex.def Info: figure2.pdf  used on input line 188. on input line 188
@@ -879,7 +885,7 @@ Overfull \hbox (3.81981pt too wide) in paragraph at lines 209--210
  cre-ate at least three unique quadru- 
  []
 
-<rsz_exp1_choicestage.png, id=196, 424.58624pt x 304.13625pt>
+<rsz_exp1_choicestage.png, id=197, 424.58624pt x 304.13625pt>
 File: rsz_exp1_choicestage.png Graphic file (type png)
 <use rsz_exp1_choicestage.png>
 Package pdftex.def Info: rsz_exp1_choicestage.png  used on input line 214. on i
@@ -890,14 +896,14 @@ Package pdftex.def Info: Requested size: 362.37569pt x 259.5844pt on input line
 LaTeX Font Info:    Font shape `OT1/ptm/m/ui' in size <12> not available
 (Font)              Font shape `OT1/ptm/m/it' tried instead on input line 220.
  [11 <./rsz_exp1_choicestage.png>] [12]
-<figure4.pdf, id=214, pagebox=cropbox, 716.6775pt x 446.66875pt>
+<figure4.pdf, id=215, pagebox=cropbox, 716.6775pt x 446.66875pt>
 File: figure4.pdf Graphic file (type pdf)
 <use figure4.pdf>
 Package pdftex.def Info: figure4.pdf  used on input line 240. on input line 240
 .
 Package pdftex.def Info: Requested size: 407.66833pt x 254.08583pt on input lin
 e 240.
-<Figure5.pdf, id=216, pagebox=cropbox, 716.6775pt x 446.66875pt>
+<Figure5.pdf, id=217, pagebox=cropbox, 716.6775pt x 446.66875pt>
 File: Figure5.pdf Graphic file (type pdf)
 <use Figure5.pdf>
 Package pdftex.def Info: Figure5.pdf  used on input line 249. on input line 249
@@ -940,14 +946,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 469--470
 ; rat-ings, and rat-ing dif-fer-ences have been scaled; Seen all is
  []
 
-<figure6.pdf, id=292, pagebox=cropbox, 578.16pt x 433.62pt>
+<figure6.pdf, id=293, pagebox=cropbox, 578.16pt x 433.62pt>
 File: figure6.pdf Graphic file (type pdf)
 <use figure6.pdf>
 Package pdftex.def Info: figure6.pdf  used on input line 478. on input line 478
 .
 Package pdftex.def Info: Requested size: 407.66833pt x 305.74846pt on input lin
 e 478.
-<figure7.pdf, id=293, pagebox=cropbox, 578.16pt x 433.62pt>
+<figure7.pdf, id=294, pagebox=cropbox, 578.16pt x 433.62pt>
 File: figure7.pdf Graphic file (type pdf)
 <use figure7.pdf>
 Package pdftex.def Info: figure7.pdf  used on input line 487. on input line 487
@@ -988,9 +994,9 @@ ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ann
 a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/
 Anna/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Use
 rs/Anna/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on AE_updated_second.pdf (26 pages, 592049 bytes).
+Output written on AE_updated_second.pdf (26 pages, 592243 bytes).
 PDF statistics:
- 367 PDF objects out of 1000 (max. 8388607)
+ 368 PDF objects out of 1000 (max. 8388607)
  63 named destinations out of 1000 (max. 500000)
  57 words of extra memory for PDF output out of 10000 (max. 10000000)
 
