@@ -307,6 +307,12 @@ triplets[, genrechoice := ifelse((target_genre_av > competitor_genre_av & Target
 
 triplets <- triplets[Which.chosen != "Decoy",]
 
+
+triplets[, TC_pair := paste0(sort(c(Target_no, Competitor_no)), collapse = " "), by = 1:nrow(triplets)]
+triplets[, type := .GRP, .(TC_pair, worker.id)]
+triplets <- triplets[order(worker.id, type, trial.no)]
+triplets[, nos := 1:.N, .(worker.id, type)]
+
 summary(m3 <- glmer(Targetchosen ~ genre_ratingdiff + (1|worker.id), data = triplets, family=binomial(link='logit')))
 #summary(m4 <- glmer(Targetchosen ~ genrechoice + (1|worker.id), data = triplets, family=binomial(link='logit')))
 #summary(m5 <- glmer(Targetchosen ~ genre_ratingdiff + genrechoice + (1|worker.id), data = triplets, family=binomial(link='logit')))
@@ -362,6 +368,34 @@ stargazer(m3, m4, type = "latex",ci=TRUE,single.row = TRUE,
           title = "")
 
 
+
+summary(m3 <- glmer(Targetchosen ~ genre_ratingdiff + (1|worker.id), data = triplets[nos == 1,], family=binomial(link='logit')))
+summary(m4 <- glmer(Targetchosen ~ Seen + Similarity_dec  + Similarity_comp +
+                      Target_decoy_ratingdiff + genre_ratingdiff  + (1|worker.id), data = triplets[nos == 1,], family=binomial(link='logit')))
+
+
+CI.vector_3 <- exp(confint(m3))
+OR.vector_3 <- exp(m3@beta)
+p.values_3 <- summary(m3)$coefficients[,4]
+
+
+CI.vector_4 <- exp(confint(m4))
+OR.vector_4 <- exp(m4@beta)
+p.values_4 <- summary(m4)$coefficients[,4]
+
+
+stargazer(m3, m4, type = "latex",ci=TRUE,single.row = TRUE,
+          coef = list(as.numeric(c(OR.vector_3)),as.numeric(c(OR.vector_4))),
+          ci.custom = list(CI.vector_3,CI.vector_4),
+          p =list(p.values_3, p.values_4),model.numbers = FALSE,
+          dep.var.labels = "Target chosen", column.labels = c("Model 3","Model 4"),
+          title = "")
+
+
+
+
+
+
 library(boot)
 calcmean <- function(data, index) {
   mean(data[index, Targetchosen])
@@ -409,22 +443,14 @@ triplets[, Target_decoy_ratingdiff := Target_rating - Decoy_rating]
 
 triplets <- triplets[Which.chosen != "Decoy",]
 
+triplets[, TC_pair := paste0(sort(c(Target_no, Competitor_no)), collapse = " "), by = 1:nrow(triplets)]
+triplets[, type := .GRP, .(TC_pair, worker.id)]
+triplets <- triplets[order(worker.id, type, trial.no)]
+triplets[, nos := 1:.N, .(worker.id, type)]
 
 
 
-# 
-# 
-# triplets[, Similarity_dec := factor(Similarity_dec,
-#                                     labels = c("1","2","3","4","5","6","7", "Don't know"))]
-# 
-# 
-# triplets[, Similarity_dec := as.numeric(Similarity_dec)]
-# 
-# triplets[Similarity_dec==8, Similarity_dec := NA]
-# 
-
-
-summary(m5 <- glm(Targetchosen ~ as.factor(Target_decoy_ratingdiff) + as.factor(Similarity_dec),
+summary(m5 <- glm(Targetchosen ~ as.factor(Target_decoy_ratingdiff)+as.factor(Similarity_dec),
                   data = triplets, family=binomial(link='logit')))
 
 
@@ -468,7 +494,7 @@ calcmean <- function(data, index) {
 toplot <- data.table(expand.grid(Target_rating = unique(triplets$Target_rating), Prop = 0, Lower = 0, Upper = 0))
 
 for (i in 1:nrow(toplot)) {
-  dataset <- triplets[Which.chosen != "Decoy" & Target_rating == toplot[i, Target_rating,],]
+  dataset <- triplets[Which.chosen != "Decoy" & Target_rating == toplot[i, Target_rating,] & nos == 1,]
   bsTind <- boot(dataset,
                  statistic=calcmean, strata = as.factor(dataset$worker.id), R=10000)
   bootcis<- boot.ci(bsTind, conf=0.95, type=c("basic", "bca"))
@@ -599,5 +625,37 @@ stargazer(m0,m1,m2, type = "latex",ci=TRUE,single.row = TRUE,
 stargazer(m0,m1,m2, type  = "latex", ci = T, single.row = T, coef = list(as.numeric(c(OR.vector_0)),as.numeric(c(OR.vector_1)),as.numeric(c(OR.vector_2))),
           ci.custom = list(CI.vector_0,CI.vector_1,CI.vector_2),
           p =list(p.values_0,p.values_1, p.values_2))
+
+
+#revision 3 03/10/2020
+
+#to get a sense of the individual variation, bootstrap the number of targets chosen
+calcmean <- function(data, index) {
+  mean(data[index, Targetchosen])
+}
+
+
+toplot <- data.table(worker.id = unique(triplets$worker.id))
+
+
+for (i in 1:nrow(toplot)) {
+bsTind <- boot(triplets[Which.chosen != "Decoy" & worker.id == toplot[i, worker.id],],
+               statistic=calcmean, R=100)
+cis <- boot.ci(bsTind, conf=0.95, type=c("basic", "bca"))
+toplot[i, prop := bsTind$t0]
+toplot[i, lower := cis$bca[,4]]
+toplot[i, upper := cis$bca[,5]]
+print(i)
+}
+
+cis <- data.table(Target_prop = 1, Lower = 1, Upper = 1)
+pp <- one.boot(choices_distr[, Target_prop], mean, R=10^4)
+cis[,Target_prop := pp$t0]
+pp <- boot.ci(pp, type = "perc")
+cis[,Lower := pp$percent[,4]]
+cis[,Upper := pp$percent[,5]]
+
+range(choices_distr$No.choices)
+cis[, No.choices := 50]
 
 

@@ -1,0 +1,37 @@
+reviewer 1
+
+feature the findings currently in the appendix in the main paper, even if they were not specified in the pre-registration
+okay.
+
+
+
+Drop or revise Figure 5.
+just exlain what it is
+
+
+get reml
+highly correlated - we chose to present something else
+not enough power 
+report the number of people with sign
+
+we didnt power for it 
+we prefer not to report this
+
+inference from teh null underpwoered on the individual level
+
+
+
+prob of choosing the decoy - x- y
+do not include just tell the editor
+
+
+figure and table update - first choices only
+update table a2
+
+
+
+
+
+
+
+
