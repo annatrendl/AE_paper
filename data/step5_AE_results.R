@@ -51,7 +51,7 @@ range(choices_distr$No.choices)
 cis[, No.choices := 50]
 
 ggplot(choices_distr, aes(No.choices, Target_prop)) + 
-  geom_point(size = 1)+ theme_few() + geom_jitter(width = 1, height = 0.01)+
+  theme_few() + geom_jitter(width = 1, height = 0.01)+
   geom_hline(aes(yintercept = 0.5), lty = 4) + xlim(c(0,52)) +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         text = element_text(size = 17), aspect.ratio=4/3) + 
@@ -451,7 +451,7 @@ triplets[, nos := 1:.N, .(worker.id, type)]
 
 
 summary(m5 <- glm(Targetchosen ~ as.factor(Target_decoy_ratingdiff)+as.factor(Similarity_dec),
-                  data = triplets, family=binomial(link='logit')))
+                  data = triplets[nos == 1,], family=binomial(link='logit')))
 
 
 newdata <- expand.grid(Target_decoy_ratingdiff = unique(triplets$Target_decoy_ratingdiff),
@@ -463,10 +463,6 @@ ilink <- family(m5)$linkinv
 newdata <- cbind(newdata, predict(m5, newdata, type = "link", se.fit = TRUE)[1:2])
 newdata <- transform(newdata, Fitted = ilink(fit), Upper = ilink(fit + (2 * se.fit)),
                 Lower = ilink(fit - (2 * se.fit)))
-
-
-
-
 
 ggplot(newdata, aes(Similarity_dec, Fitted, shape = as.factor(Target_decoy_ratingdiff))) + 
   theme_bw() +
@@ -534,12 +530,11 @@ triplets[, Similarity_dec := factor(Similarity_dec,
 
 triplets[, Similarity_dec := as.numeric(Similarity_dec)]
 triplets[, Similarity_comp := as.numeric(Similarity_comp)]
-
+triplets <- triplets[Which.chosen != "Decoy",]
 triplets[Similarity_comp==8, Similarity_comp := NA]
 triplets[Similarity_dec==8, Similarity_dec := NA]
 ########################
 triplets[, Targetchosen := ifelse(Which.chosen == "Target", 1,0)]
-triplets <- triplets[Which.chosen != "Decoy",]
 triplets[, Similarity_dec := as.numeric(Similarity_dec)]
 triplets[, Similarity_comp := as.numeric(Similarity_comp)]
 
@@ -629,18 +624,20 @@ stargazer(m0,m1,m2, type  = "latex", ci = T, single.row = T, coef = list(as.nume
 
 #revision 3 03/10/2020
 
+#he wants us to plot the individual effects. two ways to go about this: run a logistic regression with worker.id
+#dummies/calculate cis vi bootstrapping - first i'll do bootstrapping because it's the easiest to compare with figure 5
+
+
+toplot <- data.table(worker.id = unique(triplets$worker.id))
 #to get a sense of the individual variation, bootstrap the number of targets chosen
 calcmean <- function(data, index) {
   mean(data[index, Targetchosen])
 }
 
 
-toplot <- data.table(worker.id = unique(triplets$worker.id))
-
-
 for (i in 1:nrow(toplot)) {
 bsTind <- boot(triplets[Which.chosen != "Decoy" & worker.id == toplot[i, worker.id],],
-               statistic=calcmean, R=100)
+               statistic=calcmean, R=1000)
 cis <- boot.ci(bsTind, conf=0.95, type=c("basic", "bca"))
 toplot[i, prop := bsTind$t0]
 toplot[i, lower := cis$bca[,4]]
@@ -648,14 +645,91 @@ toplot[i, upper := cis$bca[,5]]
 print(i)
 }
 
-cis <- data.table(Target_prop = 1, Lower = 1, Upper = 1)
-pp <- one.boot(choices_distr[, Target_prop], mean, R=10^4)
-cis[,Target_prop := pp$t0]
-pp <- boot.ci(pp, type = "perc")
-cis[,Lower := pp$percent[,4]]
-cis[,Upper := pp$percent[,5]]
+choices_distr <- triplets[Which.chosen != "Decoy", list(Target_prop =sum(Targetchosen)/.N,
+                                                        No.choices = .N),by = worker.id]
 
-range(choices_distr$No.choices)
-cis[, No.choices := 50]
+
+toplot <- merge(toplot, choices_distr, by = "worker.id", all.x = T)
+
+toplot <- toplot[order(No.choices, prop),]
+toplot[, No.disp := 1:.N]
+
+
+
+ggplot(toplot[prop != 0.5,], aes(No.choices, Target_prop, group = worker.id)) + 
+  theme_bw() + 
+  geom_pointrange(aes(ymin = lower, ymax = upper), 
+                  position=position_jitter(width=2)) + geom_hline(aes(yintercept = 0.5), colour = 'red', linetype = 4) + 
+  labs(y = "Proportion of trials where the target was chosen", x = "Number of choices") + scale_y_continuous(limits = c(-0.05,1.05))
+
+ggsave("ind_het.png")
+
+
+#plot of the probability of choosing the decoy by competitor and target
+rm(list = ls())
+library(simpleboot)
+library(data.table)
+library(ggplot2)
+library(ggthemes)
+library(lme4)
+library(stargazer)
+load("step4_Prepare_choice_data_input.RData")
+load("C:/AE_paper/data/step1_Create_decoy_target_output.RData")
+load("step5_AE_results_input.RData")
+
+triplets[, Similarity_comp := factor(Similarity_comp,
+                                     labels = c("1","2","3","4","5","6","7", "Don't know"))]
+triplets[, Similarity_dec := factor(Similarity_dec,
+                                    labels = c("1","2","3","4","5","6","7", "Don't know"))]
+
+
+triplets[, Similarity_dec := as.numeric(Similarity_dec)]
+triplets[, Similarity_comp := as.numeric(Similarity_comp)]
+triplets[Similarity_comp==8, Similarity_comp := NA]
+triplets[Similarity_dec==8, Similarity_dec := NA]
+########################
+triplets[, Targetchosen := ifelse(Which.chosen == "Target", 1,0)]
+triplets[, Similarity_dec := as.numeric(Similarity_dec)]
+triplets[, Similarity_comp := as.numeric(Similarity_comp)]
+
+triplets[Similarity_comp==8, Similarity_comp := NA]
+triplets[Similarity_dec==8, Similarity_dec := NA]
+triplets[, Target_decoy_ratingdiff := Target_rating - Decoy_rating]
+triplets[, Seen := ifelse(Allseen == TRUE, 0.5, -0.5)]
+
+triplets[, Decoychosen := ifelse(Which.chosen == "Decoy", 1, 0)]
+triplets[, TC_pair := paste0(sort(c(Target_no, Competitor_no)), collapse = " "), by = 1:nrow(triplets)]
+triplets[, type := .GRP, .(TC_pair, worker.id)]
+triplets <- triplets[order(worker.id, type, trial.no)]
+triplets[, nos := 1:.N, .(worker.id, type)]
+#overall number of choices per pt
+triplets[, no_choices := .N,.(worker.id)]
+
+summary(m5 <- glm(Decoychosen ~ as.factor(Target_decoy_ratingdiff)+as.factor(Similarity_dec),
+                  data = triplets[nos == 1,], family=binomial(link='logit')))
+
+
+newdata <- expand.grid(Target_decoy_ratingdiff = unique(triplets$Target_decoy_ratingdiff),
+                       Similarity_dec = na.omit(unique(triplets$Similarity_dec)))
+
+
+ilink <- family(m5)$linkinv
+
+newdata <- cbind(newdata, predict(m5, newdata, type = "link", se.fit = TRUE)[1:2])
+newdata <- transform(newdata, Fitted = ilink(fit), Upper = ilink(fit + (2 * se.fit)),
+                     Lower = ilink(fit - (2 * se.fit)))
+
+setDT(newdata)
+
+ggplot(newdata[Similarity_dec != 1,], aes(Similarity_dec, Fitted, shape = as.factor(Target_decoy_ratingdiff))) + 
+  theme_bw() +
+  geom_point(position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(ymin = Lower, ymax = Upper), position = position_dodge(width = 0.5)) +
+  theme(legend.position = "bottom", text = element_text(size = 20)) +
+  scale_x_continuous(breaks = 1:7) +
+  labs(x = "Target-Decoy similarity rating", y = "Predicted probability of\nchoosing the target") +
+  guides(shape=guide_legend(title='Target-Decoy rating difference'))
+
+ggsave("decoy.png", width = 8, height = 6)
 
 
