@@ -369,26 +369,27 @@ stargazer(m3, m4, type = "latex",ci=TRUE,single.row = TRUE,
 
 
 
-summary(m3 <- glmer(Targetchosen ~ genre_ratingdiff + (1|worker.id), data = triplets[nos == 1,], family=binomial(link='logit')))
-summary(m4 <- glmer(Targetchosen ~ Seen + Similarity_dec  + Similarity_comp +
+summary(m5 <- glmer(Targetchosen ~ genre_ratingdiff + (1|worker.id), data = triplets[nos == 1,], family=binomial(link='logit')))
+summary(m6 <- glmer(Targetchosen ~ Seen + Similarity_dec  + Similarity_comp +
                       Target_decoy_ratingdiff + genre_ratingdiff  + (1|worker.id), data = triplets[nos == 1,], family=binomial(link='logit')))
 
 
-CI.vector_3 <- exp(confint(m3))
-OR.vector_3 <- exp(m3@beta)
-p.values_3 <- summary(m3)$coefficients[,4]
+CI.vector_5 <- exp(confint(m5))
+OR.vector_5 <- exp(m5@beta)
+p.values_5 <- summary(m5)$coefficients[,4]
 
 
-CI.vector_4 <- exp(confint(m4))
-OR.vector_4 <- exp(m4@beta)
-p.values_4 <- summary(m4)$coefficients[,4]
+CI.vector_6 <- exp(confint(m6))
+OR.vector_6 <- exp(m6@beta)
+p.values_6 <- summary(m6)$coefficients[,4]
 
 
-stargazer(m3, m4, type = "latex",ci=TRUE,single.row = TRUE,
-          coef = list(as.numeric(c(OR.vector_3)),as.numeric(c(OR.vector_4))),
-          ci.custom = list(CI.vector_3,CI.vector_4),
-          p =list(p.values_3, p.values_4),model.numbers = FALSE,
-          dep.var.labels = "Target chosen", column.labels = c("Model 3","Model 4"),
+stargazer(m3,m5, m4,m6, type = "latex",ci=TRUE,single.row = TRUE,
+          coef = list(as.numeric(c(OR.vector_3)),as.numeric(c(OR.vector_5)),
+                      as.numeric(c(OR.vector_4)),as.numeric(c(OR.vector_6))),
+          ci.custom = list(CI.vector_3,CI.vector_5,CI.vector_4,CI.vector_6),
+          p =list(p.values_3, p.values_5, p.values_4, p.values_6),model.numbers = FALSE,
+          dep.var.labels = "Target chosen", column.labels = c("Model 3","Model 4", "Model 4","Model 5"),
           title = "")
 
 
