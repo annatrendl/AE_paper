@@ -451,7 +451,7 @@ triplets[, nos := 1:.N, .(worker.id, type)]
 
 
 
-summary(m5 <- glm(Targetchosen ~ as.factor(Target_decoy_ratingdiff)+as.factor(Similarity_dec),
+summary(m5 <- glm(Targetchosen ~ as.factor(Target_decoy_ratingdiff)*as.factor(Similarity_dec),
                   data = triplets[nos == 1,], family=binomial(link='logit')))
 
 

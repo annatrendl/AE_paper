@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.11)  5 OCT 2020 20:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.11)  6 OCT 2020 09:14
 entering extended mode
 **./AE_updated_third.tex
 (AE_updated_third.tex
@@ -396,13 +396,8 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-)) ("C:\Program Files\MiKTeX 2.9\tex/latex/appendix\appendix.sty"
-Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count90
-\c@@ppsavesec=\count91
-\c@@ppsaveapp=\count92
-)
-("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\times.sty"
+)) ("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\times.sty
+"
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
 ("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/latex/threeparttable\thre
@@ -464,8 +459,8 @@ sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen111
-\Hy@linkcounter=\count93
-\Hy@pagecounter=\count94
+\Hy@linkcounter=\count90
+\Hy@pagecounter=\count91
 
 ("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def
 "
@@ -473,7 +468,7 @@ File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count95
+\Hy@SavedSpaceFactor=\count92
 
 ("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\hyperref.c
 fg"
@@ -486,14 +481,14 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
-\c@Hy@tempcnt=\count96
+\c@Hy@tempcnt=\count93
  ("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen112
-\Fld@menulength=\count97
+\Fld@menulength=\count94
 \Field@Width=\dimen113
 \Fld@charsize=\dimen114
 Package hyperref Info: Hyper figures OFF on input line 6358.
@@ -505,9 +500,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count98
-\c@Item=\count99
-\c@Hfootnote=\count100
+\Hy@abspage=\count95
+\c@Item=\count96
+\c@Hfootnote=\count97
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
@@ -516,8 +511,8 @@ Package hyperref Message: Driver (autodetected): hpdftex.
 ("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.de
 f"
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
-\Fld@listcount=\count101
-\c@bookmark@seq@number=\count102
+\Fld@listcount=\count98
+\c@bookmark@seq@number=\count99
 
 ("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\rerunfilec
 heck.sty"
@@ -532,9 +527,9 @@ y"
 Package: authblk 2001/02/27 1.3 (PWD)
 \affilsep=\skip58
 \@affilsep=\skip59
-\c@Maxaffil=\count103
-\c@authors=\count104
-\c@affil=\count105
+\c@Maxaffil=\count100
+\c@authors=\count101
+\c@affil=\count102
 )
 ("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/latex/setspace\setspace.s
 ty"
@@ -543,7 +538,7 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 ("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/latex/apacite\apacite.sty
 "
 Package: apacite 2013/07/21 v6.03 APA citation
-\c@BibCnt=\count106
+\c@BibCnt=\count103
 \bibleftmargin=\skip60
 \bibindent=\skip61
 \bibparsep=\skip62
@@ -566,7 +561,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen120
 \caption@hangindent=\dimen121
 )
-\c@ContinuedFloat=\count107
+\c@ContinuedFloat=\count104
 Package caption Info: hyperref package is loaded.
 Package caption Info: threeparttable package is loaded.
 )
@@ -618,7 +613,7 @@ Package color Info: Driver file: pdftex.def on input line 147.
 )
 ("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/latex/endnotes\endnotes.s
 ty"
-\c@endnote=\count108
+\c@endnote=\count105
 \endnotesep=\dimen129
 \@enotes=\write3
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/adjustbox\adjustbox.sty"
@@ -635,7 +630,7 @@ tex"
 \XKV@toks=\toks19
 \XKV@tempa@toks=\toks20
 )
-\XKV@depth=\count109
+\XKV@depth=\count106
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) ("C:\Program Files\MiKTeX 2.9\tex/latex/adjustbox\adjcalc.sty"
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
@@ -668,13 +663,13 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/ifoddpage\ifoddpage.sty"
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count110
+\c@checkoddpage=\count107
 )
 ("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ltxmisc\varwidth.st
 y"
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box29
-\sift@deathcycles=\count111
+\sift@deathcycles=\count108
 \@vwid@loff=\dimen142
 \@vwid@roff=\dimen143
 ))
@@ -695,12 +690,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen151
 \cmidrulekern=\dimen152
 \defaultaddspace=\dimen153
-\@cmidla=\count112
-\@cmidlb=\count113
+\@cmidla=\count109
+\@cmidlb=\count110
 \@aboverulesep=\dimen154
 \@belowrulesep=\dimen155
-\@thisruleclass=\count114
-\@lastruleclass=\count115
+\@thisruleclass=\count111
+\@lastruleclass=\count112
 \@thisrulewidth=\dimen156
 )
 ("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titling\titling.sty
@@ -709,10 +704,6 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmarkwidth=\skip67
 \thanksmargin=\skip68
 \droptitle=\skip69
-)
-("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\ttlkeys.de
-f"
-File: ttlkeys.def 2016/03/15
 ) (AE_updated_third.aux)
 \openout1 = `AE_updated_third.aux'.
 
@@ -783,7 +774,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 string.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count116
+\c@section@level=\count113
 )
 LaTeX Info: Redefining \ref on input line 49.
 LaTeX Info: Redefining \pageref on input line 49.
@@ -792,7 +783,7 @@ LaTeX Info: Redefining \nameref on input line 49.
 \@outlinefile=\write4
 \openout4 = `AE_updated_third.out'.
 
-\c@maskedRefs=\count117
+\c@maskedRefs=\count114
 
 ("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/latex/apacite\english.apc
 "
@@ -806,16 +797,16 @@ Package caption Info: End \AtBeginDocument code.
 ("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pdf.mki
 i"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
+\scratchcounter=\count115
 \scratchdimen=\dimen157
 \scratchbox=\box31
-\nofMPsegments=\count119
-\nofMParguments=\count120
+\nofMPsegments=\count116
+\nofMParguments=\count117
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count121
+\MPscratchCnt=\count118
 \MPscratchDim=\dimen158
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
+\MPnumerator=\count119
+\makeMPintoPDFobject=\count120
 \everyMPtoPDFconversion=\toks22
 )
 ("C:\Users\Anna\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-b
@@ -846,8 +837,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 [2
 
 ]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
 
@@ -867,7 +856,7 @@ e.2}) has been already used, duplicate ignored
                    \relax 
 l.121 
        [2] [3] [4]
-<figure1.pdf, id=139, pagebox=cropbox, 963.6pt x 542.025pt>
+<figure1.pdf, id=135, pagebox=cropbox, 963.6pt x 542.025pt>
 File: figure1.pdf Graphic file (type pdf)
 <use figure1.pdf>
 Package pdftex.def Info: figure1.pdf  used on input line 155. on input line 155
@@ -876,6 +865,8 @@ Package pdftex.def Info: Requested size: 452.9679pt x 254.79314pt on input line
  155.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 159.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 161.
 
 Overfull \hbox (3.33922pt too wide) in paragraph at lines 166--167
 \OT1/ptm/m/n/12 To de-ter-mine the choice sets used in the ex-per-i-ment, the f
@@ -889,7 +880,7 @@ Overfull \hbox (9.5795pt too wide) in paragraph at lines 168--169
  []
 
 [5]
-<flow.png, id=150, 722.7pt x 542.025pt>
+<flow.png, id=146, 722.7pt x 542.025pt>
 File: flow.png Graphic file (type png)
 <use flow.png>
 Package pdftex.def Info: flow.png  used on input line 180. on input line 180.
@@ -917,7 +908,7 @@ well as plot key-words, ac-tor and di-rec-tor names, all
  []
 
 [7 <./flow.png>]
-<figure2.pdf, id=175, pagebox=cropbox, 716.6775pt x 446.66875pt>
+<figure2.pdf, id=171, pagebox=cropbox, 716.6775pt x 446.66875pt>
 File: figure2.pdf Graphic file (type pdf)
 <use figure2.pdf>
 Package pdftex.def Info: figure2.pdf  used on input line 192. on input line 192
@@ -930,7 +921,7 @@ Overfull \hbox (3.81981pt too wide) in paragraph at lines 213--214
  cre-ate at least three unique quadru- 
  []
 
-<rsz_exp1_choicestage.png, id=194, 424.58624pt x 304.13625pt>
+<rsz_exp1_choicestage.png, id=190, 424.58624pt x 304.13625pt>
 File: rsz_exp1_choicestage.png Graphic file (type png)
 <use rsz_exp1_choicestage.png>
 Package pdftex.def Info: rsz_exp1_choicestage.png  used on input line 218. on i
@@ -940,7 +931,7 @@ Package pdftex.def Info: Requested size: 362.37569pt x 259.5844pt on input line
 LaTeX Font Info:    Font shape `OT1/ptm/m/ui' in size <12> not available
 (Font)              Font shape `OT1/ptm/m/it' tried instead on input line 224.
 [10] [11 <./rsz_exp1_choicestage.png>]
-<figure4.pdf, id=206, pagebox=cropbox, 678.535pt x 355.3275pt>
+<figure4.pdf, id=202, pagebox=cropbox, 678.535pt x 355.3275pt>
 File: figure4.pdf Graphic file (type pdf)
 <use figure4.pdf>
 Package pdftex.def Info: figure4.pdf  used on input line 244. on input line 244
@@ -948,7 +939,7 @@ Package pdftex.def Info: figure4.pdf  used on input line 244. on input line 244
 Package pdftex.def Info: Requested size: 407.66833pt x 213.48007pt on input lin
 e 244.
  [12]
-<Figure5.pdf, id=214, pagebox=cropbox, 716.6775pt x 446.66875pt>
+<Figure5.pdf, id=210, pagebox=cropbox, 716.6775pt x 446.66875pt>
 File: Figure5.pdf Graphic file (type pdf)
 <use Figure5.pdf>
 Package pdftex.def Info: Figure5.pdf  used on input line 253. on input line 253
@@ -990,7 +981,7 @@ hat this had any ef-fect on the strength
  []
 
 [17]
-<figure6.pdf, id=267, pagebox=cropbox, 578.16pt x 433.62pt>
+<figure6.pdf, id=264, pagebox=cropbox, 578.16pt x 433.62pt>
 File: figure6.pdf Graphic file (type pdf)
 <use figure6.pdf>
 Package pdftex.def Info: figure6.pdf  used on input line 404. on input line 404
@@ -998,7 +989,7 @@ Package pdftex.def Info: figure6.pdf  used on input line 404. on input line 404
 Package pdftex.def Info: Requested size: 407.66833pt x 305.74846pt on input lin
 e 404.
  [18 <./figure6.pdf>]
-<figure7.pdf, id=280, pagebox=cropbox, 578.16pt x 433.62pt>
+<figure7.pdf, id=277, pagebox=cropbox, 578.16pt x 433.62pt>
 File: figure7.pdf Graphic file (type pdf)
 <use figure7.pdf>
 Package pdftex.def Info: figure7.pdf  used on input line 416. on input line 416
@@ -1006,44 +997,27 @@ Package pdftex.def Info: figure7.pdf  used on input line 416. on input line 416
 Package pdftex.def Info: Requested size: 407.66833pt x 305.74846pt on input lin
 e 416.
  [19 <./figure7.pdf>] [20] [21] (AE_updated_third.bbl
-[22]) [23]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 454.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 547.
- [24
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 547.
+[22])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 453.
+ [23]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 453.
  (AE_updated_third.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 547.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 547.
-
-
-Package rerunfilecheck Warning: File `AE_updated_third.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `AE_updated_third.out':
-(rerunfilecheck)             Before: 9A1322DD505837789943975B0BF0315A;101
-(rerunfilecheck)             After:  D7215725CD4D1AC88B9F98983A058EF3;102.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 547.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 453.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 453.
+Package rerunfilecheck Info: File `AE_updated_third.out' has not changed.
+(rerunfilecheck)             Checksum: 98F8AF56CB9D522D45DDA8FF5B9DFA7E;54.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 453.
  ) 
 Here is how much of TeX's memory you used:
- 9306 strings out of 493301
- 143657 string characters out of 3129579
- 241919 words of memory out of 3000000
- 12623 multiletter control sequences out of 15000+200000
- 30150 words of font info for 57 fonts, out of 3000000 for 9000
+ 9187 strings out of 493301
+ 141751 string characters out of 3129579
+ 241060 words of memory out of 3000000
+ 12514 multiletter control sequences out of 15000+200000
+ 28524 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,13n,61p,1539b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.13} has been referenced but does not exist
-, replaced by a fixed one
 
 {C:/Users/Anna/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C
 :/Users/Anna/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
@@ -1056,9 +1030,9 @@ ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ann
 a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/
 Anna/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Use
 rs/Anna/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on AE_updated_third.pdf (26 pages, 591337 bytes).
+Output written on AE_updated_third.pdf (25 pages, 590332 bytes).
 PDF statistics:
- 366 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 357 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

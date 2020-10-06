@@ -4,7 +4,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
 %\usepackage[tablesfirst,nolists]{endfloat}
-\usepackage[toc,page]{appendix}
+%\usepackage[toc,page]{appendix}
 \usepackage{times}
 \usepackage[flushleft]{threeparttable}
 \usepackage{hyperref}
@@ -23,7 +23,7 @@
 \usepackage{titling}
 \usepackage{authblk}
 
-\renewcommand\appendixpagename{Appendix}
+%\renewcommand\appendixpagename{Appendix}
 
 \captionsetup{
   labelsep=newline,
@@ -38,10 +38,10 @@
 \doublespacing
 %\renewcommand{\efloatheading}[1]{}
 
-\renewcommand{\appendixname}{Appendix}
-\titleformat{name=\section,numberless}[hang]
-   {\bfseries}{}{6pt}{\Large}
-
+%\renewcommand{\appendixname}{Appendix}
+%\titleformat{name=\section,numberless}[hang]
+%   {\bfseries}{}{6pt}{\Large}
+%
 
 %\let\footnote=\endnote
 
@@ -395,17 +395,17 @@ Second, to determine whether overall genre preferences for the target and compet
   
 Overall, while the results indicate that overall genre preferences slightly influenced choices between the target and competitor, we found no evidence that this had any effect on the strength of the attraction effect.
 
-The decoy was chosen very rarely, in less than 5\% of trials. Previously, it had been shown that a decoy that is placed too far from the target can result in a reverse attraction effect (repulsion effect; \citeNP{Spektor2018}). On a 1-7 preference rating scale, we allowed for a minimum distance of 3 and a maximum of 6 between the target and decoy. While we have not found any evidence that the target-decoy rating difference influenced the strength of the attraction effect (see Model 2 in Table \ref{latentattr_exp2reg}), a non-linear association between target-decoy preference and the attraction effect might still exist. To examine this possibility while controlling for the perceived similarity of the target-decoy pair, we ran a logistic regression model to predict the probability of choosing the target, with target-decoy rating difference and their perceived similarity as explanatory variables. To test for a potential non-monotonic relationship, we estimated a separate coefficient for each level of the explanatory variables. Figure \ref{fig:exp2_res} in the Appendix shows the predicted probabilities from this analysis for each combination of target-decoy rating difference and similarity rating, using first choices only. The pattern of these predicted values do not indicate that the strength of the attraction effect varies systematically by the target-decoy rating difference and similarity rating.
+The decoy was chosen very rarely, in less than 5\% of trials. Previously, it had been shown that a decoy that is placed too far from the target can result in a reverse attraction effect (repulsion effect; \citeNP{Spektor2018}). On a 1-7 preference rating scale, we allowed for a minimum distance of 3 and a maximum of 6 between the target and decoy. While we have not found any evidence that the target-decoy rating difference influenced the strength of the attraction effect (see Model 2 in Table \ref{latentattr_exp2reg}), a non-linear association between target-decoy preference and the attraction effect might still exist. To examine this possibility while controlling for the perceived similarity of the target-decoy pair, we ran a logistic regression model to predict the probability of choosing the target, with target-decoy rating difference and their perceived similarity as explanatory variables. To test for a potential non-monotonic relationship, we estimated a separate coefficient for each level of the explanatory variables. Figure \ref{fig:TD_fig} shows the predicted probabilities from this analysis for each combination of target-decoy rating difference and similarity rating, using first choices only. The pattern of these predicted values do not indicate that the strength of the attraction effect varies systematically by the target-decoy rating difference and similarity rating.
 
 
 \begin{figure}[htb!]
 \centering
 		\caption{The predicted proportion of trials where the target was chosen instead of the competitor, by target decoy rating difference and similarity rating. The dot and error bars show model predictions and 95\% CIs from a logistic regression with target-decoy similarity rating and rating difference as explanatory variables, first choices only.}
 \includegraphics[width=0.9\textwidth]{figure6.pdf}
-\label{fig:exp2_res}
+\label{fig:TD_fig}
 \end{figure}
 
-It is possible that the strength of the attraction effect is influenced by the overall preference for the target and competitor (this is at least 4 and at most 7 in our experiment). To explore this possibility, we calculated the proportion of trials where the target was chosen for each level of target-competitor preference rating, using first choices only. Figure \ref{fig:exp2_res} in the Appendix shows these proportions, suggesting that target-competitor preference ratings had no effect on the strength of the attraction effect. 
+It is possible that the strength of the attraction effect is influenced by the overall preference for the target and competitor (this is at least 4 and at most 7 in our experiment). To explore this possibility, we calculated the proportion of trials where the target was chosen for each level of target-competitor preference rating, using first choices only. Figure \ref{fig:TC_fig} shows these proportions, suggesting that target-competitor preference ratings had no effect on the strength of the attraction effect. 
 
 
 
@@ -414,7 +414,7 @@ It is possible that the strength of the attraction effect is influenced by the o
 \centering
 		\caption{The proportion of trials where the target was chosen instead of the competitor by target-competitor rating. The dots and error bars show the bootstrapped mean and 95\% CI under stratified sampling (by participant), first choices only.}
 \includegraphics[width=0.9\textwidth]{figure7.pdf}
-\label{fig:exp2_res}
+\label{fig:TC_fig}
 \end{figure}
 
 \section*{General Discussion}
@@ -449,99 +449,5 @@ In summary, our results are in line with that of \citeA{Frederick2014}, and prov
 \newpage
 
 \bibliography{refs_update2}
-
-\clearpage
-\begin{appendices}
-
-\renewcommand{\thetable}{A\arabic{table}}
-\renewcommand{\thefigure}{A\arabic{figure}}
-\setcounter{table}{0}
-\setcounter{figure}{0}
-
-
-%
-%\begin{table*}[htb!]
-%\centering
-%  \begin{threeparttable}
-%    \caption{Odds ratios and 95\% CIs from two mixed-effects logistic models fit by maximum likelihood with subject-specific intercepts.}
-%  \label{latentattr_exp3reg}
-%\begin{tabular}{@{\extracolsep{5pt}}lcc} 
-%\\[-1.8ex]\hline 
-%\hline \\[-1.8ex] 
-% & \multicolumn{2}{c}{\textit{Dependent variable:}} \\ 
-%\cline{2-3} 
-%\\[-1.8ex] & \multicolumn{2}{c}{Target chosen} \\ 
-% & Model 6 & Model 7 \\ 
-%\hline \\[-1.8ex] 
-%Intercept & 1.001 (0.918, 1.091) & 0.989 (0.803, 1.217) \\ 
-% Genre rating difference & 1.080 (0.990, 1.178) & 1.101$^{*}$ (1.007, 1.204) \\  
-% Seen all &  & 1.042 (0.687, 1.581) \\ 
-%  TC similarity rating &  & 0.980 (0.895, 1.074) \\ 
-%  TD similarity rating &  & 0.960 (0.877, 1.050) \\ 
-%  TD rating difference &  & 0.947 (0.866, 1.036) \\ 
-%   \hline \\[-1.8ex]
-%Observations & 2,055 & 1,953 \\ 
-%Log Likelihood & $-$1,422.902 & $-$1,350.093 \\ 
-%Akaike Inf. Crit. & 2,851.803 & 2,714.186 \\ 
-%Bayesian Inf. Crit. & 2,868.687 & 2,753.226 \\ 
-%\hline 
-%\hline \\[-1.8ex] 
-%%\textit{Note:}  & \multicolumn{2}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
-%\end{tabular} 
-%    \begin{tablenotes}
-%      \small
-%      \item Notes: $^{*}$p$<$0.05; ratings, and rating differences have been scaled; Seen all is coded 0.5 (Yes) and -0.5 (No); T - Target, C - Competitor, D - Decoy
-%    \end{tablenotes}
-%  \end{threeparttable}
-%\end{table*}
-%
-%
-%\textsc{\begin{table*}[htb!]
-%\centering
-%  \begin{threeparttable}
-%    \caption{Odds ratios and 95\% CIs from two mixed-effects logistic models fit by maximum likelihood with subject-specific intercepts, first choices only.}
-%  \label{latentattr_exp3regfirstonly}
-%\begin{tabular}{@{\extracolsep{5pt}}lcc} 
-%\\[-1.8ex]\hline 
-%\hline \\[-1.8ex] 
-% & \multicolumn{2}{c}{\textit{Dependent variable:}} \\ 
-%\cline{2-3} 
-%\\[-1.8ex] & \multicolumn{2}{c}{Target chosen} \\ 
-% & Model 8 & Model 9 \\ 
-%\hline \\[-1.8ex] 
-% Intercept & 0.941 (0.834, 1.061) & 0.875 (0.657, 1.157) \\ 
-% Genre rating difference & 1.080 (0.958, 1.218) & 1.075 (0.949, 1.219) \\ 
-%  Seen &  & 1.173 (0.669, 2.083) \\ 
-% TC similarity rating &  & 0.893 (0.784, 1.013) \\ 
-% TD similarity rating &  & 0.920 (0.814, 1.039) \\ 
-% TD rating difference &  & 0.893 (0.791, 1.006) \\ 
-%    \hline \\[-1.8ex]
-%Observations & 1,065 & 1,014 \\ 
-%Log Likelihood & $-$736.835 & $-$696.577 \\ 
-%Akaike Inf. Crit. & 1,479.670 & 1,407.153 \\ 
-%Bayesian Inf. Crit. & 1,494.582 & 1,441.605 \\ 
-%\hline 
-%\hline \\[-1.8ex] 
-%%\textit{Note:}  & \multicolumn{2}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
-%\end{tabular} 
-%    \begin{tablenotes}
-%      \small
-%      \item Notes: $^{*}$p$<$0.05; ratings, and rating differences have been scaled; Seen all is coded 0.5 (Yes) and -0.5 (No); T - Target, C - Competitor, D - Decoy
-%    \end{tablenotes}
-%  \end{threeparttable}
-%\end{table*}}
-
-
-%
-%
-%
-%\begin{figure}[htb!]
-%\centering
-%		\caption{The proportion of trials where the target was chosen instead of the competitor by target-competitor rating. The dots and error bars show the bootstrapped mean and 95\% CI under stratified sampling (by participant), first choices only.}
-%\includegraphics[width=0.9\textwidth]{figure7.pdf}
-%\label{fig:exp2_res_app2}
-%\end{figure}
-
-\end{appendices}
 
 \end{document}
