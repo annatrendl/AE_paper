@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.11)  7 OCT 2020 20:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.11)  8 OCT 2020 22:06
 entering extended mode
 **./AE_updated_third.tex
 (AE_updated_third.tex
@@ -879,14 +879,13 @@ Overfull \hbox (9.5795pt too wide) in paragraph at lines 165--166
 , as we de-tail be-low. The main steps in the quadru- 
  []
 
-[5]
-<flow.png, id=145, 722.7pt x 542.025pt>
+[5] [6 <./figure1.pdf>]
+<flow.png, id=161, 722.7pt x 542.025pt>
 File: flow.png Graphic file (type png)
 <use flow.png>
 Package pdftex.def Info: flow.png  used on input line 177. on input line 177.
 Package pdftex.def Info: Requested size: 407.66833pt x 305.74844pt on input lin
 e 177.
- [6 <./figure1.pdf>]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 181.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1011,7 +1010,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 450.
 Here is how much of TeX's memory you used:
  9187 strings out of 493301
  141751 string characters out of 3129579
- 240060 words of memory out of 3000000
+ 241060 words of memory out of 3000000
  12514 multiletter control sequences out of 15000+200000
  28524 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1030,7 +1029,7 @@ ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Ann
 a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/
 Anna/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Use
 rs/Anna/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on AE_updated_third.pdf (25 pages, 590200 bytes).
+Output written on AE_updated_third.pdf (25 pages, 590117 bytes).
 PDF statistics:
  356 PDF objects out of 1000 (max. 8388607)
  61 named destinations out of 1000 (max. 500000)
