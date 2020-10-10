@@ -451,7 +451,7 @@ triplets[, nos := 1:.N, .(worker.id, type)]
 
 
 
-summary(m5 <- glm(Targetchosen ~ as.factor(Target_decoy_ratingdiff)*as.factor(Similarity_dec),
+summary(m5 <- glm(Targetchosen ~ as.factor(Target_decoy_ratingdiff)+as.factor(Similarity_dec),
                   data = triplets[nos == 1,], family=binomial(link='logit')))
 
 
@@ -465,6 +465,7 @@ newdata <- cbind(newdata, predict(m5, newdata, type = "link", se.fit = TRUE)[1:2
 newdata <- transform(newdata, Fitted = ilink(fit), Upper = ilink(fit + (2 * se.fit)),
                 Lower = ilink(fit - (2 * se.fit)))
 
+
 ggplot(newdata, aes(Similarity_dec, Fitted, shape = as.factor(Target_decoy_ratingdiff))) + 
   theme_bw() +
   geom_point(position = position_dodge(width = 0.5)) +
@@ -473,8 +474,8 @@ ggplot(newdata, aes(Similarity_dec, Fitted, shape = as.factor(Target_decoy_ratin
   ylim(c(0,1))+ theme(legend.position = "bottom", text = element_text(size = 20)) +
   scale_x_continuous(breaks = 1:7) +
   labs(x = "Target-Decoy similarity rating", y = "Predicted probability of\nchoosing the target") +
-  guides(shape=guide_legend(title='Target-Decoy rating difference'))
-
+  guides(shape=guide_legend(title='Target-Decoy rating difference')) + 
+  scale_y_continuous(labels = scales::percent_format(accuracy = 5L))
 ggsave("figure6.pdf", width = 8, height = 6)
 
 
@@ -507,7 +508,8 @@ ggplot(toplot, aes(Target_rating, Prop)) + geom_point() + theme_bw()  +
   geom_hline(aes(yintercept = 0.5), linetype = 4) +
   ylim(c(0,1))+
   labs(x = "Target and Competitor rating", y = "Probability of\nchoosing the target") + 
-  theme(text = element_text(size = 20))
+  theme(text = element_text(size = 20)) + 
+  scale_y_continuous(labels = scales::percent_format(accuracy = 5L))
   
 ggsave("figure7.pdf", width = 8, height = 6)
 
@@ -728,7 +730,7 @@ ggplot(newdata[Similarity_dec != 1,], aes(Similarity_dec, Fitted, shape = as.fac
   geom_errorbar(aes(ymin = Lower, ymax = Upper), position = position_dodge(width = 0.5)) +
   theme(legend.position = "bottom", text = element_text(size = 20)) +
   scale_x_continuous(breaks = 1:7) +
-  labs(x = "Target-Decoy similarity rating", y = "Predicted probability of\nchoosing the target") +
+  labs(x = "Target-Decoy similarity rating", y = "Predicted probability of\nchoosing the decoy") +
   guides(shape=guide_legend(title='Target-Decoy rating difference'))
 
 ggsave("decoy.png", width = 8, height = 6)
